@@ -1,0 +1,831 @@
+Bien, ya conoces las opciones de apuesta disponibles para participar con todos los sorteos.
+Acabo de actualizar la data con cargar_loteria.py para cundinamarca con el resultado del ultimo sorteo.
+Generemos un script Python llamado radar_premios.py donde actualice la data con cargar_loteria.py, luego consulte 
+a loterias.db para que lea la fecha actual, detecte las loterías del día basado en el calendario de sorteos 
+que ya conoces, podemos usar esta tabla para generar automáticamente sugerencias por día, analizando únicamente las
+loterías que juegan ese día y el sorteo astro luna que juega diariamente, analice combinaciones recientes o más
+frecuentes, produciendo automáticamente jugadas estratégicas, estas combinaciones inteligentes están basadas en
+datos históricos de la base de datos loterias.db, podemos tomar los últimos dígitos de los ganadores para recomendar
+pata y uña, tomar las combinaciones más frecuentes o calientes para chance y combinado, separar por cifras para saber
+si una jugada es buena para 2, 3 o 4 cifras sugiriendo combinaciones ganadoras por modalidad, guarde las sugerencias
+y el número real del día, calcule aciertos parciales y coincidencias exactas para que posteriormente actualizada la
+data estas jugadas sean analizadas y evaluadas con el objetivo de saber a corto plazo cuál estrategia ofrece más
+precisión para retorno de inversión. Módulo para detectar combinaciones frecuentes de 2 resultados en un mismo día
+(por lotería o sorteo). Recomendador de combinaciones basado en: Números calientes de 4 cifras (más repetidos)
+Pares de resultados frecuentes en un mismo día, Agregar una función simular_chance_millonario(fecha) que tome la 
+base histórica y simule posibles premios. Generar automáticamente recomendaciones de jugadas para el día con alta
+probabilidad de acierto. Almacenar y clasificar resultados según si una jugada habría ganado acumulado, parcial
+o nada. Estadística histórica: Extraer frecuencia de últimas 3 y 4 cifras de los premios mayores. Recomendaciones
+basadas en combinaciones más repetidas. Consulta por fecha: dado que es por una sola lotería diaria, puedes simular
+combinaciones para: Loterías pasadas de Risaralda. Juegos que hayan tenido premio mayor. Entonces crear: Un módulo
+de simulación y sugerencias para Súper Chance. Un sistema que diga “Si hubiera jugado este número en tal día 
+con Risaralda, hubiera ganado”. Una tabla histórica que almacene los aciertos simulados, Análisis de signos 
+más frecuentes por fecha. Predicción y sugerencia de número y signo con mayor probabilidad
+(basado en patrones históricos), Cálculo de frecuencia de aciertos por número y por sorteo. 
+Combinaciones con predicción de doble aciertos (basado en históricos). Carga de nuevas apuestas del día 
+y verificación de resultados. Recomendación basada en frecuencia histórica y probabilidad ponderada
+Registro del premio estimado y detección de patrones, Cruce de resultados con otros juegos para estrategias combinada.
+Todo desde un mismo script Python y SQLite completo, flexible, robusto, escalable que se imprima en pantalla ordenado,
+limpió. 
+
+-- 🔄 Asegurar que no exista la tabla temporal
+DROP TABLE IF EXISTS resultados_nueva;
+
+-- 1. Crear nueva tabla con numero como TEXT
+CREATE TABLE resultados_nueva (
+    loteria TEXT NOT NULL,
+    fecha TEXT NOT NULL,
+    numero TEXT NOT NULL,
+    signo TEXT DEFAULT '',
+    PRIMARY KEY (loteria, fecha, numero, signo)
+);
+
+-- 2. Copiar los datos válidos
+INSERT INTO resultados_nueva (loteria, fecha, numero, signo)
+SELECT
+    loteria,
+    fecha,
+    substr('0000' || CAST(numero AS INTEGER), -4, 4),
+    IFNULL(signo, '')
+FROM resultados
+WHERE numero IS NOT NULL
+  AND TRIM(numero) != ''
+  AND numero GLOB '[0-9]*';
+
+-- 3. Eliminar la tabla original
+DROP TABLE resultados;
+
+-- 4. Renombrar la tabla nueva
+ALTER TABLE resultados_nueva RENAME TO resultados;
+
+
+
+Huila
+
+Analisis
+0428, 0658, 0686, 0850, 3532, 4362, 5882, 6502, 7452, 7732
+
+Analisis avanzado (basadas en clustering)
+1504, 2384, 2554, 4276, 4553, 5523, 7510, 8364, 8510, 9657
+
+Alto puntaje
+9445, 1745, 8702, 3645, 6445
+
+Alto puntaje
+5086, 1908, 9045, 1765, 5908, 0465, 3008, 1888, 5959, 5670
+
+
+Astro luna
+
+Combinaciones sugeridas (basadas en cluster más frecuente):
+01: 0014 (signo: cancer)
+02: 0021 (signo: escorpion)
+03: 0061 (signo: libra)
+04: 0110 (signo: cancer)
+05: 0312 (signo: acuario)
+06: 0352 (signo: geminis)
+07: 0411 (signo: piscis)
+08: 0470 (signo: acuario)
+09: 0654 (signo: libra)
+10: 1300 (signo: cancer)
+11: 2073 (signo: escorpion)
+12: 2145 (signo: geminis)
+13: 2205 (signo: escorpion)
+14: 2343 (signo: geminis)
+15: 2373 (signo: geminis)
+16: 2830 (signo: sagitario)
+17: 2922 (signo: acuario)
+18: 3052 (signo: capricornio)
+19: 3303 (signo: aries)
+20: 3651 (signo: tauro)
+21: 3902 (signo: aries)
+22: 4136 (signo: tauro)
+23: 4223 (signo: escorpion)
+24: 4245 (signo: sagitario)
+25: 4852 (signo: sagitario)
+26: 5124 (signo: capricornio)
+27: 5310 (signo: cancer)
+28: 5323 (signo: aries)
+29: 5540 (signo: virgo)
+30: 5702 (signo: capricornio)
+
+Combinaciones sugeridas (basadas en cluster más frecuente):
+01: 0014 (signo: cancer)
+02: 0061 (signo: libra)
+03: 0110 (signo: cancer)
+04: 0291 (signo: aries)
+05: 0312 (signo: acuario)
+06: 0352 (signo: geminis)
+07: 0470 (signo: acuario)
+08: 0654 (signo: libra)
+09: 0873 (signo: virgo)
+10: 1300 (signo: cancer)
+11: 1681 (signo: geminis)
+12: 2073 (signo: escorpion)
+13: 2145 (signo: geminis)
+14: 2343 (signo: geminis)
+15: 2373 (signo: geminis)
+16: 2830 (signo: sagitario)
+17: 2922 (signo: acuario)
+18: 3052 (signo: capricornio)
+19: 3404 (signo: cancer)
+20: 3651 (signo: tauro)
+21: 3902 (signo: aries)
+22: 4001 (signo: escorpion)
+23: 4223 (signo: escorpion)
+24: 4245 (signo: sagitario)
+25: 4852 (signo: sagitario)
+26: 5105 (signo: capricornio)
+27: 5124 (signo: capricornio)
+28: 5310 (signo: cancer)
+29: 5540 (signo: virgo)
+30: 5702 (signo: capricornio)
+
+
+Colombia1
+
+Distancia entre pares de dígitos, Paridad total (cuántos dígitos pares/impares tiene el número),
+ Frecuencia histórica de ese número/signo, Combinaciones históricamente ganadoras (top N más repetidos),
+ Optimizar modelos con GridSearchCV
+
+
+
+
+
+C:\Users\sorteos>python manizales_avanzado.py
+
+TOP 5 COMBINACIONES MÁS FUERTES (cruce de modelos + proximidad + frecuencia):
+numero  probabilidad  frecuencia  proximidad  cluster
+  0444          0.97         1.0           0        2
+  0324          0.93         1.0           0        2
+  6584          0.92         1.0           0        0
+  3513          0.92         1.0           0        2
+  9019          0.91         1.0           0        1
+
+
+
+C:\Users\sorteos>python manizales_avanzado.py
+
+TOP 5 COMBINACIONES MÁS FUERTES (modelado + frecuencia + diversidad):
+numero  probabilidad  frecuencia  distancia  cluster
+  0002      0.765755           0   1.000000        2
+  2808      0.576620           0   5.000000        1
+  0990      0.566045           0   6.000000        0
+  6686      0.557155           0   1.000000        4
+  7580      0.480883           0   4.333333        3
+
+
+C:\Users\sorteos>python manizales_final.py
+
+Generando combinaciones para jugar...
+
+TOP 5 COMBINACIONES MÁS FUERTES (modelado + señales numéricas + diversidad):
+numero  probabilidad  suma  paridad  distancia  cluster
+  6535          0.97    19        1   1.500000        0
+  7525          0.95    19        1   2.500000        0
+  6553          0.95    19        1   1.500000        0
+  6757          0.95    25        1   1.166667        3
+  4745          0.94    20        2   1.666667        3
+
+SUGERENCIA PARA JUGAR:Loteria de Manizales
+👉 5536
+👉 7525
+👉 9019
+👉 1384 
+👉 4547
+
+
+Genera los script .py necesarios corregidos, completos,
+robustos, flexibles y manten los nombres que inicialmente asignamos.
+
+
+Aquí tienes las 5 combinaciones más fuertes para jugar hoy Astro Luna, basadas en un cruce
+avanzado de análisis de modelos, frecuencia, proximidad y diversidad:
+
+2526-Cancer
+
+1288-Libra
+
+3404-Cancer
+
+5540-Virgo
+
+6555-Capricornio
+
+Basado en el análisis combinado de frecuencia, proximidad, modelado y diversidad 
+de señales numéricas, los 5 números de 4 cifras más fuertes para jugar hoy con Loteria del Quindio
+son:
+
+7640
+
+9732
+
+2367
+
+9541
+
+7960
+
+genero también un script para actualizar solo los sorteos nuevos (modo incremental) 
+
+
+Quiero conocer el comportamiento de los numeros del 0,1,2,3,4,5,6,7,8, al 9 segun la posicion um, c, d, u por fecha 
+de aparicion de la tabla matriz_astro_luna en radar_premios.db representado en columnas como cabezote
+estructural fecha, numero, signo, um, c, d, u. 
+
+Genera archivo primer_resumen_matriz_aslu.csv con el comportamiento del numero 0 segun la posicion 
+um, c, d, u por fecha de aparicion.
+
+um, c, d, u 0,1,2,3,4,5,6,7,8,9 fecha, posicion numero 
+um, c, d, u,                                                                                                              
+
+Crear matriz a partir de los datos almacenados en radar_premios.db donde inciaremos con 
+uno de los archivos con el objetivo de producir una fuente de datos para analisis especificos.
+
+Genera archivo matriz_astro_luna.csv, la tabla astro_luna para llenar su estructura de columnas (fecha, numero, 
+signo, um, c, d, u) (ej.) toma el contenido de la columna numero y repartelo asi: 
+         
+         fecha	numero	signo	um	c	d	u
+    02/08/2025	  1836	Virgo	 1	8	3	6
+
+tipo matriz, guardala en C:\RadarPremios\data\limpio. 
+
+
+Genera script para crear archivo todo_cuando_0_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando cero es" desde las tablas cuando_cero_es_unidad, cuando_cero_es_decena, cuando_cero_es_centena, cuando_cero_es_umil, 
+cuando_cero_es_d_y_u, cuando_cero_es_c_y_u, cuando_cero_es_um_y_u, cuando_cero_es_c_y_d, cuando_cero_es_um_y_d, 
+cuando_cero_es_um_y_c, cuando_cero_es_c_d_y_u, cuando_cero_es_um_c_d_y_u, cuando_cero_es_um_c_y_d, 
+cuando_cero_es_um_c_y_u, cuando_cero_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+todas las combinaciones posibles de 1, 2, 3 y 4 posiciones "cuando cero es"
+
+
+Bien tenemos definida la estructura para obtener los datos que siguen a contunuacion es necesario genera script para 
+crear archivos 
+
+Estructurar los datos desde astro_luna, ya fue definida; vamos a estudiar el comportamiento de cada numero visto desde 
+cada posicion um, c, d, u ya contamos con el conocimiento porque compliamos todos los movimientos y comportamientos del 
+cero en sus diferentes combinacines y apariciones. Descomponer los números en posiciones individuales es lo que vamos a 
+empezar a hacer con los numeros que faltan, hasta ahora tenemos los datos del cero por eso Analizar sistemáticamente cada 
+dígito del 0 al 9 es lo mas combeniente como radar de premios que somos, saber cuantas posiciones a la derecha, izquierda, 
+atras , adelante a tomado entre fechas, vamos a basarnos en las fecha como norte; comparemos si en años anteriores los 
+numeros coinciden entre fechas, por estos meses por estos dias deben haber  señales y rastro de  las combinaciones futuras. 
+Explorar patrones específicos de los números y combinaciones simples y complejas, las consultas estan consolidadas todas 
+en un dataset amplio para análisis posterior o visualización.
+
+
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+Genera script para crear archivo cuando_2_es_unidad.csv de la tabla tercer_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_2. Filtra solo los casos donde u_2 == 1
+
+Genera script para crear archivo cuando_2_es_decena.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_2. Filtra solo los casos donde d_2 == 1
+
+Genera script para crear archivo cuando_2_es_centena.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_2. Filtra solo los casos donde c_2 == 1
+
+Genera script para crear archivo cuando_2_es_umil.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2. Filtra solo los casos donde  um_2 == 1
+
+Genera script para crear archivo cuando_2_es_d_y_u.csvde la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_2, u_2. Filtra solo los casos donde d_2 == 1 and u_2 == 1
+
+Genera script para crear archivo cuando_2_es_c_y_u.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_2, u_2. Filtra solo los casos donde c_2 == 1 and u_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_y_u.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, u_2. Filtra solo los casos donde um_2 == 1 and u_2 == 1
+
+Genera script para crear archivo cuando_2_es_c_y_d.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_2, d_2. Filtra solo los casos donde c_2 == 1 and d_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_y_d.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, d_2,. Filtra solo los casos donde um_2 == 1 and d_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_y_c.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, c_2,. Filtra solo los casos donde um_2 == 1 and c_2 == 1
+
+Genera script para crear archivo cuando_2_es_c_d_y_u.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_2, d_2, u_2. Filtra solo los casos donde c_2 == 1 and d_2 == 1 and u_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_c_d_y_u.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, c_2, d_2, u_2. Filtra solo los casos donde um_2 == 1 and c_2 == 1 and d_2 == 1 and u_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_c_y_d.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, c_2, d_2. Filtra solo los casos donde um_2 == 1 and c_2 == 1 and d_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_c_y_u.csv de la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, c_2, u_2. Filtra solo los casos donde um_2 == 1 and c_2 == 1 and u_2 == 1
+
+Genera script para crear archivo cuando_2_es_um_d_y_u.csvde la tabla tercer_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_2, d_2, u_2. Filtra solo los casos donde um_2 == 1 and d_2 == 1 and u_2 == 1
+
+Genera script para crear archivo todo_cuando_2_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 2 es" desde las tablas cuando_2_es_unidad, cuando_2_es_decena, cuando_2_es_centena, cuando_2_es_umil,
+cuando_2_es_d_y_u, cuando_2_es_c_y_u, cuando_2_es_um_y_u, cuando_2_es_c_y_d, cuando_2_es_um_y_d,
+cuando_2_es_um_y_c, cuando_2_es_c_d_y_u, cuando_2_es_um_c_d_y_u, cuando_2_es_um_c_y_d, cuando_2_es_um_c_y_u,
+cuando_2_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_3_es_unidad.csv de la tabla cuarto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_3. Filtra solo los casos donde u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_decena.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_3. Filtra solo los casos donde d_3 == 1
+
+*Genera script para crear archivo cuando_3_es_centena.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_3. Filtra solo los casos donde c_3 == 1
+
+*Genera script para crear archivo cuando_3_es_umil.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3. Filtra solo los casos donde  um_3 == 1
+
+*Genera script para crear archivo cuando_3_es_d_y_u.csvde la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_3, u_3. Filtra solo los casos donde d_3 == 1 and u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_c_y_u.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_3, u_3. Filtra solo los casos donde c_3 == 1 and u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_y_u.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, u_3. Filtra solo los casos donde um_3 == 1 and u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_c_y_d.csv de la tabla cuarto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_3, d_3. Filtra solo los casos donde c_3 == 1 and d_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_y_d.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, d_3. Filtra solo los casos donde um_3 == 1 and d_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_y_c.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, c_3. Filtra solo los casos donde um_3 == 1 and c_3 == 1
+
+*Genera script para crear archivo cuando_3_es_c_d_y_u.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_3, d_3, u_3. Filtra solo los casos donde c_3 == 1 and d_3 == 1 and u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_c_d_y_u.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, c_3, d_3, u_3. Filtra solo los casos donde um_3 == 1 and c_3 == 1 and d_3 == 1 and u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_c_y_d.csv de la tabla cuarto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, c_3, d_3. Filtra solo los casos donde um_3 == 1 and c_3 == 1 and d_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_c_y_u.csv de la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, c_3, u_3. Filtra solo los casos donde um_3 == 1 and c_3 == 1 and u_3 == 1
+
+*Genera script para crear archivo cuando_3_es_um_d_y_u.csvde la tabla cuarto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_3, d_3, u_3. Filtra solo los casos donde um_3 == 1 and d_3 == 1 and u_3 == 1
+
+Genera script para crear archivo todo_cuando_3_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 3 es" desde las tablas cuando_3_es_unidad, cuando_3_es_decena, cuando_3_es_centena, cuando_3_es_umil,
+cuando_3_es_d_y_u, cuando_3_es_c_y_u, cuando_3_es_um_y_u, cuando_3_es_c_y_d, cuando_3_es_um_y_d,
+cuando_3_es_um_y_c, cuando_3_es_c_d_y_u, cuando_3_es_um_c_d_y_u, cuando_3_es_um_c_y_d, cuando_3_es_um_c_y_u,
+cuando_3_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_4_es_unidad.csv de la tabla quinto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_4. Filtra solo los casos donde u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_decena.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_4. Filtra solo los casos donde d_4 == 1
+
+*Genera script para crear archivo cuando_4_es_centena.csv de la tabla quinto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_4. Filtra solo los casos donde c_4 == 1
+
+*Genera script para crear archivo cuando_4_es_umil.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4. Filtra solo los casos donde  um_4 == 1
+
+*Genera script para crear archivo cuando_4_es_d_y_u.csvde la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_4, u_4. Filtra solo los casos donde d_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_c_y_u.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_4, u_4. Filtra solo los casos donde c_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_y_u.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, u_4. Filtra solo los casos donde um_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_c_y_d.csv de la tabla quinto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_4, d_4. Filtra solo los casos donde c_4 == 1 and d_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_y_d.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, d_4. Filtra solo los casos donde um_4 == 1 and d_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_y_c.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, c_4. Filtra solo los casos donde um_4 == 1 and c_4 == 1
+
+*Genera script para crear archivo cuando_4_es_c_d_y_u.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, c_4, d_4, u_4. Filtra solo los casos donde c_4 == 1 and d_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_c_d_y_u.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, c_4, d_4, u_4. Filtra solo los casos donde um_4 == 1 and c_4 == 1 and d_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_c_y_d.csv de la tabla quinto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, c_4, d_4. Filtra solo los casos donde um_4 == 1 and c_4 == 1 and d_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_c_y_u.csv de la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, c_4, u_4. Filtra solo los casos donde um_4 == 1 and c_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo cuando_4_es_um_d_y_u.csvde la tabla quinto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_4, d_4, u_4. Filtra solo los casos donde um_4 == 1 and d_4 == 1 and u_4 == 1
+
+*Genera script para crear archivo todo_cuando_4_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 4 es" desde las tablas cuando_4_es_unidad, cuando_4_es_decena, cuando_4_es_centena, cuando_4_es_umil,
+cuando_4_es_d_y_u, cuando_4_es_c_y_u, cuando_4_es_um_y_u, cuando_4_es_c_y_d, cuando_4_es_um_y_d,
+cuando_4_es_um_y_c, cuando_4_es_c_d_y_u, cuando_4_es_um_c_d_y_u, cuando_4_es_um_c_y_d, cuando_4_es_um_c_y_u,
+cuando_4_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+
+ cuando_ _es_unidad.csv	        u_0 == 1
+ cuando_ _es_decena.csv	        d_0 == 1
+ cuando_ _es_centena.csv        c_0 == 1
+ cuando_ _es_umil.csv          um_0 == 1
+ cuando_ _es_d_y_u.csv	        d_0 == 1 and u_0 == 1
+ cuando_ _es_c_y_u.csv	        c_0 == 1 and u_0 == 1
+ cuando_ _es_um_y_u.csv	       um_0 == 1 and u_0 == 1
+ cuando_ _es_c_y_d.csv	        c_0 == 1 and d_0 == 1
+ cuando_ _es_um_y_d.csv	       um_0 == 1 and d_0 == 1
+ cuando_ _es_um_y_c.csv	       um_0 == 1 and c_0 == 1
+ cuando_ _es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+ cuando_ _es_um_c_d_y_u.csv    um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+ cuando_ _es_um_c_y_d.csv      um_0 == 1 and c_0 == 1 and d_0 == 1
+ cuando_ _es_um_c_y_u.csv      um_0 == 1 and c_0 == 1 and u_0 == 1
+ cuando_ _es_um_d_y_u.csv      um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_5_es_unidad.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_5. Filtra solo los casos donde u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_decena.csv de la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_5. Filtra solo los casos donde d_5 == 1
+
+*Genera script para crear archivo cuando_5_es_centena.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_5. Filtra solo los casos donde c_5 == 1
+
+*Genera script para crear archivo cuando_5_es_umil.csv de la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_5. Filtra solo los casos donde  um_5 == 1
+
+*Genera script para crear archivo cuando_5_es_d_y_u.csvde la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_5, u_5. Filtra solo los casos donde d_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_c_y_u.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_5, u_5. Filtra solo los casos donde c_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_y_u.csv de la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, u_5. Filtra solo los casos donde um_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_c_y_d.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_5, d_5. Filtra solo los casos donde c_5 == 1 and d_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_y_d.csv de la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, d_5. Filtra solo los casos donde um_5 == 1 and d_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_y_c.csv de la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, c_5. Filtra solo los casos donde um_5 == 1 and c_5 == 1
+
+*Genera script para crear archivo cuando_5_es_c_d_y_u.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_5, d_5, u_5. Filtra solo los casos donde c_5 == 1 and d_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_c_d_y_u.csv de la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, c_5, d_5, u_5. Filtra solo los casos donde um_5 == 1 and c_5 == 1 and d_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_c_y_d.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, c_5, d_5. Filtra solo los casos donde um_5 == 1 and c_5 == 1 and d_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_c_y_u.csv de la tabla sexto_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, c_5, u_5. Filtra solo los casos donde um_5 == 1 and c_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo cuando_5_es_um_d_y_u.csvde la tabla sexto_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_5, d_5, u_5. Filtra solo los casos donde um_5 == 1 and d_5 == 1 and u_5 == 1
+
+*Genera script para crear archivo todo_cuando_5_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 5 es" desde las tablas cuando_5_es_unidad, cuando_5_es_decena, cuando_5_es_centena, cuando_5_es_umil,
+cuando_5_es_d_y_u, cuando_5_es_c_y_u, cuando_5_es_um_y_u, cuando_5_es_c_y_d, cuando_5_es_um_y_d,
+cuando_5_es_um_y_c, cuando_5_es_c_d_y_u, cuando_5_es_um_c_d_y_u, cuando_5_es_um_c_y_d, cuando_5_es_um_c_y_u,
+cuando_5_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_6_es_unidad.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_6. Filtra solo los casos donde u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_decena.csv de la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_6. Filtra solo los casos donde d_6 == 1
+
+*Genera script para crear archivo cuando_6_es_centena.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_6. Filtra solo los casos donde c_6 == 1
+
+*Genera script para crear archivo cuando_6_es_umil.csv de la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_6. Filtra solo los casos donde  um_6 == 1
+
+*Genera script para crear archivo cuando_6_es_d_y_u.csvde la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_6, u_6. Filtra solo los casos donde d_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_c_y_u.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_6, u_6. Filtra solo los casos donde c_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_y_u.csv de la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, u_6. Filtra solo los casos donde um_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_c_y_d.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_6, d_6. Filtra solo los casos donde c_6 == 1 and d_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_y_d.csv de la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, d_6. Filtra solo los casos donde um_6 == 1 and d_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_y_c.csv de la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, c_6. Filtra solo los casos donde um_6 == 1 and c_6 == 1
+
+*Genera script para crear archivo cuando_6_es_c_d_y_u.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_6, d_6, u_6. Filtra solo los casos donde c_6 == 1 and d_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_c_d_y_u.csv de la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, c_6, d_6, u_6. Filtra solo los casos donde um_6 == 1 and c_6 == 1 and d_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_c_y_d.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, c_6, d_6. Filtra solo los casos donde um_6 == 1 and c_6 == 1 and d_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_c_y_u.csv de la tabla septimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, c_6, u_6. Filtra solo los casos donde um_6 == 1 and c_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo cuando_6_es_um_d_y_u.csvde la tabla septimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_6, d_6, u_6. Filtra solo los casos donde um_6 == 1 and d_6 == 1 and u_6 == 1
+
+*Genera script para crear archivo todo_cuando_6_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 6 es" desde las tablas cuando_6_es_unidad, cuando_6_es_decena, cuando_6_es_centena, cuando_6_es_umil,
+cuando_6_es_d_y_u, cuando_6_es_c_y_u, cuando_6_es_um_y_u, cuando_6_es_c_y_d, cuando_6_es_um_y_d,
+cuando_6_es_um_y_c, cuando_6_es_c_d_y_u, cuando_6_es_um_c_d_y_u, cuando_6_es_um_c_y_d, cuando_6_es_um_c_y_u,
+cuando_6_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db  
+
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_7_es_unidad.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_7. Filtra solo los casos donde u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_decena.csv de la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_7. Filtra solo los casos donde d_7 == 1
+
+*Genera script para crear archivo cuando_7_es_centena.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_7. Filtra solo los casos donde c_7 == 1
+
+*Genera script para crear archivo cuando_7_es_umil.csv de la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_7. Filtra solo los casos donde  um_7 == 1
+
+*Genera script para crear archivo cuando_7_es_d_y_u.csvde la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_7, u_7. Filtra solo los casos donde d_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_c_y_u.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_7, u_7. Filtra solo los casos donde c_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_y_u.csv de la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, u_7. Filtra solo los casos donde um_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_c_y_d.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_7, d_7. Filtra solo los casos donde c_7 == 1 and d_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_y_d.csv de la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, d_7. Filtra solo los casos donde um_7 == 1 and d_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_y_c.csv de la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, c_7. Filtra solo los casos donde um_7 == 1 and c_7 == 1
+
+*Genera script para crear archivo cuando_7_es_c_d_y_u.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_7, d_7, u_7. Filtra solo los casos donde c_7 == 1 and d_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_c_d_y_u.csv de la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, c_7, d_7, u_7. Filtra solo los casos donde um_7 == 1 and c_7 == 1 and d_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_c_y_d.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, c_7, d_7. Filtra solo los casos donde um_7 == 1 and c_7 == 1 and d_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_c_y_u.csv de la tabla octavo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, c_7, u_7. Filtra solo los casos donde um_7 == 1 and c_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo cuando_7_es_um_d_y_u.csvde la tabla octavo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_7, d_7, u_7. Filtra solo los casos donde um_7 == 1 and d_7 == 1 and u_7 == 1
+
+*Genera script para crear archivo todo_cuando_7_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 7 es" desde las tablas cuando_7_es_unidad, cuando_7_es_decena, cuando_7_es_centena, cuando_7_es_umil,
+cuando_7_es_d_y_u, cuando_7_es_c_y_u, cuando_7_es_um_y_u, cuando_7_es_c_y_d, cuando_7_es_um_y_d,
+cuando_7_es_um_y_c, cuando_7_es_c_d_y_u, cuando_7_es_um_c_d_y_u, cuando_7_es_um_c_y_d, cuando_7_es_um_c_y_u,
+cuando_7_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_8_es_unidad.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_8. Filtra solo los casos donde u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_decena.csv de la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_8. Filtra solo los casos donde d_8 == 1
+
+*Genera script para crear archivo cuando_8_es_centena.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_8. Filtra solo los casos donde c_8 == 1
+
+*Genera script para crear archivo cuando_8_es_umil.csv de la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_8. Filtra solo los casos donde  um_8 == 1
+
+*Genera script para crear archivo cuando_8_es_d_y_u.csvde la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_8, u_8. Filtra solo los casos donde d_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_c_y_u.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_8, u_8. Filtra solo los casos donde c_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_y_u.csv de la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, u_8. Filtra solo los casos donde um_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_c_y_d.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_8, d_8. Filtra solo los casos donde c_8 == 1 and d_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_y_d.csv de la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, d_8. Filtra solo los casos donde um_8 == 1 and d_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_y_c.csv de la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, c_8. Filtra solo los casos donde um_8 == 1 and c_8 == 1
+
+*Genera script para crear archivo cuando_8_es_c_d_y_u.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_8, d_8, u_8. Filtra solo los casos donde c_8 == 1 and d_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_c_d_y_u.csv de la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, c_8, d_8, u_8. Filtra solo los casos donde um_8 == 1 and c_8 == 1 and d_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_c_y_d.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, c_8, d_8. Filtra solo los casos donde um_8 == 1 and c_8 == 1 and d_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_c_y_u.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, c_8, u_8. Filtra solo los casos donde um_8 == 1 and c_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo cuando_8_es_um_d_y_u.csvde la tabla noveno_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_8, d_8, u_8. Filtra solo los casos donde um_8 == 1 and d_8 == 1 and u_8 == 1
+
+*Genera script para crear archivo todo_cuando_8_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 8 es" desde las tablas cuando_8_es_unidad, cuando_8_es_decena, cuando_8_es_centena, cuando_8_es_umil,
+cuando_8_es_d_y_u, cuando_8_es_c_y_u, cuando_8_es_um_y_u, cuando_8_es_c_y_d, cuando_8_es_um_y_d,
+cuando_8_es_um_y_c, cuando_8_es_c_d_y_u, cuando_8_es_um_c_d_y_u, cuando_8_es_um_c_y_d, cuando_8_es_um_c_y_u,
+cuando_8_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+
+*cuando_cero_es_unidad.csv	u_0 == 1
+*cuando_cero_es_decena.csv	d_0 == 1
+*cuando_cero_es_centena.csv	c_0 == 1
+*cuando_cero_es_umil.csv       um_0 == 1
+*cuando_cero_es_d_y_u.csv	d_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_u.csv	c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_y_u.csv	um_0 == 1 and u_0 == 1
+*cuando_cero_es_c_y_d.csv	c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_d.csv	um_0 == 1 and d_0 == 1
+*cuando_cero_es_um_y_c.csv	um_0 == 1 and c_0 == 1
+*cuando_cero_es_c_d_y_u.csv	c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_d_y_u.csv	um_0 == 1 and c_0 == 1 and d_0 == 1 and u_0 == 1
+*cuando_cero_es_um_c_y_d.csv	um_0 == 1 and c_0 == 1 and d_0 == 1
+*cuando_cero_es_um_c_y_u.csv	um_0 == 1 and c_0 == 1 and u_0 == 1
+*cuando_cero_es_um_d_y_u.csv	um_0 == 1 and d_0 == 1 and u_0 == 1
+
+
+*Genera script para crear archivo cuando_9_es_unidad.csv de la tabla noveno_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, u_9. Filtra solo los casos donde u_9 == 1
+
+*Genera script para crear archivo cuando_9_es_decena.csv de la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_9. Filtra solo los casos donde d_9 == 1
+
+*Genera script para crear archivo cuando_9_es_centena.csv de la tabla decimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_9. Filtra solo los casos donde c_9 == 1
+
+*Genera script para crear archivo cuando_9_es_umil.csv de la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_9. Filtra solo los casos donde  um_9 == 1
+
+*Genera script para crear archivo cuando_9_es_d_y_u.csvde la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, d_9, u_9. Filtra solo los casos donde d_9 == 1 and u_9 == 1
+
+*Genera script para crear archivo cuando_9_es_c_y_u.csv de la tabla decimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_9, u_9. Filtra solo los casos donde c_9 == 1 and u_9 == 1
+
+*Genera script para crear archivo cuando_9_es_um_y_u.csv de la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, u_9. Filtra solo los casos donde um_9 == 1 and u_9 == 1
+
+*Genera script para crear archivo cuando_9_es_c_y_d.csv de la tabla decimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_9, d_9. Filtra solo los casos donde c_9 == 1 and d_9 == 1
+
+*Genera script para crear archivo cuando_9_es_um_y_d.csv de la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, d_9. Filtra solo los casos donde um_9 == 1 and d_9 == 1
+
+*Genera script para crear archivo cuando_9_es_um_y_c.csv de la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, c_9. Filtra solo los casos donde um_9 == 1 and c_9 == 1
+
+*Genera script para crear archivo cuando_9_es_c_d_y_u.csv de la tabla decimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, c_9, d_9, u_9. Filtra solo los casos donde c_9 == 1 and d_9 == 1 and u_9 == 1
+
+*Genera script para crear archivo cuando_9_es_um_c_d_y_u.csv de la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, c_9, d_9, u_9. Filtra solo los casos donde um_9 == 1 and c_9 == 1 and d_9 == 1 and u_9 == 1
+
+*Genera script para crear archivo cuando_9_es_um_c_y_d.csv de la tabla decimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, c_9, d_9. Filtra solo los casos donde um_9 == 1 and c_9 == 1 and d_9 == 1
+
+*Genera script para crear archivo cuando_9_es_um_c_y_u.csv de la tabla decimo_resumen_matriz_aslu en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, c_9, u_9. Filtra solo los casos donde um_9 == 1 and c_9 == 1 and u_9 == 1
+
+Genera script para crear archivo cuando_9_es_um_d_y_u.csvde la tabla decimo_resumen_matriz_aslu  en radar_premios.db 
+representado en las columnas Fecha, numero, um_9, d_9, u_9. Filtra solo los casos donde um_9 == 1 and d_9 == 1 and u_9 == 1
+
+*Genera script para crear archivo todo_cuando_9_es.csv, de todas las combinaciones posibles de 1, 2, 3 y 4 posiciones 
+"cuando 9 es" desde las tablas cuando_9_es_unidad, cuando_9_es_decena, cuando_9_es_centena, cuando_9_es_umil,
+cuando_9_es_d_y_u, cuando_9_es_c_y_u, cuando_9_es_um_y_u, cuando_9_es_c_y_d, cuando_9_es_um_y_d,
+cuando_9_es_um_y_c, cuando_9_es_c_d_y_u, cuando_9_es_um_c_d_y_u, cuando_9_es_um_c_y_d, cuando_9_es_um_c_y_u,
+cuando_9_es_um_d_y_u, tipo matriz de la base de datos radar_premios.db 
+
+
+
+
