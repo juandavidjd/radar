@@ -1,0 +1,217 @@
+12/08/2025 17:05:04.42 - === Master pipeline iniciado ===
+12/08/2025 17:05:04.42 - Base: C:\RadarPremios\radar_premios.db
+12/08/2025 17:05:04.42 - Log:  C:\RadarPremios\logs\master_2025-12-08_1705.log.txt
+12/08/2025 17:05:04.44 - [STEP] Scraper LOTERÍAS
+[2025-08-12 17:05:05] === Inicio de scrapeo de loter�as ===
+[2025-08-12 17:05:05] [INFO] tolima: sin nuevos registros
+[2025-08-12 17:05:05] [INFO] huila: sin nuevos registros
+[2025-08-12 17:05:05] [INFO] manizales: sin nuevos registros
+[2025-08-12 17:05:06] [INFO] quindio: sin nuevos registros
+[2025-08-12 17:05:06] [INFO] medellin: sin nuevos registros
+[2025-08-12 17:05:06] [INFO] boyaca: sin nuevos registros
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\scraper_loterias.py", line 109, in <module>
+    log("\u2705 Scrapeo completado")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RadarPremios\scripts\scraper_loterias.py", line 24, in log
+    print(f"[{hora}] {msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 22: character maps to <undefined>
+12/08/2025 17:05:06.64 - [ERROR] Falló: Scraper LOTERÍAS (ver log)
+12/08/2025 17:05:06.64 - [STEP] Scraper ASTRO LUNA
+[2025-08-12 17:05:07] === Inicio de scrapeo de AstroLuna ===
+[2025-08-12 17:05:15] [INFO] AstroLuna: sin nuevos registros
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\scraper_astroluna.py", line 84, in <module>
+    log("\u2705 Scrapeo completado")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RadarPremios\scripts\scraper_utils.py", line 14, in log
+    print(f"[{hora}] {msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 22: character maps to <undefined>
+12/08/2025 17:05:15.95 - [ERROR] Falló: Scraper ASTRO LUNA (ver log)
+12/08/2025 17:05:15.96 - [STEP] Scraper BALOTO premios
+[2025-08-12 17:05:16] === Inicio de scrapeo de premios Baloto ===
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\scraper_baloto_premios.py", line 141, in <module>
+    main()
+    ~~~~^^
+  File "C:\RadarPremios\scripts\scraper_baloto_premios.py", line 111, in main
+    log(f"\u23f3 Sorteo {sorteo_actual} -> {url}")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RadarPremios\scripts\scraper_utils.py", line 14, in log
+    print(f"[{hora}] {msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 22: character maps to <undefined>
+12/08/2025 17:05:16.52 - [ERROR] Falló: Scraper BALOTO premios (ver log)
+12/08/2025 17:05:16.54 - [STEP] Scraper BALOTO resultados
+[2025-08-12 17:05:17] === Inicio de scrapeo de Baloto ===
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\scraper_baloto_resultados.py", line 124, in <module>
+    main()
+    ~~~~^^
+  File "C:\RadarPremios\scripts\scraper_baloto_resultados.py", line 92, in main
+    log(f"\u23f3 Sorteo {sorteo_actual} -> {url}")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RadarPremios\scripts\scraper_utils.py", line 14, in log
+    print(f"[{hora}] {msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 22: character maps to <undefined>
+12/08/2025 17:05:17.11 - [ERROR] Falló: Scraper BALOTO resultados (ver log)
+12/08/2025 17:05:17.13 - [STEP] Scraper REVANCHA premios
+[2025-08-12 17:05:17] === Inicio de scrapeo de premios Revancha ===
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\scraper_revancha_premios.py", line 138, in <module>
+    main()
+    ~~~~^^
+  File "C:\RadarPremios\scripts\scraper_revancha_premios.py", line 105, in main
+    log(f"\u23f3 Sorteo {sorteo_actual} -> {url}")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RadarPremios\scripts\scraper_utils.py", line 14, in log
+    print(f"[{hora}] {msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 22: character maps to <undefined>
+12/08/2025 17:05:17.69 - [ERROR] Falló: Scraper REVANCHA premios (ver log)
+12/08/2025 17:05:17.70 - [STEP] Scraper REVANCHA resultados
+[2025-08-12 17:05:18] === Inicio de scrapeo de resultados Revancha ===
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\scraper_revancha_resultados.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "C:\RadarPremios\scripts\scraper_revancha_resultados.py", line 100, in main
+    log(f"\u23f3 Sorteo {sorteo_actual} -> {url}")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RadarPremios\scripts\scraper_utils.py", line 14, in log
+    print(f"[{hora}] {msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 22: character maps to <undefined>
+12/08/2025 17:05:18.27 - [ERROR] Falló: Scraper REVANCHA resultados (ver log)
+12/08/2025 17:05:18.29 - [STEP] LIMPIAR CSVs
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\limpiar_csvs.py", line 6, in <module>
+    ARCHIVOS = [f for f in os.listdir(CRUDO_DIR) if f.endswith(".csv")]
+                           ~~~~~~~~~~^^^^^^^^^^^
+FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada: '../data/crudos'
+12/08/2025 17:05:19.15 - [ERROR] Falló: LIMPIAR CSVs (ver log)
+12/08/2025 17:05:19.17 - [STEP] CARGAR DB
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\cargar_db.py", line 77, in <module>
+    cargar_datos()
+    ~~~~~~~~~~~~^^
+  File "C:\RadarPremios\scripts\cargar_db.py", line 60, in cargar_datos
+    print(f'\U0001f4e5 Cargando {archivo} \u2192 tabla {nombre_tabla}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e5' in position 0: character maps to <undefined>
+12/08/2025 17:05:19.76 - [ERROR] Falló: CARGAR DB (ver log)
+12/08/2025 17:05:19.78 - [STEP] GENERAR MATRIZ ASTRO LUNA
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\generar_matriz_astro_luna.py", line 31, in <module>
+    print(f'\u2705 Matriz generada: {OUTPUT_PATH}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+12/08/2025 17:05:20.38 - [ERROR] Falló: GENERAR MATRIZ ASTRO LUNA (ver log)
+12/08/2025 17:05:20.39 - [STEP] CARGAR DB (post-matriz)
+Traceback (most recent call last):
+  File "C:\RadarPremios\scripts\cargar_db.py", line 77, in <module>
+    cargar_datos()
+    ~~~~~~~~~~~~^^
+  File "C:\RadarPremios\scripts\cargar_db.py", line 60, in cargar_datos
+    print(f'\U0001f4e5 Cargando {archivo} \u2192 tabla {nombre_tabla}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP Laptop\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e5' in position 0: character maps to <undefined>
+12/08/2025 17:05:20.95 - [ERROR] Falló: CARGAR DB (post-matriz) (ver log)
+12/08/2025 17:05:20.97 - [STEP] ACTUALIZAR_BASE_ASTROLUNA
+[OK] Proceso finalizado.
+[OK] Log escrito en: C:\RadarPremios\actualizar_base_astroluna_20250812_170521.log.txt
+12/08/2025 17:05:21.24 - [OK] ACTUALIZAR_BASE_ASTROLUNA
+12/08/2025 17:05:21.24 - [STEP] MANTENIMIENTO DB
+[INFO] db_maintenance.py � 2025-08-12 17:05:21
+[INFO] Base: C:\RadarPremios\radar_premios.db
+[INFO] �ndices asegurados/planificados: 352
+[OK] Vista 'todo' creada con INNER JOIN.
+[OK] ANALYZE ejecutado.
+[OK] VACUUM ejecutado.
+[OK] Puesta a punto finalizada.
+12/08/2025 17:05:21.69 - [OK] MANTENIMIENTO DB
+12/08/2025 17:05:21.69 - [STEP] SCORING 100 CANDIDATOS
+TOP 15
+6358  score=0.751631  hotcold=0.515  cal=0.727  dp=0.138  exact=1.000  patt=+0.100
+0385  score=0.748458  hotcold=0.574  cal=0.705  dp=0.071  exact=1.000  patt=+0.100
+0153  score=0.741943  hotcold=0.574  cal=0.614  dp=0.129  exact=1.000  patt=+0.100
+3806  score=0.736270  hotcold=0.382  cal=0.841  dp=0.112  exact=1.000  patt=+0.100
+8057  score=0.730495  hotcold=0.515  cal=0.659  dp=0.100  exact=1.000  patt=+0.100
+2035  score=0.730392  hotcold=0.588  cal=0.500  dp=0.167  exact=1.000  patt=+0.100
+6025  score=0.726515  hotcold=0.500  cal=0.591  dp=0.167  exact=1.000  patt=+0.100
+0056  score=0.726332  hotcold=0.544  cal=0.818  dp=0.133  exact=1.000  patt=+0.050
+6807  score=0.723307  hotcold=0.324  cal=0.795  dp=0.167  exact=1.000  patt=+0.100
+5304  score=0.720495  hotcold=0.515  cal=0.659  dp=0.050  exact=1.000  patt=+0.100
+1630  score=0.716422  hotcold=0.382  cal=0.750  dp=0.104  exact=1.000  patt=+0.100
+5602  score=0.714848  hotcold=0.500  cal=0.591  dp=0.108  exact=1.000  patt=+0.100
+6036  score=0.714528  hotcold=0.382  cal=0.886  dp=0.208  exact=1.000  patt=+0.050
+6752  score=0.713102  hotcold=0.471  cal=0.477  dp=0.250  exact=1.000  patt=+0.100
+9063  score=0.711426  hotcold=0.412  cal=0.659  dp=0.133  exact=1.000  patt=+0.100
+
+================================================================
+SHORTLIST FINAL (5 propuestas)
+----------------------------------------------------------------
+ 1. 6358  score=0.751631  hotcold=0.515  cal=0.727  dp=0.138  exact=1.000  patt=+0.100
+ 2. 0385  score=0.748458  hotcold=0.574  cal=0.705  dp=0.071  exact=1.000  patt=+0.100
+ 3. 0153  score=0.741943  hotcold=0.574  cal=0.614  dp=0.129  exact=1.000  patt=+0.100
+ 4. 3806  score=0.736270  hotcold=0.382  cal=0.841  dp=0.112  exact=1.000  patt=+0.100
+ 5. 8057  score=0.730495  hotcold=0.515  cal=0.659  dp=0.100  exact=1.000  patt=+0.100
+----------------------------------------------------------------
+FOLIO DEL RUN
+----------------------------------------------------------------
+timestamp: 2025-08-12 17:05:21
+db: C:\RadarPremios\radar_premios.db
+gen: 100
+seed: 12345
+top: 15
+shortlist: 5
+w_hotcold: 0.25
+w_cal: 0.2
+w_dp: 0.2
+w_exact: 0.35
+cap_digitpos: 60
+cap_exact: 180
+export_top: None
+export_all: None
+report_html: None
+================================================================
+
+[OK] Run guardado en DB con run_id=4
+Consulta evaluaci�n cuando cargues el siguiente sorteo:
+  SELECT * FROM v_run_eval         WHERE run_id = 4 ORDER BY rank;
+  SELECT * FROM v_run_eval_summary WHERE run_id = 4;
+12/08/2025 17:05:21.83 - [OK] SCORING 100 CANDIDATOS
+12/08/2025 17:05:21.83 - [STEP] EVALUAR RUN RECIENTE
+python: can't open file 'C:\\RadarPremios\\eval_last_run.py': [Errno 2] No such file or directory
+12/08/2025 17:05:21.89 - [ERROR] Falló: EVALUAR RUN RECIENTE (ver log)
+12/08/2025 17:05:21.89 - === Master pipeline FINALIZADO ===

@@ -1,0 +1,4 @@
+=== Master pipeline iniciado ===
+Base: C:\RadarPremios\radar_premios.db
+Log:  C:\RadarPremios\logs\master_2025-08-14_072358.log.txt
+

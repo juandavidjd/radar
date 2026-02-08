@@ -1,0 +1,8 @@
+=== Master pipeline iniciado ===
+Base: C:\RadarPremios\radar_premios.db
+Log:  C:\RadarPremios\logs\master_2025-08-13_1258.log.txt
+
+[STEP] 
+[CMD ] 
+[OK  ]   RC=0
+

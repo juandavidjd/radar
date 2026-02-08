@@ -1,0 +1,176 @@
+=== Master pipeline iniciado ===
+[2025-08-14 06:51:58] === Inicio de scrapeo de loterías ===
+[2025-08-14 06:51:58] [INFO] tolima: sin nuevos registros
+[2025-08-14 06:51:58] [INFO] huila: sin nuevos registros
+[2025-08-14 06:51:58] [INFO] manizales: sin nuevos registros
+[2025-08-14 06:51:59] [INFO] quindio: sin nuevos registros
+[2025-08-14 06:51:59] [INFO] medellin: sin nuevos registros
+[2025-08-14 06:51:59] [INFO] boyaca: sin nuevos registros
+[2025-08-14 06:51:59] ✅ Scrapeo completado
+[2025-08-14 06:52:00] === Inicio de scrapeo de AstroLuna ===
+[2025-08-14 06:52:14] [INFO] AstroLuna: sin nuevos registros
+[2025-08-14 06:52:14] ✅ Scrapeo completado
+[2025-08-14 06:52:14] === Inicio de scrapeo de premios Baloto ===
+[2025-08-14 06:52:15] ⏳ Sorteo 2539 -> https://baloto.com/resultados-baloto/2539
+[2025-08-14 06:52:16] [✓] 8 premios extraídos
+[2025-08-14 06:52:16] ⏳ Sorteo 2540 -> https://baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:17] [REINTENTO 1] Error al acceder https://baloto.com/resultados-baloto/2540: 500 Server Error: Internal Server Error for url: https://baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:20] [REINTENTO 2] Error al acceder https://baloto.com/resultados-baloto/2540: 500 Server Error: Internal Server Error for url: https://baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:23] [REINTENTO 3] Error al acceder https://baloto.com/resultados-baloto/2540: 500 Server Error: Internal Server Error for url: https://baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:23] [ERROR] Fallo permanente al acceder a https://baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:23] [✓] 8 nuevos registros guardados
+[2025-08-14 06:52:23] ✅ Scrapeo completado
+[2025-08-14 06:52:24] === Inicio de scrapeo de Baloto ===
+[2025-08-14 06:52:24] ⏳ Sorteo 2539 -> https://www.baloto.com/resultados-baloto/2539
+[2025-08-14 06:52:26] ⏳ Sorteo 2540 -> https://www.baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:26] [REINTENTO 1] Error al acceder https://www.baloto.com/resultados-baloto/2540: 500 Server Error: Internal Server Error for url: https://www.baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:30] [REINTENTO 2] Error al acceder https://www.baloto.com/resultados-baloto/2540: 500 Server Error: Internal Server Error for url: https://www.baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:33] [REINTENTO 3] Error al acceder https://www.baloto.com/resultados-baloto/2540: 500 Server Error: Internal Server Error for url: https://www.baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:33] [ERROR] Fallo permanente al acceder a https://www.baloto.com/resultados-baloto/2540
+[2025-08-14 06:52:33] [✓] 1 nuevos registros guardados
+[2025-08-14 06:52:33] ✅ Scrapeo completado
+[2025-08-14 06:52:33] === Inicio de scrapeo de premios Revancha ===
+[2025-08-14 06:52:33] ⏳ Sorteo 2539 -> https://www.baloto.com/resultados-revancha/2539
+[2025-08-14 06:52:34] [✓] 8 premios extraídos
+[2025-08-14 06:52:35] ⏳ Sorteo 2540 -> https://www.baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:36] [REINTENTO 1] Error al acceder https://www.baloto.com/resultados-revancha/2540: 500 Server Error: Internal Server Error for url: https://www.baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:39] [REINTENTO 2] Error al acceder https://www.baloto.com/resultados-revancha/2540: 500 Server Error: Internal Server Error for url: https://www.baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:42] [REINTENTO 3] Error al acceder https://www.baloto.com/resultados-revancha/2540: 500 Server Error: Internal Server Error for url: https://www.baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:42] [ERROR] Fallo permanente al acceder a https://www.baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:42] [✓] 8 nuevos registros guardados
+[2025-08-14 06:52:42] ✅ Scrapeo completado
+[2025-08-14 06:52:43] === Inicio de scrapeo de resultados Revancha ===
+[2025-08-14 06:52:43] ⏳ Sorteo 2539 -> https://baloto.com/resultados-revancha/2539
+[2025-08-14 06:52:44] ⏳ Sorteo 2540 -> https://baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:45] [REINTENTO 1] Error al acceder https://baloto.com/resultados-revancha/2540: 500 Server Error: Internal Server Error for url: https://baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:48] [REINTENTO 2] Error al acceder https://baloto.com/resultados-revancha/2540: 500 Server Error: Internal Server Error for url: https://baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:51] [REINTENTO 3] Error al acceder https://baloto.com/resultados-revancha/2540: 500 Server Error: Internal Server Error for url: https://baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:51] [ERROR] Fallo permanente al acceder a https://baloto.com/resultados-revancha/2540
+[2025-08-14 06:52:51] [✓] 1 nuevos registros guardados
+[2025-08-14 06:52:51] ✅ Scrapeo completado
+[INFO] Origen no existe: C:\RadarPremios\data\crudos
+[INFO] Nada que limpiar. Saliendo (RC=0).
+📥 Cargando boyaca.csv → tabla boyaca
+✅ Tabla boyaca cargada con 102 registros.
+📥 Cargando huila.csv → tabla huila
+✅ Tabla huila cargada con 101 registros.
+📥 Cargando manizales.csv → tabla manizales
+✅ Tabla manizales cargada con 101 registros.
+📥 Cargando medellin.csv → tabla medellin
+✅ Tabla medellin cargada con 101 registros.
+📥 Cargando quindio.csv → tabla quindio
+✅ Tabla quindio cargada con 101 registros.
+📥 Cargando tolima.csv → tabla tolima
+✅ Tabla tolima cargada con 102 registros.
+📥 Cargando astro_luna.csv → tabla astro_luna
+✅ Tabla astro_luna cargada con 5504 registros.
+📥 Cargando baloto_resultados.csv → tabla baloto_resultados
+✅ Tabla baloto_resultados cargada con 458 registros.
+📥 Cargando baloto_premios.csv → tabla baloto_premios
+✅ Tabla baloto_premios cargada con 3664 registros.
+📥 Cargando revancha_resultados.csv → tabla revancha_resultados
+✅ Tabla revancha_resultados cargada con 458 registros.
+📥 Cargando revancha_premios.csv → tabla revancha_premios
+✅ Tabla revancha_premios cargada con 3664 registros.
+📥 Cargando matriz_astro_luna.csv → tabla matriz_astro_luna
+✅ Tabla matriz_astro_luna cargada con 5504 registros.
+
+🟢 Base de datos lista en: C:\RadarPremios\radar_premios.db
+✅ Matriz generada: C:\RadarPremios\data\limpio\matriz_astro_luna.csv
+📥 Cargando boyaca.csv → tabla boyaca
+✅ Tabla boyaca cargada con 102 registros.
+📥 Cargando huila.csv → tabla huila
+✅ Tabla huila cargada con 101 registros.
+📥 Cargando manizales.csv → tabla manizales
+✅ Tabla manizales cargada con 101 registros.
+📥 Cargando medellin.csv → tabla medellin
+✅ Tabla medellin cargada con 101 registros.
+📥 Cargando quindio.csv → tabla quindio
+✅ Tabla quindio cargada con 101 registros.
+📥 Cargando tolima.csv → tabla tolima
+✅ Tabla tolima cargada con 102 registros.
+📥 Cargando astro_luna.csv → tabla astro_luna
+✅ Tabla astro_luna cargada con 5504 registros.
+📥 Cargando baloto_resultados.csv → tabla baloto_resultados
+✅ Tabla baloto_resultados cargada con 458 registros.
+📥 Cargando baloto_premios.csv → tabla baloto_premios
+✅ Tabla baloto_premios cargada con 3664 registros.
+📥 Cargando revancha_resultados.csv → tabla revancha_resultados
+✅ Tabla revancha_resultados cargada con 458 registros.
+📥 Cargando revancha_premios.csv → tabla revancha_premios
+✅ Tabla revancha_premios cargada con 3664 registros.
+📥 Cargando matriz_astro_luna.csv → tabla matriz_astro_luna
+✅ Tabla matriz_astro_luna cargada con 5504 registros.
+
+🟢 Base de datos lista en: C:\RadarPremios\radar_premios.db
+[OK] Proceso finalizado.
+[OK] Log escrito en: C:\RadarPremios\actualizar_base_astroluna_20250814_065257.log.txt
+[INFO] db_maintenance.py — 2025-08-14 06:52:57
+[INFO] Base: C:\RadarPremios\radar_premios.db
+[INFO] Índices asegurados/planificados: 352
+[OK] Vista 'todo' creada con INNER JOIN.
+[OK] ANALYZE ejecutado.
+[OK] VACUUM ejecutado.
+[OK] Puesta a punto finalizada.
+C:\RadarPremios\score_candidates.py:5: SyntaxWarning: invalid escape sequence '\R'
+  python score_candidates.py --db "C:\RadarPremios\radar_premios.db" --gen 100 --seed 12345 --top 15 --shortlist 5 ^
+TOP 15
+2035  score=0.770392  hotcold=0.588  cal=0.700  dp=0.167  exact=1.000  patt=+0.100
+0153  score=0.759216  hotcold=0.574  cal=0.700  dp=0.129  exact=1.000  patt=+0.100
+6025  score=0.748333  hotcold=0.500  cal=0.700  dp=0.167  exact=1.000  patt=+0.100
+0385  score=0.747549  hotcold=0.574  cal=0.700  dp=0.071  exact=1.000  patt=+0.100
+8057  score=0.738676  hotcold=0.515  cal=0.700  dp=0.100  exact=1.000  patt=+0.100
+6752  score=0.737647  hotcold=0.471  cal=0.600  dp=0.250  exact=1.000  patt=+0.100
+5602  score=0.736667  hotcold=0.500  cal=0.700  dp=0.108  exact=1.000  patt=+0.100
+2571  score=0.734314  hotcold=0.471  cal=0.600  dp=0.233  exact=1.000  patt=+0.100
+5304  score=0.728676  hotcold=0.515  cal=0.700  dp=0.050  exact=1.000  patt=+0.100
+7105  score=0.728676  hotcold=0.515  cal=0.700  dp=0.050  exact=1.000  patt=+0.100
+2930  score=0.726618  hotcold=0.426  cal=0.700  dp=0.150  exact=1.000  patt=+0.100
+6358  score=0.726176  hotcold=0.515  cal=0.600  dp=0.138  exact=1.000  patt=+0.100
+7093  score=0.724461  hotcold=0.441  cal=0.700  dp=0.121  exact=1.000  patt=+0.100
+0056  score=0.722696  hotcold=0.544  cal=0.800  dp=0.133  exact=1.000  patt=+0.050
+9063  score=0.719608  hotcold=0.412  cal=0.700  dp=0.133  exact=1.000  patt=+0.100
+[OK] CSV → C:\RadarPremios\candidatos_scored.csv
+[OK] CSV (todos) → C:\RadarPremios\candidatos_all.csv
+[OK] HTML → C:\RadarPremios\candidatos_scored.html
+
+================================================================
+SHORTLIST FINAL (5 propuestas)
+----------------------------------------------------------------
+  1. 2035  score=0.770392  hotcold=0.588  cal=0.700  dp=0.167  exact=1.000  patt=+0.100
+  2. 0153  score=0.759216  hotcold=0.574  cal=0.700  dp=0.129  exact=1.000  patt=+0.100
+  3. 6025  score=0.748333  hotcold=0.500  cal=0.700  dp=0.167  exact=1.000  patt=+0.100
+  4. 0385  score=0.747549  hotcold=0.574  cal=0.700  dp=0.071  exact=1.000  patt=+0.100
+  5. 8057  score=0.738676  hotcold=0.515  cal=0.700  dp=0.100  exact=1.000  patt=+0.100
+----------------------------------------------------------------
+FOLIO DEL RUN
+----------------------------------------------------------------
+timestamp: 2025-08-14 06:52:58
+db: C:\RadarPremios\radar_premios.db
+gen: 100
+seed: 12345
+top: 15
+shortlist: 5
+w_hotcold: 0.25
+w_cal: 0.2
+w_dp: 0.2
+w_exact: 0.35
+cap_digitpos: 60
+cap_exact: 180
+export_top: C:\RadarPremios\candidatos_scored.csv
+export_all: C:\RadarPremios\candidatos_all.csv
+report_html: C:\RadarPremios\candidatos_scored.html
+================================================================
+
+[OK] Run guardado en DB con run_id=9
+C:\RadarPremios\scripts\eval_last_run.py:6: SyntaxWarning: invalid escape sequence '\R'
+  python eval_last_run.py --db "C:\RadarPremios\radar_premios.db"
+
+==================== VEREDICTO (post-run) ====================
+Fecha real más reciente: 2025-08-11
+Número ganador:         4968
+Run evaluado:           run_id=9  created_at=2025-08-14 11:52:58  seed=12345
+Veredicto:              MISS ❌  (rank=—)
+==============================================================
+
+=== Master pipeline FINALIZADO ===

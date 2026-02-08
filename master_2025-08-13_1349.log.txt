@@ -1,0 +1,62 @@
+=== Master pipeline iniciado ===
+Base: C:\RadarPremios\radar_premios.db
+Log:  C:\RadarPremios\logs\master_2025-08-13_1349.log.txt
+
+[STEP] Scraper LOTERÍAS
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\scraper_loterias.py"
+[ERROR] Scraper LOTERÍAS  RC=1  -- ver log
+
+[STEP] Scraper ASTRO LUNA
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\scraper_astroluna.py"
+[ERROR] Scraper ASTRO LUNA  RC=1  -- ver log
+
+[STEP] Scraper BALOTO premios
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\scraper_baloto_premios.py"
+[ERROR] Scraper BALOTO premios  RC=1  -- ver log
+
+[STEP] Scraper BALOTO resultados
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\scraper_baloto_resultados.py"
+[ERROR] Scraper BALOTO resultados  RC=1  -- ver log
+
+[STEP] Scraper REVANCHA premios
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\scraper_revancha_premios.py"
+[ERROR] Scraper REVANCHA premios  RC=1  -- ver log
+
+[STEP] Scraper REVANCHA resultados
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\scraper_revancha_resultados.py"
+[ERROR] Scraper REVANCHA resultados  RC=1  -- ver log
+
+[STEP] LIMPIAR CSVs
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\limpiar_csvs.py"
+[ERROR] LIMPIAR CSVs  RC=1  -- ver log
+
+[STEP] CARGAR DB
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\cargar_db.py"
+[ERROR] CARGAR DB  RC=1  -- ver log
+
+[STEP] GENERAR MATRIZ ASTRO LUNA
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\generar_matriz_astro_luna.py"
+[ERROR] GENERAR MATRIZ ASTRO LUNA  RC=1  -- ver log
+
+[STEP] CARGAR DB post-matriz
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\cargar_db.py"
+[ERROR] CARGAR DB post-matriz  RC=1  -- ver log
+
+[STEP] ACTUALIZAR_BASE_ASTROLUNA
+[CMD ] python -X utf8 "C:\RadarPremios\actualizar_base_astroluna.py" --db "C:\RadarPremios\radar_premios.db" --todo-join inner
+[ERROR] ACTUALIZAR_BASE_ASTROLUNA  RC=1  -- ver log
+
+[STEP] MANTENIMIENTO DB
+[CMD ] python -X utf8 "C:\RadarPremios\db_maintenance.py" --db "C:\RadarPremios\radar_premios.db" --todo-join inner
+[ERROR] MANTENIMIENTO DB  RC=1  -- ver log
+
+[STEP] SCORING CANDIDATOS
+[CMD ] python -X utf8 "C:\RadarPremios\score_candidates.py" --db "C:\RadarPremios\radar_premios.db" --gen 100 --seed 12345 --top 15 --shortlist 5 --export "C:\RadarPremios\candidatos_scored.csv" --export-all "C:\RadarPremios\candidatos_all.csv" --report "C:\RadarPremios\candidatos_scored.html" --w-hotcold 0.25 --w-cal 0.20 --w-dp 0.20 --w-exact 0.35 --cap-digitpos 60 --cap-exact 180 --cal-horizon 30
+[ERROR] SCORING CANDIDATOS  RC=1  -- ver log
+
+[STEP] EVALUAR RUN RECIENTE
+[CMD ] python -X utf8 "C:\RadarPremios\scripts\eval_last_run.py" --db "C:\RadarPremios\radar_premios.db"
+[ERROR] EVALUAR RUN RECIENTE  RC=1  -- ver log
+
+=== Master pipeline FINALIZADO ===
+Log en: C:\RadarPremios\logs\master_2025-08-13_1349.log.txt
