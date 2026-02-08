@@ -1,31 +1,45 @@
+# -*- coding: utf-8 -*-
+import os
 import sqlite3
 import pandas as pd
-import os
+from pathlib import Path
 
-# Ruta de entrada y salida
-DB_PATH = r'C:\RadarPremios\radar_premios.db'
-OUTPUT_PATH = r'C:\RadarPremios\data\limpio\matriz_astro_luna.csv'
+ROOT = r"C:\RadarPremios"
+DB_PATH = os.path.join(ROOT, "radar_premios.db")
+OUT_CSV = os.path.join(ROOT, "data", "limpio", "matriz_astro_luna.csv")
 
-# Conexión a la base de datos
-conn = sqlite3.connect(DB_PATH)
+def fail(msg): 
+    print(f"[ERROR] {msg}")
+    raise SystemExit(1)
 
-# Leer tabla astro_luna
-df = pd.read_sql_query("SELECT fecha, numero, signo FROM astro_luna", conn)
+def main():
+    Path(os.path.dirname(OUT_CSV)).mkdir(parents=True, exist_ok=True)
+    con = sqlite3.connect(DB_PATH)
 
-# Asegurar que 'numero' tenga siempre 4 dígitos como string
-df['numero'] = df['numero'].astype(str).str.zfill(4)
+    # Verificación de esquema requerido
+    cols = [r[1] for r in con.execute("PRAGMA table_info(astro_luna)")]
+    req = {"fecha","numero","signo"}
+    if not req.issubset(set(cols)):
+        fail(f"astro_luna sin columnas requeridas {req}. Encontradas: {cols}")
 
-# Descomponer número en columnas um, c, d, u
-df['um'] = df['numero'].str[0]
-df['c']  = df['numero'].str[1]
-df['d']  = df['numero'].str[2]
-df['u']  = df['numero'].str[3]
+    # Trae datos base
+    df = pd.read_sql_query("SELECT fecha, numero, signo FROM astro_luna", con)
+    if df.empty:
+        fail("astro_luna está vacío, no se puede generar matriz.")
 
-# Reordenar columnas
-df = df[['fecha', 'numero', 'signo', 'um', 'c', 'd', 'u']]
+    # ----- ejemplo simple de matriz (ajusta tu propia lógica) -----
+    # matriz por fecha, conteos por signo y último número
+    df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
+    pivot_signo = df.pivot_table(index="fecha", columns="signo", values="numero", aggfunc="count").fillna(0)
+    pivot_signo = pivot_signo.astype(int).reset_index()
 
-# Guardar CSV
-df.to_csv(OUTPUT_PATH, sep='\t', index=False, encoding='utf-8')
+    # Une con últimos números del día (si aplica)
+    last_num = df.sort_values(["fecha"]).groupby("fecha")["numero"].last().rename("numero_ultimo").reset_index()
+    matriz = pivot_signo.merge(last_num, on="fecha", how="left")
 
-conn.close()
-print(f'✅ Matriz generada: {OUTPUT_PATH}')
+    # Guarda a CSV y, en cargar_db.py, se volcará a la tabla matriz_astro_luna
+    matriz.to_csv(OUT_CSV, index=False, encoding="utf-8")
+    print(f"✅ Matriz generada: {OUT_CSV} ({len(matriz):,} filas)")
+
+if __name__ == "__main__":
+    main()

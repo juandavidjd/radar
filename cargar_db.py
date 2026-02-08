@@ -1,77 +1,139 @@
-import os
-import sqlite3
-import pandas as pd
+# -*- coding: utf-8 -*-
+import argparse, csv, hashlib, os, sqlite3, sys
 
-# Ruta base de archivos ya limpios
-DATA_DIR = r'C:\RadarPremios\data\limpio'
-DB_PATH = r'C:\RadarPremios\radar_premios.db'
+def log(msg):
+    print(msg, flush=True)
 
-# Archivos a cargar
-archivos = [
-    'boyaca.csv', 'huila.csv', 'manizales.csv', 'medellin.csv', 'quindio.csv', 'tolima.csv',
-    'astro_luna.csv',
-    'baloto_resultados.csv', 'baloto_premios.csv',
-    'revancha_resultados.csv', 'revancha_premios.csv', 'matriz_astro_luna.csv'] #, 'primer_resumen_matriz_aslu.csv', 
-    #'segundo_resumen_matriz_aslu.csv', 'tercer_resumen_matriz_aslu.csv', 'cuarto_resumen_matriz_aslu.csv',
-  #  'quinto_resumen_matriz_aslu.csv', 'sexto_resumen_matriz_aslu.csv', 'septimo_resumen_matriz_aslu.csv',
-    #'octavo_resumen_matriz_aslu.csv', 'noveno_resumen_matriz_aslu.csv', 'decimo_resumen_matriz_aslu.csv',
-   # 'todos_resumen_matriz_aslu.csv', 'cuando_cero_es_unidad.csv', 'cuando_cero_es_decena.csv', 'cuando_cero_es_centena.csv',
-  #  'cuando_cero_es_umil.csv', 'cuando_cero_es_d_y_u.csv', 'cuando_cero_es_c_y_u.csv', 'cuando_cero_es_um_y_u.csv',
-   # 'cuando_cero_es_c_y_d.csv', 'cuando_cero_es_um_y_d.csv', 'cuando_cero_es_um_y_c.csv', 'cuando_cero_es_c_d_y_u.csv',
-   # 'cuando_cero_es_um_c_d_y_u.csv', 'cuando_cero_es_um_c_y_d.csv', 'cuando_cero_es_um_c_y_u.csv', 'cuando_cero_es_um_d_y_u.csv',
-   # 'todo_cuando_0_es.csv', 'cuando_1_es_unidad.csv', 'cuando_1_es_decena.csv', 'cuando_1_es_centena.csv', 'cuando_1_es_umil.csv',
-  #  'cuando_1_es_d_y_u.csv', 'cuando_1_es_c_y_u.csv', 'cuando_1_es_um_y_u.csv', 'cuando_1_es_c_y_d.csv', 'cuando_1_es_um_y_d.csv',
-  #  'cuando_1_es_um_y_c.csv', 'cuando_1_es_c_d_y_u.csv', 'cuando_1_es_um_c_d_y_u.csv', 'cuando_1_es_um_c_y_d.csv', 'cuando_1_es_um_c_y_u.csv',
-  #  'cuando_1_es_um_d_y_u.csv', 'todo_cuando_1_es.csv', 'cuando_2_es_unidad.csv', 'cuando_2_es_decena.csv', 'cuando_2_es_centena.csv', 'cuando_2_es_umil.csv', 'cuando_2_es_c_d_y_u.csv',
-  #  'cuando_2_es_c_y_d.csv', 'cuando_2_es_c_y_u.csv', 'cuando_2_es_d_y_u.csv', 'cuando_2_es_um_c_d_y_u.csv', 'cuando_2_es_um_c_y_d.csv', 
-  #  'cuando_2_es_um_c_y_u.csv', 'cuando_2_es_um_d_y_u.csv', 'cuando_2_es_um_y_c.csv', 'cuando_2_es_um_y_d.csv' , 'cuando_2_es_um_y_u.csv', 
-  #  'todo_cuando_2_es.csv', 'cuando_3_es_unidad.csv', 'cuando_3_es_decena.csv', 'cuando_3_es_centena.csv', 'cuando_3_es_umil.csv', 'cuando_3_es_um_c_y_d.csv','cuando_3_es_c_y_u.csv',
-  #  'cuando_3_es_d_y_u.csv', 'cuando_3_es_c_d_y_u.csv', 'cuando_3_es_um_c_d_y_u.csv', 'cuando_3_es_c_y_d.csv', 'cuando_3_es_um_c_y_u.csv', 'cuando_3_es_um_d_y_u.csv',
-  #  'cuando_3_es_um_y_c.csv', 'cuando_3_es_um_y_d.csv', 'cuando_3_es_um_y_u.csv', 'todo_cuando_3_es.csv', 'cuando_4_es_unidad.csv', 'cuando_4_es_decena.csv', 'cuando_4_es_centena.csv',
-   # 'cuando_4_es_umil.csv', 'cuando_4_es_c_d_y_u.csv', 'cuando_4_es_c_y_d.csv','cuando_4_es_c_y_u.csv', 'cuando_4_es_d_y_u.csv', 'cuando_4_es_um_c_d_y_u.csv', 'cuando_4_es_um_c_y_d.csv',
-  #  'cuando_4_es_um_c_y_u.csv', 'cuando_4_es_um_d_y_u.csv', 'cuando_4_es_um_y_c.csv', 'cuando_4_es_um_y_d.csv', 'cuando_4_es_um_y_u.csv', 'todo_cuando_4_es.csv', 'cuando_5_es_unidad.csv', 'cuando_5_es_decena.csv',
-  #  'cuando_5_es_centena.csv', 'cuando_5_es_umil.csv', 'cuando_5_es_c_d_y_u.csv', 'cuando_5_es_c_y_d.csv', 'cuando_5_es_c_y_u.csv', 'cuando_5_es_d_y_u.csv', 'cuando_5_es_um_c_d_y_u.csv', 'cuando_5_es_um_c_y_d.csv',
-  #  'cuando_5_es_um_c_y_u.csv', 'cuando_5_es_um_d_y_u.csv', 'cuando_5_es_um_y_c.csv', 'cuando_5_es_um_y_d.csv', 'cuando_5_es_um_y_u.csv', 'todo_cuando_5_es.csv', 'cuando_6_es_unidad.csv', 'cuando_6_es_decena.csv',
-   # 'cuando_6_es_centena.csv', 'cuando_6_es_umil.csv', 'cuando_6_es_c_d_y_u.csv', 'cuando_6_es_c_y_d.csv', 'cuando_6_es_d_y_u.csv', 'cuando_6_es_um_c_d_y_u.csv', 'cuando_6_es_c_y_u.csv', 'cuando_6_es_um_c_y_d.csv',
-   # 'cuando_6_es_um_c_y_u.csv', 'cuando_6_es_um_d_y_u.csv', 'cuando_6_es_um_y_c.csv', 'cuando_6_es_um_y_d.csv', 'cuando_6_es_um_y_u.csv', 'todo_cuando_6_es.csv', 'cuando_7_es_unidad.csv', 'cuando_7_es_decena.csv',
-   # 'cuando_7_es_centena.csv', 'cuando_7_es_umil.csv', 'cuando_7_es_c_d_y_u.csv', 'cuando_7_es_c_y_d.csv', 'cuando_7_es_c_y_u.csv', 'cuando_7_es_d_y_u.csv', 'cuando_7_es_um_c_d_y_u.csv', 'cuando_7_es_um_c_y_d.csv',
-   # 'cuando_7_es_um_c_y_u.csv', 'cuando_7_es_um_d_y_u.csv', 'cuando_7_es_um_y_c.csv', 'cuando_7_es_um_y_d.csv', 'cuando_7_es_um_y_u.csv', 'todo_cuando_7_es.csv', 'cuando_8_es_unidad.csv', 'cuando_8_es_decena.csv',
-   # 'cuando_8_es_centena.csv', 'cuando_8_es_umil.csv', 'cuando_8_es_c_d_y_u.csv', 'cuando_8_es_c_y_d.csv', 'cuando_8_es_c_y_u.csv', 'cuando_8_es_d_y_u.csv', 'cuando_8_es_um_c_d_y_u.csv',
-   # 'cuando_8_es_um_c_y_d.csv', 'cuando_8_es_um_c_y_u.csv', 'cuando_8_es_um_d_y_u.csv', 'cuando_8_es_um_y_c.csv', 'cuando_8_es_um_y_d.csv', 'cuando_8_es_um_y_u.csv', 'todo_cuando_8_es.csv', 'cuando_9_es_unidad.csv',
-    #'cuando_9_es_decena.csv', 'cuando_9_es_centena.csv', 'cuando_9_es_umil.csv', 'cuando_9_es_c_d_y_u.csv', 'cuando_9_es_c_y_d.csv', 'cuando_9_es_c_y_u.csv', 'cuando_9_es_d_y_u.csv', 'cuando_9_es_um_c_d_y_u.csv',
-    #'cuando_9_es_um_c_y_d.csv', 'cuando_9_es_um_c_y_u.csv', 'cuando_9_es_um_d_y_u.csv', 'cuando_9_es_um_y_d.csv', 'cuando_9_es_um_y_c.csv', 'cuando_9_es_um_y_u.csv', 'todo_cuando_9_es.csv', 'todos_cuando_son.csv',
-    
+def safe_table_name(path):
+    name = os.path.splitext(os.path.basename(path))[0]
+    # Mantén nombre tal cual aparece en tus tablas previas
+    return name
 
+def sniff_delimiter(sample_bytes):
+    sample = sample_bytes.decode('utf-8', errors='ignore')
+    # Heurística simple: cuenta comas vs punto y coma
+    c = sample.count(',')
+    s = sample.count(';')
+    if s > c:
+        return ';'
+    return ','
 
-     
+def read_rows(csv_path):
+    # Abre en binario para sniff, luego reabre en texto con el delimitador correcto
+    with open(csv_path, 'rb') as fb:
+        sample = fb.read(4096) or b''
+    delim = sniff_delimiter(sample)
+    # Relee en texto
+    with open(csv_path, 'r', encoding='utf-8-sig', newline='') as f:
+        reader = csv.reader(f, delimiter=delim)
+        rows = list(reader)
 
+    if not rows:
+        return [], []
 
-# Limpieza de nombres de columnas
-def limpiar_columnas(cols):
-    return [col.strip().lower().replace(" ", "_") for col in cols]
+    # Normaliza encabezados: strip espacios
+    headers = [h.strip() for h in rows[0]]
+    data = []
+    for r in rows[1:]:
+        # Asegura longitud = headers (rellena con vacío o recorta)
+        if len(r) < len(headers):
+            r = r + [''] * (len(headers) - len(r))
+        elif len(r) > len(headers):
+            r = r[:len(headers)]
+        data.append([ (v.strip() if isinstance(v, str) else v) for v in r ])
+    return headers, data
 
-def cargar_datos():
-    conn = sqlite3.connect(DB_PATH)
+def ensure_table(conn, table, headers):
+    # Crea tabla si no existe, añade columnas faltantes, añade _rowhash y su índice único.
+    cur = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?;", (table,))
+    exists = cur.fetchone() is not None
+    if not exists:
+        cols_sql = ", ".join('"{}" TEXT'.format(h) for h in headers)
+        sql = f'CREATE TABLE "{table}" ({cols_sql});'
+        conn.execute(sql)
 
-    for archivo in archivos:
-        nombre_tabla = archivo.replace('.csv', '').lower()
-        ruta_archivo = os.path.join(DATA_DIR, archivo)
+    # Trae esquema actual
+    cur = conn.execute(f'PRAGMA table_info("{table}");')
+    present = {row[1] for row in cur.fetchall()}  # set de nombres de columna
 
-        print(f'📥 Cargando {archivo} → tabla {nombre_tabla}')
+    # Añade columnas faltantes
+    for h in headers:
+        if h not in present:
+            conn.execute(f'ALTER TABLE "{table}" ADD COLUMN "{h}" TEXT;')
+    # Asegura _rowhash
+    cur = conn.execute(f'PRAGMA table_info("{table}");')
+    present = {row[1] for row in cur.fetchall()}
+    if "_rowhash" not in present:
+        conn.execute(f'ALTER TABLE "{table}" ADD COLUMN "_rowhash" TEXT;')
+    # Índice único para deduplicar por hash
+    conn.execute(f'CREATE UNIQUE INDEX IF NOT EXISTS "ux_{table}__rowhash" ON "{table}"(_rowhash);')
 
-        try:
-            df = pd.read_csv(ruta_archivo, sep='\t', dtype=str, encoding='utf-8')
-            df.columns = limpiar_columnas(df.columns)
+def row_hash(values):
+    # Junta con separador que no aparece en números por lo general
+    joined = "\u241F".join([str(v) if v is not None else "" for v in values])
+    return hashlib.sha1(joined.encode('utf-8', errors='ignore')).hexdigest()
 
-            # Cargar en base de datos
-            df.to_sql(nombre_tabla, conn, if_exists='replace', index=False)
-            print(f'✅ Tabla {nombre_tabla} cargada con {len(df)} registros.')
+def upsert_rows(conn, table, headers, data):
+    if not data:
+        return 0, 0
+    # Inserta con OR IGNORE para respetar cualquier UNIQUE existente y nuestro _rowhash
+    cols = ', '.join('"{}"'.format(h) for h in headers)
+    placeholders = ', '.join(['?'] * (len(headers) + 1))  # +1 por _rowhash
+    sql = f'INSERT OR IGNORE INTO "{table}" ({cols}, "_rowhash") VALUES ({placeholders});'
 
-        except Exception as e:
-            print(f"❌ Error cargando {archivo}: {e}")
+    to_insert = []
+    for r in data:
+        h = row_hash(r)
+        to_insert.append(tuple(r + [h]))
+    cur_before = conn.execute(f'SELECT COUNT(1) FROM "{table}";').fetchone()[0]
+    conn.executemany(sql, to_insert)
+    cur_after = conn.execute(f'SELECT COUNT(1) FROM "{table}";').fetchone()[0]
+    inserted = cur_after - cur_before
+    ignored = len(to_insert) - inserted
+    return inserted, ignored
 
-    conn.close()
-    print(f'\n🟢 Base de datos lista en: {DB_PATH}')
+def process_dir(db_path, src_dir):
+    total_ins = total_ign = 0
+    with sqlite3.connect(db_path) as conn:
+        conn.execute('PRAGMA journal_mode = WAL;')
+        conn.execute('PRAGMA synchronous = NORMAL;')
+        conn.execute('PRAGMA temp_store = MEMORY;')
+        for root, _, files in os.walk(src_dir):
+            for fn in sorted(files):
+                if not fn.lower().endswith('.csv'):
+                    continue
+                csv_path = os.path.join(root, fn)
+                table = safe_table_name(csv_path)
+                try:
+                    headers, data = read_rows(csv_path)
+                    if not headers:
+                        log(f'[WARN] {table}: CSV vacío, omitido.')
+                        continue
+                    ensure_table(conn, table, headers)
+                    ins, ign = upsert_rows(conn, table, headers, data)
+                    conn.commit()
+                    total_ins += ins; total_ign += ign
+                    log(f'[OK ] {table}: +{ins} filas (omitidas: {ign})')
+                except Exception as ex:
+                    conn.rollback()
+                    log(f'[ERR] {table}: {ex}')
+                    # No re-levantar: permite continuar con otros archivos
+    return total_ins, total_ign
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--db', required=True, help='Ruta a radar_premios.db')
+    ap.add_argument('--src', required=True, help='Directorio con CSVs limpios')
+    args = ap.parse_args()
+
+    if not os.path.isdir(args.src):
+        log(f'[FATAL] No existe directorio --src: {args.src}')
+        sys.exit(2)
+
+    os.makedirs(os.path.dirname(args.db) or '.', exist_ok=True)
+    ins, ign = process_dir(args.db, args.src)
+    log(f'[OK ] cargar_db: insertadas={ins}, ignoradas={ign}')
+    sys.exit(0)
 
 if __name__ == '__main__':
-    cargar_datos()
+    main()
