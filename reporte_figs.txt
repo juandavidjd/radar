@@ -1,0 +1,8 @@
+REPORTE DE AUDITORÍA DE FIGURAS
+Archivo  : todo_fig_100.xlsx
+Salida   : todo_fig_100_validado.xlsx
+Filas/fig: 4, columnas: 6 (b..g)
+Total figs detectadas: 100 (esperadas ~100)
+
+HALLAZGOS:
+• Patrón repetido en figuras: 2, 9

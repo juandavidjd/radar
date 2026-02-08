@@ -1,0 +1,4367 @@
+0:00
+¿Cuántas veces necesitas barajar un mazo de cartas para que estén realmente revueltas? ¿Cuánto uranio se necesita
+0:06
+para construir una bomba nuclear? ¿Cómo puedes predecir la siguiente palabra en una oración? ¿Y cómo sabe
+0:13
+Google cuál es la página que estabas buscando? La razón por la que tenemos la respuesta a estas preguntas se debe a
+0:20
+una extraña disputa matemática en Rusia que tuvo lugar hace más de 100 años.
+0:26
+En 1905, grupos socialistas en toda Rusia se levantaron contra el SAR, el gobernante del imperio. Exigían una
+0:33
+reforma política completa o en su defecto que renunciara totalmente al poder.
+0:39
+Esto dividió a la nación en dos. Por un lado tienes a los aristas. Ellos querían defender el estatus quo y mantener al
+0:46
+sar en el poder. Y por otro lado tenías a los socialistas que querían una reforma política total. Y esta división
+0:54
+fue tan profunda que se infiltró en cada parte de la sociedad, al punto de que hasta las matemáticas empezaron a tomar
+1:00
+partida. Del lado del Sar estaba Pavel Necrasov, conocido informalmente como el
+1:05
+sar de la probabilidad. Necrasov era un hombre profundamente religioso y poderoso y utilizó su posición para
+1:11
+argumentar que las matemáticas podían usarse para explicar el libre albedrío y la voluntad de Dios. Su némesis
+1:17
+intelectual en el lado socialista era Andrey Markov, también conocido como Andrey el Furioso.
+1:24
+Markov era ateo y no tenía paciencia con las personas que no eran rigurosas, como consideraba a Necrosoft, porque a sus
+1:31
+ojos las matemáticas nada tenían que ver con el libre albedrío o la religión. Así que criticó públicamente el trabajo de
+1:37
+Necrasof, incluyéndolo en la lista de abusos de las matemáticas. Su disputa se centraba en la idea principal que la
+1:42
+gente había utilizado para hacer cálculos de probabilidad durante los últimos 200 años. Y podemos ilustrarlo
+1:48
+solo lanzando una moneda. Cuando lanzo la moneda 10 veces, obtengo seis veces cara y cuatro veces cruz, lo cual
+1:54
+obviamente no es el 5050 que esperarías, pero si sigo lanzando la moneda al principio la relación varía mucho. Pero
+2:02
+después de un gran número de lanzamientos vemos que lentamente se estabiliza y se acerca al 5050.
+2:07
+Y en este caso, después de 100 lanzamientos, terminamos con 51 caras y 49 cruces, lo cual es casi exactamente
+2:15
+lo que se espera. Este comportamiento en el que el resultado promedio se aproxima cada vez
+2:20
+más y más al valor esperado a medida que se realizan más pruebas independientes, se conoce como la ley de los grandes
+2:26
+números. Fue probado por primera vez por Jacob Bernie en 1713 y fue el concepto
+2:31
+clave de la teoría de probabilidad hasta antes de Markov y Necrosoft. Pero
+2:37
+Bernuli solo demostró que funcionaba para eventos independientes como lanzar una moneda o cuando se le pide a la
+2:43
+gente que adivine el valor de un artículo por separado, donde un evento no influye en los otros.
+2:49
+Pero ahora imagina que en lugar de pedirle a cada persona que haga su estimación individualmente, les pides
+2:54
+que griten su respuesta en público. En este caso, la primera persona podría
+3:00
+pensar que es un artículo extremadamente valioso y decir que vale unos $2,000.
+3:05
+Pero ahora todas las demás personas en la sala están influenciadas por este valor y sus conjeturas se vuelven
+3:11
+dependientes y entonces el promedio no converge hacia el valor real, sino que se agrupa alrededor de una cantidad más
+3:18
+alta. Y así durante 200 años la probabilidad se basó en la suposición clave de que se
+3:24
+necesita independencia para que la ley de los grandes números se cumpla. Y fue esta idea la que desató la disputa entre
+3:31
+Necrasov y Markov. Necrasov estaba de acuerdo con Bernuli en que se necesita independencia para obtener la ley de los
+3:36
+grandes números, pero fue un paso más allá. Dijo que si se observa la ley de los grandes números, se puede inferir
+3:43
+que los eventos subyacentes deben ser independientes. Tomemos este registro de matrimonios
+3:49
+belgas de 1841 a 1845. Se puede ver que cada año el promedio es de alrededor de 29,000, por lo que
+3:56
+parece que los valores convergen y por lo tanto se cumple la ley de los grandes números. Y cuando Necrosoft examinó
+4:02
+otras estadísticas sociales como las tasas de criminalidad y natalidad, notó un patrón similar.
+4:08
+Pero ahora piensa de dónde vienen todos estos datos. Provienen de decisiones de casarse, decisiones de cometer delitos y
+4:14
+decisiones de tener hijos, al menos en su mayoría. Así, Microsoft concluyó que dado que estas estadísticas siguen la
+4:20
+ley de los grandes números, las decisiones que las causan deben ser independientes. Es decir, argumentaba
+4:26
+que debían ser actos de libre albedrío. Para él, el libre albedrío no solo era algo filosófico, era algo que se podía
+4:33
+medir, era científico. Pero para Marco, Necrasov estaba
+4:39
+desvariando. Le parecía absurdo vincular la independencia matemática con el libre albedrío.
+4:45
+Así que Markops se propuso demostrar que los eventos dependientes también podían seguir la ley de los grandes números y
+4:51
+que incluso se puede hacer probabilidad con este tipo de eventos. Para esto necesitaba algo donde un
+4:58
+evento dependiera claramente de lo que ocurrió antes y se le ocurrió que esto es lo que sucedía en el texto. Que la
+5:05
+siguiente letra sea una consonante o una vocal depende en gran medida de cuál es la letra actual.
+5:10
+Para probar esto, Markov recurrió a un poema fundamental de la literatura rusa. Eugenio Neguin de Alexander Pushkin.
+5:19
+Tomó las primeras 20,000 letras del poema, eliminó toda la puntuación y los espacios y las unió en una larga cadena
+5:25
+de caracteres. Contó las letras y descubrió que el 43% eran vocales y el
+5:31
+57% eran consonantes. Luego, Markop dividió la cadena en pares superpuestos.
+5:37
+Eso le dio cuatro combinaciones posibles: vocal vocal, consonante consonante, vocal consonante o
+5:43
+consonante vocal. Ahora, si las letras fueran independientes, la probabilidad de un par vocal vocal sería simplemente la
+5:49
+probabilidad de una vocal dos veces, que es aproximadamente 0.18 o un 18% de probabilidad. Pero cuando Markov los
+5:57
+contó, encontró que los pares vocal vocal solo aparecían el 6% de las veces,
+6:03
+mucho menos de lo que sería si fueran independientes. Y cuando verificó los otros pares, descubrió que todos los
+6:09
+valores diferían enormemente de lo que se predecía en cada caso independiente. Así que Markov demostró que las letras
+6:15
+eran dependientes. Y para vencer a Necrasov, lo único que necesitaba hacer ahora era demostrar que
+6:21
+estas letras aún seguían la ley de los grandes números. Así que creo una especie de máquina de predicción.
+6:28
+Comenzó dibujando dos círculos, uno para una vocal y otro para una consonante. Estos eran sus estados. Ahora,
+6:34
+supongamos que estás en una vocal. Entonces, la siguiente letra podría ser una vocal consonante. Así que dibujó dos
+6:40
+flechas para representar estas transiciones. Pero, ¿cuáles son las probabilidades de estas transiciones?
+6:46
+Markov sabía que si elige un punto de inicio al azar, hay un 43% de probabilidad de que sea una vocal.
+6:52
+También sabía que los pares de vocales ocurren aproximadamente el 6% de las veces. Entonces, para encontrar la
+6:58
+probabilidad de pasar de una vocal a otra, dividió 0.06 / 0.43 y encontró una probabilidad de
+7:04
+transición de aproximadamente 13%. Y dado que hay un 100% de probabilidad de que haya una siguiente letra, todas las
+7:12
+flechas que parten del mismo estado deben sumar uno. Entonces, la probabilidad de que siga una consonante
+7:17
+es una -0.13 u 87%. repitió este proceso para las
+7:22
+consonantes para completar su máquina predictiva. Veamos cómo funciona.
+7:28
+Comenzamos con una vocal. Luego generamos un número aleatorio entre 0 y 1. Si es menor a 0.13 obtenemos otra
+7:37
+vocal. Si es mayor obtenemos una consonante. Obtuvimos 0.78, así que es consonante. Luego generamos otro número
+7:44
+y verificamos si es mayor o menor que 0.67. 0.21. Así que es una vocal.
+7:50
+Podemos seguir haciendo esto y llevar un registro de la proporción de vocales a consonantes. Al principio la proporción
+7:55
+varía mucho, pero después de un tiempo converge en un valor constante. 43%
+8:01
+vocales y 57% consonantes. La división exacta que Markovado a mano.
+8:09
+Markov había construido un sistema dependiente, una cadena literal de eventos y demostró que también seguía la
+8:15
+ley de los grandes números, lo que significaba que observar la convergencia en las estadísticas sociales no probaba
+8:20
+que las decisiones subyacentes fueran independientes. En otras palabras, esas estadísticas no prueban para nada el
+8:26
+libre albedrío. Markov había destrozado el argumento de Necrasov y lo sabía, así
+8:31
+que terminó su artículo con una última indirecta a su rival. Por lo tanto, el libre albedrío no es necesario para ser
+8:37
+probabilidad. De hecho, ni siquiera es necesaria la independencia para ser probabilidad. Con esta cadena de Markov,
+8:44
+como llegó a conocerse, se encontró una manera de hacer probabilidad con eventos dependientes. Esto debería haber sido un
+8:50
+gran avance porque en el mundo real casi todo depende de otra cosa. Es decir, el
+8:56
+clima de mañana depende de las condiciones de hoy. La propagación de una enfermedad depende de quién está
+9:02
+infectado ahora y el comportamiento de las partículas depende del comportamiento de las partículas a su
+9:08
+alrededor. Muchos de estos procesos podrían modelarse usando cadenas de Markov.
+9:13
+La gente piensa que fue un golpe de gracia como, "Oh, Necrasov perdió, Markov." O, "¿adaron y pasó
+9:21
+desapercibido?" Creo que la gente no se dio cuenta, como que no fue algo muy importante.
+9:28
+Y al mismo Markov aparentemente no le importaba mucho cómo podría aplicarse en situaciones prácticas. escribió, "Solo
+9:35
+me interesan las cuestiones de análisis puro. Para mí, el tema de sutilidad me
+9:41
+es indiferente. No se imaginaba que esta nueva forma de teoría de probabilidad pronto
+9:47
+desempeñaría un papel importante en uno de los desarrollos más significativos del siglo XX.
+9:54
+La mañana del 16 de julio de 1945, Estados Unidos detonó el gadget, la
+10:01
+primera bomba nuclear del mundo. La bomba de plutonio de 6 kg creó una
+10:07
+explosión equivalente a casi 25,000 toneladas de TNT.
+10:12
+Esta fue la culminación del ultrasecreto proyecto Manhattan, un trabajo de 3 años realizado por
+10:19
+algunas de las mentes más brillantes de la época, incluyendo a personas como J. Robert Oppenheimer, John Van Neuman y
+10:25
+matemático poco conocido llamado Stanislab Ulam. Incluso después del fin de la guerra,
+10:31
+Ulam continuó intentando entender cómo se comportaban los neutrones dentro de una bomba nuclear. Una bomba nuclear
+10:36
+funciona más o menos así. Digamos que tienes un núcleo de uranio 235. Cuando
+10:41
+un neutrón lo impacta, el núcleo se divide liberando energía y muy
+10:47
+importante, dos o tres neutrones más. Si esos nuevos neutrones continúen chocando
+10:52
+y dividiendo en promedio más de un núcleo de uranio 235, se produce una reacción en cadena descontrolada, lo que
+10:58
+resulta en una bomba nuclear. Pero el uranio 235, el combustible fisible que requieren las bombas, era muy difícil de
+11:05
+obtener. Así que una de las preguntas clave era cuánto se necesitaba para construir una bomba y por eso Ulam
+11:11
+quería entender cómo se comportaban los neutrones. Pero luego en enero de 1946
+11:18
+todo se detuvo. Ulan sufrió un caso repentino y grave de encefalitis, una inflamación del cerebro
+11:26
+que casi termina con él. Su recuperación fue larga y lenta y pasaba la mayor
+11:31
+parte de su tiempo en cama. Para pasar el tiempo jugaba un sencillo juego de cartas solitario, pero mientras jugaba
+11:38
+un sinfín de partidas, ganando algunas, perdiendo otras, una pregunta le rondaba la cabeza.
+11:44
+¿Qué probabilidades hay de ganar una partida de solitario barajada al azar?
+11:50
+Era un problema aparentemente fácil, pero difícil de resolver. Jugaba con las 52 cartas donde cada disposición creaba
+11:56
+un juego único. Así que el número total de juegos posibles era 52 factorial o aproximadamente 8* 10 elevado a la 67.
+12:06
+Resolver esto analíticamente era imposible, pero Ulam tuvo un destello de
+12:12
+inspiración y si jugaba cientos de partidas y contaba cuántas se podían ganar, eso le daría una especie de
+12:17
+aproximación estadística de la respuesta. En Los Álamos, el resto de científicos
+12:23
+lideaban con problemas mucho más complejos que el solitario, como entender cómo se comportan los neutrones en un núcleo de un núcleo atómico.
+12:31
+En un núcleo atómico hay miles de millones de neutrones interactuando con su alrededor.
+12:37
+Entonces, el número posible de resultados es inmenso y calcularlos directamente parece imposible. Pero
+12:42
+cuando Ulam regresó al trabajo tuvo una revelación repentina. Y si pudiéramos simular estos sistemas generando muchos
+12:49
+resultados aleatorios, como hice con el solitario, compartió su idea con Von Nean, quien inmediatamente reconoció su
+12:56
+potencial, pero también detectó un problema importante. En el solitario, cada partida es
+13:02
+independiente. Cómo se reparten las cartas en una partida no afecta a la siguiente. Pero los neutrones no son
+13:08
+así. El comportamiento de un neutrón depende de dónde está y de lo que se ha hecho antes.
+13:14
+No se podía simplemente mostrar resultados aleatorios como en el solitario. En cambio, se necesitaba
+13:19
+modelar toda una cadena de eventos donde cada paso influía en el siguiente. Bal Neyman se dio cuenta de que necesitaba
+13:26
+una cadena de Marco, así que hicieron una y así funciona una versión mucho más
+13:32
+simplificada. El estado inicial es solamente un neutrón viajando a través del núcleo y a
+13:37
+partir de ahí pueden ocurrir tres cosas. Puede dispersarse al chocar con un átomo y seguir viajando, lo que resulta en una
+13:43
+flecha que regresa a sí misma. Puede salir del sistema o ser absorbido por un material visible, en cuyo caso deja de
+13:50
+participar en la reacción en cadena y así termina su cadena de Markov. o puede
+13:55
+chocar con otro átomo de uranio 235, provocando un evento de fisión y liberando dos o tres neutrones más que
+14:02
+iniciarán sus propias cadenas. Pero en esta cadena las probabilidades de transición no son fijas, dependen de
+14:09
+factores como la posición, la velocidad y la energía del neutrón, así como la configuración y la masa totales del
+14:15
+uranio. Así que un neutrón que se mueve rápidamente tendrá un 30% de probabilidad de dispersarse, un 50% de
+14:21
+ser absorbido o salir y un 20% de causar fisión. Pero un neutron más lento tendría diferentes probabilidades.
+14:29
+Después ejecutaron esta cadena en la primera computadora científica del mundo, la ENAC. La computadora comenzó
+14:35
+generando aleatoriamente las condiciones iniciales de un neutrón y se desplazó a través de una cadena para llevar un registro de cuántos neutrones se
+14:41
+producían en promedio por ejecución, conocido como el factor de multiplicación k. Si en promedio un
+14:47
+neutrón produce otros dos neutrones, entonces k es ig a 2. Y si en promedio cada dos neutrones producen tres
+14:53
+neutrones, entonces k es igivamente.
+14:59
+Luego, después de recorrer toda la cadena durante un número específico de pasos, recogió el valor promedio de K y
+15:04
+lo registró en un histograma. Este proceso se repitió cientos de veces y los resultados se sumaron
+15:11
+proporcionando una distribución estadística del resultado. Si resulta que en la mayoría de los casos K es
+15:18
+menor que 1, la reacción se extingue. Si es igual a 1, hay una reacción en cadena autosostenida, pero no crece. Y si k es
+15:25
+mayor que 1, la reacción crece exponencialmente y tienes una bomba.
+15:31
+Con esto, Von Neyan y Ulam tenían un método estadístico para determinar cuántos neutrones se producían sin
+15:36
+necesidad de realizar cálculos exactos. En otras palabras, podían aproximar ecuaciones diferenciales que eran
+15:42
+demasiado difíciles de resolver de forma analítica. Ahora lo que faltaba era un nombre para el nuevo método. El tío de
+15:49
+Ulam era apostador y el muestreo aleatorio y las apuestas altas le recordaban a Ulam el casino de
+15:55
+Montecarlo en Mónaco y el nombre les gustó. Así nació el método de Montecarlo.
+16:01
+El método tuvo tanto éxito que no se mantuvo en secreto por mucho tiempo. A finales de 1948, en otro laboratorio,
+16:08
+Argón en Chicago, los científicos lo utilizaron para estudiar diseños de reactores nucleares y a partir de ahí la
+16:14
+idea se propagó rápidamente. Ulam comentó más tarde, "Aún me sorprende ver como unos cuantos
+16:20
+garabatos en un pizarrón pudieron cambiar el curso de los asuntos humanos."
+16:27
+Y no sería la última vez que un método basado en las cadenas de Marcop cambiara el curso de los asuntos humanos.
+16:35
+En 1993, el internet se abrió al público y muy pronto se disparó. A mediados de
+16:41
+la década de 1990 aparecían miles de páginas nuevas diariamente y el número solo crecía.
+16:48
+Esto generó un nuevo problema, cómo encontrar algo en un mar que siempre está creciente de información.
+16:55
+En 1994, dos estudiantes de doctorado Stanford, Jerry Young y David Phillo,
+17:00
+crearon Yahoo, un motor de búsqueda para solucionar el problema, pero necesitaban dinero, por lo que un año más tarde
+17:07
+concertaron una cita con el millonario japonés Masosian, también conocido como el Bill Gates de Japón.
+17:15
+Querían recaudar 5 millones de dólares para su emprendimiento, pero Son tenía
+17:20
+otros planes. Les ofreció invertir 100 millones de dólares. Eso era 20 veces más de lo que
+17:27
+los fundadores pidieron. Así que Jerry Young lo rechazó diciendo que no necesitaban tanto. Pero Son acuerdo.
+17:35
+Jerry, todos necesitan 100 millones de dólares. Antes de que los empresarios pudieran
+17:41
+responder, Son intervino de nuevo y preguntó, "¿Quiénes son sus mayores competidores?" "¿Excite y laicos?",
+17:47
+respondieron los dos. Son ordenó a su socio que anote esos nombres y luego dijo, "Si no me dejan invertir en Yahoo,
+17:54
+invertiré en uno de ellos y los destruiré. Y es que Son se dio cuenta de algo.
+18:01
+Ninguno de los principales motores de búsqueda de entonces tenía una tecnología superior. No tenían una
+18:06
+ventaja tecnológica sobre los otros. Solo clasificaban las páginas según la frecuencia en que aparecía un término
+18:12
+buscado en alguna página. Así que la batalla por ser el motor de búsqueda número uno se decidía por quién podía
+18:18
+atraer más usuarios, quién podía gastar más en marketing. Laicos, atrápalo.
+18:23
+Sin laos estás perdido. Esta es la revolución. [Música]
+18:33
+Y el marketing requería mucho dinero, dinero que son tenía, por lo que podía decidir quién ganaba la guerra. Los
+18:40
+fundadores de Yaku se dieron cuenta de que no les quedaba otra opción más que aceptar la inversión de Son
+18:46
+Estamos aquí, justo en el centro de Yahoo y en 4 años Yahoo se convirtió en el sitio más popular del planeta. En el
+18:53
+tiempo que toma decir esta frase, Yahoo responderá a 79,000 solicitudes de información en todo el mundo. Los dos
+19:00
+hombres ahora valen 120 millones de dólares cada uno.
+19:05
+[Música] Pero Yahoo tenía una debilidad crítica.
+19:11
+La búsqueda por palabras clave de Yahoo era fácil de engañar. Para lograr que tu página apareciera en los primeros lugares, podías repetir las palabras
+19:17
+clave cientos de veces, ocultándolas con texto blanco sobre un fondo blanco. Algo que no había en esa época era una
+19:26
+noción de calidad de resultado. Había una idea de relevancia de si el documento hablaba sobre el tema que te
+19:34
+interesa, pero realmente no había una noción de cuáles eran mejores. Lo que en verdad necesitaban era una
+19:40
+forma de clasificar las páginas por relevancia y calidad. Pero, ¿cómo se mide la calidad de una página web? Para
+19:47
+entender eso, tenemos que tomar prestada una idea de las bibliotecas. Recuerdo cuando los libros de la
+19:53
+biblioteca tenían una tarjeta con los sellos de todas las fechas de cuando había que devolverlos. Si tomabas un
+19:59
+libro y tenía muchos sellos, podías pensar que era un buen libro y si no tenía ninguno, decías, "Tal vez este no
+20:04
+sea el mejor." Los sellos servían como aprobación. Mientras más sellos, mejor debía ser el libro y la misma idea se puede aplicar a
+20:11
+la web. En Stanford, dos estudiantes de doctorado, Sergey Bren y Lorry Page estaban trabajando en este mismo
+20:18
+problema. Bren y Page se dieron cuenta de que cada enlace a una página podía considerarse como una aprobación y entre
+20:25
+más enlaces envía una página, menos valioso se vuelve cada voto. De lo que se dieron cuenta es que se puede modelar
+20:31
+la web como una cadena de Markov. Para ver cómo funciona esto, imagina un
+20:36
+internet de juguete con solo cuatro páginas web, llamémoslas Amy, Ben, Chris y Dan. Estas son nuestros estados.
+20:43
+Normalmente una página web enlaza a otras permitiéndote mover entre ellas. Estas son nuestras transiciones.
+20:50
+En este escenario, Amy solo enlaza a Ben, por lo que hay un 100% de probabilidad de ir de Amy a Ben. Ben
+20:56
+enlaza Amy, Chris y Dan, así que hay un 33% de probabilidad de ir a cualquiera de esas páginas y podemos completar las
+21:03
+otras probabilidades de transición de la misma forma. Ahora podemos ejecutar esta cadena de Markov y ver qué pasa. Imagina
+21:11
+que estás navegando en esta red. Comienzas en una página al azar, digamos Amy, y continúas ejecutando la máquina y
+21:17
+vas registrando el porcentaje de tiempos que pasas en cada página. Con el tiempo, la proporción se estabiliza y las
+21:24
+puntuaciones nos dan una medida de la importancia relativa de estas páginas. Pasas más tiempo en Ben, así que Ben se
+21:30
+clasifica en primero seguido por Amy, luego Dan y por último Cris. Puede parecer una forma fácil de ganarle al
+21:37
+sistema. Solo a 100 páginas que se enlacen a tu sitio web y así vas a tener
+21:42
+100 votos y siempre vas a estar hasta arriba. Pero no sucede así. Aunque en un
+21:48
+principio pueden hacer que tu página parezca importante, no hay otros sitios web que se enlacen a ellos, así que
+21:54
+después de un tiempo sus contribuciones no importan. Podrías tener muchos enlaces, pero no son enlaces de calidad,
+22:01
+por lo que no afectan al algoritmo. Pero aún hay un problema, no todas las páginas están conectadas. En redes como
+22:08
+esta, una navegación aleatoria puede quedar atrapada en un bucle sin llegar nunca al resto de la web. Para
+22:13
+solucionar esto, podemos establecer una regla en la que el 85% del tiempo nuestro internauta aleatorio siga un
+22:20
+enlace de manera normal, pero luego durante aproximadamente el 15% del tiempo salte una página al azar. Este
+22:26
+factor de amortiguamiento asegura que exploremos todas las partes posibles de la web sin quedarnos atrapados.
+22:32
+Al utilizar cadenas de Markov, Page y Bring construyeron un motor de búsqueda mejorado y lo llamaron Page Rank
+22:38
+porque tiene que ver con cómo interactúan las páginas web entre sí y también porque el nombre del fundador es
+22:45
+Larry Page, así que lo coló. Con P rank se obtuvieron mucho mejores
+22:50
+resultados de búsqueda, a menudo llevándote al sito que buscabas de un solo intento. Aunque para algunos esto
+22:56
+sonaba como una pésima idea. Otros dijeron, "¿Me estás diciendo que la búsqueda los va a llevar al resultado
+23:03
+correcto en la primera respuesta?" Yo no quiero eso porque si les lleva tres o cuatro intentos de búsqueda llegar a
+23:10
+donde quieren, tengo tres o cuatro intentos de mostrar anuncios. Y si les das la respuesta de inmediato,
+23:15
+simplemente los voy a perder. No, no le veo lo bueno a esta mejor búsqueda. Pero Page y BR no estaban de acuerdo.
+23:22
+Estaban convencidos de que si su producto era muy superior, la gente correría a él. Yo diría que es una democracia que
+23:29
+funciona. Si todas las páginas fueran iguales, cualquiera podría crear tantas páginas como quisiera. Yo podría
+23:35
+configurar 1000 millones de páginas en mi servidor mañana. No deberíamos tratarlas a todas igual. Revisando los
+23:41
+datos por seguridad, descubrimos que teníamos la tecnología para hacer una mejor búsqueda y nos dimos cuenta del
+23:46
+impacto de una búsqueda eficiente. Y en 1998 lanzaron su nuevo motor de
+23:52
+búsqueda para competir con Yahoo. Inicialmente lo llamaron backr por los enlaces entrantes que analizaba, pero se
+23:59
+dieron cuenta de que tal vez ese no era el nombre más atractivo. Su ambición era enorme y querían indexar todas las
+24:05
+páginas de internet y necesitaban un nombre igual de grande. Así que pensaron en el número más grande que se les
+24:11
+ocurrió, 10 elevado a la potencia de 100, un Google. Pero entonces, al intentar registrar su dominio, lo
+24:17
+escribieron mal sin querer y así nació Google.
+24:24
+[Música] En los siguientes 4 años, Google derrocó a Yakú para convertirse en el motor de
+24:30
+búsqueda más utilizado. Casi todos los que conocen internet conocen Google. Para los adolescentes googlear es como
+24:36
+respirar. Y hoy Alfabet, la empresa matriz de Google tiene un valor aproximado de 2 billones de dólares.
+24:43
+Cuando Google realiza el más mínimo cambio en sus algoritmos, el efecto puede ser enorme.
+24:48
+Google, Google, Google, Google. están en su mejor momento y la razón es
+24:53
+porque están concentrados y están más concentrados que Yahoo que hace búsquedas más que Microsoft que realiza búsquedas con Bing. Yahoo tiene mucho
+25:00
+tráfico, siempre lo ha tenido, tiene algunas cualidades realmente buenas, pero no creo que Yahoo sea el lugar a la que la gente acude.
+25:06
+Y en el centro de este algoritmo de un billón de dólares hay una cadena de Markop que lo único que hace es observar
+25:12
+el estado actual para predecir lo que sucederá después. Pero en la década de 1940, Cloud
+25:18
+Shannon, el padre de la teoría de la información, comenzó a hacerse una pregunta distinta. Volvió la idea
+25:24
+original de Markov de predecir texto, pero en lugar de usar solo vocales y consonantes, se centró en letras
+25:30
+individuales y se preguntó si en lugar de mirar solo la última letra como predictoria, veo
+25:36
+las dos últimas. Con eso obtuvo un texto que se veía así. No tiene mucho sentido,
+25:42
+pero se reconocen algunas palabras como we, of y d.
+25:47
+Pero Shannon estaba seguro de poder hacerlo mejor, así que en lugar de ver letras, pensó en qué pasaría si usara
+25:53
+palabras enteras como predictores. Eso le dio frases como esta: "La cabeza
+25:58
+llenó un ataque a un escritor inglés que el carácter de este punto es. Por lo tanto, otro método para las letras que
+26:04
+el tiempo de quien sea que haya dicho el problema para un inesperado.
+26:09
+Obviamente esto no tiene sentido, pero Shano notó que secuencias de unas cuatro palabras normalmente sí tienen sentido.
+26:16
+Por ejemplo, ataque a un escritor inglés tiene cierto sentido. Shannon descubrió
+26:22
+que se pueden hacer predicciones cada vez más precisas sobre cuál será la siguiente palabra al considerar cada vez
+26:27
+más las palabras anteriores. Es más o menos lo que hace Gmail cuando predice lo que vas a escribir a
+26:33
+continuación. Y esto no es una coincidencia. Los algoritmos que realizan estas
+26:38
+predicciones se basan en cadenas de Markov. No necesariamente usan letras, eh usan
+26:44
+lo que llaman tokens. Algunos de ellos son letras, algunos son palabras, signos de puntuación,
+26:52
+etcétera. Es un es es un conjunto más grande que el alfabeto. El juego es
+26:57
+simple. Eh, tenemos esta cadena de tokens que podría tener 30 de largo y
+27:04
+preguntamos cuáles son las probabilidades de que el siguiente token sea este, pero los modelos extensos de lenguaje
+27:11
+actuales no tratan a todos esos tokens por igual, porque a diferencia de las cadenas de marcop simples, también utilizan algo llamado atención que le
+27:17
+indica al modelo a qué debe prestar atención. Entonces, en la frase la estructura de la célula, el modelo puede
+27:23
+utilizar el contexto previo como sangre y mitocondrias para saber qué célula probablemente se refiere a la biología
+27:29
+en lugar de a un grupo de personas y utiliza eso para ajustar su predicción. Pero a medida que los modelos extensos
+27:35
+de lenguaje se vuelven más comunes, una preocupación es que el texto que producen termine en internet y eso se
+27:40
+convierta en información de entrenamiento para futuros modelos. Cuando comienzas a hacer eso, el juego
+27:47
+termina muy pronto. En este caso, llegas a un estado muy aburrido y estable.
+27:52
+Simplemente repite lo mismo una y otra vez. Los modelos de lenguaje son vulnerables a este proceso.
+27:59
+Y cualquier sistema como este con bucle de retroalimentación se volverá difícil de modelar usando cadenas de Markov.
+28:05
+Tomemos el calentamiento global como ejemplo. Al incrementarse el dióxido de carbono en el aire, la temperatura
+28:10
+promedio de la Tierra aumenta. Pero a medida que la temperatura aumenta, la atmósfera puede contener más vapor de
+28:15
+agua, que es un gas de efecto invernadero increíblemente poderoso. Y con más vapor de agua, la temperatura aumenta, permitiendo que haya todavía
+28:22
+más vapor de agua. Se produce un bucle de retroalimentación positiva que dificulta predecir lo que sucederá a
+28:27
+continuación. Entonces, hay sistemas en los que las cadenas de Markop no funcionan, pero para muchos otros sistemas dependientes ofrecen una forma
+28:34
+de calcular probabilidades. Pero lo fascinante es que todos estos sistemas tienen historias extremadamente
+28:40
+largas. Podrías rastrear todas las letras de un texto, rastrear todas las interacciones que tuvo el Neutron o
+28:46
+rastrear el clima durante semanas. Pero lo hermoso que Markoveron
+28:51
+es que para muchos de estos sistemas puedes ignorar casi todo eso. Puedes solo observar el estado actual y
+28:58
+olvidarte del resto. Eso hace que estos sistemas sean sin memoria. Y esta
+29:03
+cualidad de no tener memoria es lo que hace que las cadenas de Markov sean poderosas, porque es lo que permite
+29:08
+tomar estos sistemas extremadamente complejos y simplificarlos mucho para seguir haciendo predicciones
+29:14
+significativas. Como se expresó en un artículo, resolver problemas a menudo consiste en idear la
+29:20
+cadena de Marcov adecuada. Me me parece un poco ridículo que este hecho básico de las matemáticas surgiera
+29:27
+de una disputa así que no tenía nada que ver con eso, pero todo indica que fue
+29:33
+realmente eh esa determinación de superar a Microsoft, lo que llevó a
+29:39
+Markov a hacerlo. Pero hay una pregunta que todavía no hemos respondido. Al jugar al solitario,
+29:46
+¿cómo sabía Ulam que sus cartas estaban perfectamente barajadas? Es decir, ¿cuántas veces hay que barajar para
+29:51
+obtener una disposición de las cartas completamente aleatoria? Si tienes un mazo de cartas, necesitas
+29:58
+barajarlo, ¿verdad? Okay. ¿Cuántas veces si lo barajas? Ya sabes, lo divides por la mitad y luego haces
+30:05
+¿Cuántas veces tienes que barajarlo para que sea totalmente aleatorio? Dos. Dos.
+30:11
+Voy a decir 26. Cuatro veces. No sé. 52. Okay, okay, tiene sentido.
+30:18
+Siete, son siete. ¿En serio? Sí. Se puede pensar que barajar cartas
+30:23
+es como una cadena de markov donde cada disposición del mazo es un estado y cada que se baraja es un paso. Así que para
+30:29
+un mazo de 52 cartas, si las barajas con rifle siete veces, entonces cada disposición del mazo es casi igual de
+30:34
+probable. Así que básicamente es aleatorio. Pero yo no puedo barajar así. Lo que yo
+30:41
+hago es algo así. ¿Cuántas veces creen que hay que barajar así para que sea aleatorio?
+30:48
+¿Tú qué piensas y quizás más importante, ¿cómo crees que lo resolverías?
+30:54
+Bueno, ahí es donde entra Brilliant. Brilliant es una aplicación de aprendizaje que te permite trabajar con
+30:59
+problemas como este, ya sea matemáticas, física, programación o incluso IA. Las
+31:05
+lecciones interactivas y desafíos de Brilliant te permiten jugar mientras agudizas tu mente. Puedes descubrir cómo
+31:10
+funcionan realmente los modelos extensos de lenguaje, desde cadenas de marco básicas hasta redes neuronales complejas
+31:16
+o profundizar en las matemáticas detrás de la pregunta sobre el barajado. Es una forma divertida de desarrollar conocimientos y habilidades que te
+31:22
+ayudan a resolver todo tipo de problemas, lo que nos lleva de nuevo a nuestra baraja. Así que, Casper, dinos
+31:27
+cuál es la respuesta. Son más de 2,000 veces. ¿Qué? Más qué loco, ¿no?
+31:33
+Así que la próxima vez que alguien ofrezca barajar antes de un juego, asegúrate de que lo haga bien. Si te mezclas o no cuenta. Pero la parte
+31:40
+interesante no es solo saber eso, sino entender por qué y ver cómo una pregunta simple puede llevarte a unas matemáticas
+31:47
+sorprendentemente complejas y de eso se trata Brilliant.
+31:52
+Para probar todo lo que Brilliant tiene para ofrecer de forma gratuita durante 30 días, visita brilliant.org/onalberita
+31:57
+org/al veritasium. Haz clic en ese enlace en la descripción o escanea este práctico código QR. Y si te suscribes,
+32:03
+también obtendrás un 20% de descuento en tu suscripción anual premium. Gracias a Brilliant por patrocinar este video y
+32:09
+gracias a ti por verlo. [Música]
+32:20
+Qué fácil.
+
+
+0:00
+[Música] Hay una regla en matemáticas que es tan simple que uno pensaría que obviamente debe ser cierta, pero si la aceptas
+0:07
+descubres que ahora hay algunos segmentos de línea que no tienen longitud. Una esfera, sin añadirle nada
+0:13
+más, puede convertirse en dos esferas idénticas. Más de 100 años de matemática
+0:19
+se han basado en este axioma. Parece intuitivo y funciona, pero también crea
+0:24
+paradojas ridículas. Entonces, ¿es correcto, todo comienza con el tema de
+0:31
+la elección? Intenta esto. Elige un número. Puedo simplemente pensar en un número al azar
+0:37
+como 37 o 42, pero eso es el cerebro humano en acción, no un proceso
+0:43
+matemático. En matemáticas realmente no se puede elegir al azar porque las
+0:48
+fórmulas siempre dan el mismo resultado. Por eso las computadoras no generan números verdaderamente aleatorios, sino
+0:55
+que normalmente ejecutan un algoritmo basado en la hora local actual para generar números que parezcan aleatorios.
+1:02
+Pero si no podemos elegir al azar, ¿cómo seleccionamos algo en matemáticas? Bueno, la única manera es seguir algún
+1:09
+tipo de regla. Una regla podría ser siempre elegir lo más pequeño. Por
+1:14
+ejemplo, si estamos considerando los números enteros positivos, el más pequeño es uno. Para los números primos
+1:20
+sería dos. Fácil. Pero, ¿qué pasa con los números reales? Es decir, cualquier número positivo, negativo, entero,
+1:26
+fraccionario e incluso irracional como pi o la raíz cuadrada de 2. Intenta elegir el más pequeño. Es imposible. Los
+1:34
+números reales se extienden hacia el infinito negativo. Aún si intentamos ajustar la regla haciéndola super
+1:41
+específica, como elige el número más pequeño después de uno, nos vamos a atorar. Está 1.01 y luego el
+1:49
+1.001 y después el 1.00,
+1:54
+etcétera. Entonces, ¿qué número va realmente después de
+2:00
+uno? Si de entrada no podemos especificar el orden de los números reales, siguiente y anterior, primero y
+2:05
+último, no avanzamos. Lo más ridículo es que sabemos que tenemos infinitas opciones, pero a pesar de eso no sabemos
+2:13
+cómo elegir solo uno. La misión de resolver esto comenzó con un hombre en
+2:19
+1870. Se puso la tarea de poner los números reales en un orden definitivo, aunque le costara la vida y casi le
+2:30
+cuesta. Georg Cantor era un talentoso matemático alemán que fue el centro de una tormenta de críticas. luego de
+2:37
+publicar uno de sus primeros artículos a la edad de 29 años. Durante siglos, nuestra
+2:43
+comprensión del infinito estuvo fuertemente influenciada por el libro de Galileo de 1638. En él planteó una
+2:50
+pregunta clave. ¿Existen más números naturales o más números cuadrados? A
+2:55
+simple vista, los números cuadrados están más espaciados y se separan cada vez más conforme se va subiendo, así que
+3:02
+pareciera que hay menos cuadrados que números naturales. Pero Galileo se dio cuenta de que podía trazar una línea que
+3:09
+uniera cada número natural con su propio cuadrado. Y como logró establecer esta correspondencia uno a un, dedujo que los
+3:16
+dos conjuntos debían ser exactamente del mismo tamaño. Así que en realidad hay
+3:21
+tantos números cuadrados como números naturales. A partir de este resultado
+3:27
+contrainttuitivo, Galileo concluyó que términos como más que o menos que no se usan con infinito como los utilizamos
+3:34
+normalmente, sino que es simplemente un gran concepto de eternidad. Y esta visión prevaleció durante siglos. De
+3:41
+hecho, es así como muchas personas entienden el infinito actualmente. Pero 200 años después, Cantor no estaba
+3:49
+satisfecho. En 1874 se preguntó, "¿Y si existieran dos conjuntos infinitos que
+3:55
+no se correspondieran perfectamente entre sí? ¿Serían infinitos diferentes?"
+4:01
+decidió comparar los números naturales con los números reales entre 0 y uno.
+4:06
+Cantor comenzó suponiendo que podría relacionar uno a uno estos conjuntos perfectamente, así que imagino escribir
+4:13
+una lista infinita con un número natural en un lado y un número real entre cer y
+4:18
+uno en el otro. y dado que no hay un número real más pequeño, los escribiría
+4:24
+en cualquier orden. Asumiendo que ya tenía una lista infinita completa,
+4:29
+Cantor escribió otro número real y para hacerlo tomó el primer dígito del primer
+4:34
+número y le sumó uno. Luego el segundo dígito del segundo número y nuevamente le sumó uno. Continuó haciendo esto a lo
+4:42
+largo de toda la lista. Si el dígito era ocho o nueve, restaba uno en lugar de sumar para evitar
+4:48
+duplicados. Y al final de este proceso había escrito un número real entre 0 y
+4:54
+un pero ese número no aparecía en ninguna parte de su lista.
+5:00
+es diferente del primer número en el primer decimal, diferente del segundo número en el segundo decimal y así
+5:06
+sucesivamente. Tiene que ser diferente de cada número en la lista por al menos un dígito, el dígito en la diagonal. Por
+5:14
+eso se conoce como argumento de la diagonal de Cantor y demuestra que debe haber más números reales entre er y 1
+5:21
+que números naturales extendiéndose al infinito. Cantor había revelado algo
+5:28
+extraordinario. El infinito no viene en un solo tamaño. Algunos infinitos, como el conjunto de números cuadrados enteros
+5:35
+o números racionales, pueden emparejarse perfectamente con los números naturales. Literalmente se pueden contar un dos 3es
+5:42
+y así sucesivamente. Cantor llamó a estos infinitos numerables, pero luego
+5:48
+existen infinitos más grandes. Cantor los llamó no numerables. Estos infinitos, como el conjunto de todos los
+5:54
+números reales, los números complejos, no pueden emparejarse uno a uno con los números
+5:59
+naturales. Los resultados de Cantor acudieron a la comunidad matemática. Al fin y al cabo, ¿cómo puede algo que
+6:06
+continúa para siempre ser más grande que otra cosa que también continúa para siempre? Su trabajo fue calificado como
+6:13
+un horror y una enfermedad peligrosa, pero Cantor no se desanimó. Su éxito solo lo impulsó a perseguir un objetivo
+6:19
+aún más ambicioso, demostrar que incluso los conjuntos infinitos no numerables podrían colocarse en un orden
+6:25
+definitivo, lo que Cantor llamó un buen orden. Para que un conjunto esté bien
+6:30
+ordenado, requería dos condiciones. Primero, el conjunto debía tener un punto de inicio claro. Y segundo, cada
+6:38
+subconjunto, una colección de elementos de ese conjunto también debía tener un punto de inicio claro. Por ejemplo, los
+6:45
+números naturales están bien ordenados. Hay un punto de inicio, uno y cualquier subconjunto, digamos, 6, 7, 8, también
+6:52
+tiene un punto de inicio. Claro, en este caso seis. Siempre se sabe qué número viene antes y cuál viene
+7:00
+después. Pero, ¿qué pasa con los números enteros? Los enteros se extienden hacia el infinito, tanto en dirección positiva
+7:06
+como negativa. Bueno, Cantor se dio cuenta de que podía simplemente elegir el cero como punto de partida y a partir
+7:12
+de ahí su ordenación fue 1 - 1 2 - 2 clasificando los enteros por su valor
+7:18
+absoluto, su distancia desde el cero. No importa si pones primero los positivos o
+7:24
+los negativos, siempre y cuando seas consistente. Ordenarlos de esta manera es lo que realmente nos permite
+7:29
+mapearlos enteros con los números naturales y ver que ambos conjuntos tienen el mismo tamaño. Pero hay otras
+7:35
+maneras en las que podríamos ordenar bien los enteros. Podríamos comenzar con el 0 y luego 1 2 3 hasta llegar al
+7:41
+infinito positivo y luego -1 -2 -3 hasta llegar al infinito
+7:47
+negativo. No es como estamos acostumbrados a contar, pero ambas opciones cumplen con la definición de un
+7:53
+buen orden. Hay un punto de inicio claro, el cero, y todos sus subconjuntos también tienen un punto de inicio
+8:00
+definido. Cantor había logrado ordenar bien un conjunto que era infinito en ambas direcciones, pero solo era
+8:08
+contablemente infinito. En su siguiente libro publicó su teorema del buen orden.
+8:13
+Afirmaba que cualquier conjunto, incluso los infinitamente no numerables como los números reales, se puede bien
+8:20
+ordenar. El problema era que en realidad no lo había demostrado porque no podía.
+8:26
+Todos los métodos que probó fallaron. Pero había una gran razón por
+8:32
+la que Cantor estaba tan seguro de su teorema. Era un luterano devoto y creía
+8:37
+que Dios hablaba a través de él. Dijo, "Mi teoría se mantiene tan firme como
+8:43
+una roca. Cada flecha que se dirija contra ella regresará rápidamente a su arquero. ¿Cómo lo sé? porque la he
+8:50
+estudiado desde todos los ángulos durante muchos años y sobre todo porque he seguido sus raíces, por así decirlo,
+8:56
+hasta la infalible causa primera de todas las cosas creadas. A pesar de su creencia, afirmar el
+9:04
+teorema del buen orden sin ninguna prueba matemática era arrogante. Y así,
+9:09
+por segunda vez, la comunidad matemática volvió a atacar y a marginar a Cantor.
+9:16
+Liderando el ataque estaba Leopold Kroniker, el jefe del departamento de matemáticas de la Universidad de Berlín.
+9:21
+Chroniker desdeñó por completo el trabajo de cantor, calificándolo de científico charlatán y corruptor de la
+9:27
+juventud. Yronaker había sido profesor de Cantor. Cantor soñaba con unirse a él en la
+9:33
+Universidad de Berlín, pero todas sus solicitudes fueron misteriosamente rechazadas. Cantor se tomó el rechazo de
+9:40
+manera personal. En 1884 le escribió 52 cartas a un amigo y
+9:46
+en cada una de ellas se quejaba de Chroniker. Pronto Cantor sufrió la que sería la primera de muchas crisis
+9:53
+nerviosas. Fue internado en un sanatorio para su recuperación. La única forma en que podía demostrar
+9:59
+que todos estaban equivocados era bien ordenando los números reales, pero no podía encontrar un punto de partida,
+10:06
+literalmente. Cuando lo dieron de alta del sanatorio, quebrantado, se alejó de las matemáticas. Durante los siguientes
+10:13
+15 años enseñó filosofía y rara vez se acercó a sus antiguas actividades.
+10:18
+Quizás su mayor desafío llegó en el Congreso Internacional de Matemáticas de 1904. Ahí Julio Conig, un respetado
+10:25
+profesor de Budapest, anunció que tenía pruebas de que el teorema del buen orden de Cantor estaba equivocado. En la
+10:32
+audiencia no solo estaba Ctor, sino también su esposa, dos de sus hijos y sus colegas.
+10:39
+se sintió completamente humillado. Pero alguien más se encontraba presente.
+10:46
+Ernestelo. Sermelo era un matemático alemán que había desarrollado recientemente un gran interés en el
+10:51
+trabajo de Cantor. Y mientras escuchaba la presentación de Conig, algo no le cuadraba. En menos de 24 horas, Sermelo
+10:59
+había identificado el problema. La prueba de Conig contenía una contradicción condenatoria.
+11:04
+Y en menos de un mes, Sermelo publicó un artículo de tres páginas titulado prueba de que todo conjunto puede ser bien
+11:11
+ordenado. Y era impecable. El logro de Sermelo llegó cuando
+11:17
+descubrió algo profundo en el trabajo de Cantor. Utilizaba un mecanismo inconsciente e instintivamente en todas
+11:24
+partes, pero no lo formulaba explícitamente en ningún lado. Cantor siempre había supuesto que podía ser un
+11:30
+número infinito de elecciones a la vez de cualquier conjunto, incluyendo conjuntos infinitos no numerables como
+11:36
+los números reales. Pero esto era solo una suposición. En ningún lugar de las
+11:41
+convenciones matemáticas se permitía esto explícitamente y las matemáticas se basan en reglas, específicamente
+11:47
+axiomas. Los axiomas son enunciados simples que se aceptan como verdaderos sin demostración. Sermelo se dio cuenta
+11:53
+de que la suposición de Cantor necesitaba formalizarse en algo que se sostuviera en un sistema de prueba, un
+11:59
+nuevo axioma que estableciera que hacer todas esas elecciones era posible. Necesitaba el axioma de elección.
+12:07
+El axioma de elección se puede expresar así. Si tienes un número infinito de conjuntos y ninguno de ellos es vacío,
+12:13
+entonces existe una forma de elegir un elemento de cada uno. Para los conjuntos finitos, esto parece obvio. Simplemente
+12:19
+elige algo de cada conjunto. Incluso para conjuntos infinitos es fácil si hay una regla clara, como siempre elegir el
+12:27
+elemento más pequeño, pero a veces no hay una regla natural. En esos casos,
+12:32
+cuando se está eligiendo de entre un número infinito de conjuntos, incluidos los noerables, se necesita el axioma de
+12:38
+elección. No podemos decir cómo estamos eligiendo, pero el axioma hace todas estas elecciones a la vez. El axioma no
+12:46
+te permite decir qué elemento has escogido, solo que es posible hacer infinitas elecciones. Entonces, ¿cómo
+12:53
+nos permite este nuevo axioma bien ordenar los números reales? Sermelo utilizó el axioma de elección
+13:00
+para escoger un número del conjunto de todos los números reales. Colocó este número, llamémoslo X1, en un nuevo
+13:06
+conjunto R. El axioma le permitió entonces elegir otro número del subconjunto de todos los números reales
+13:12
+menos el que se sacó. Llamó este número X2 y lo colocó como el siguiente número en su conjunto. Y continuó haciendo
+13:19
+esto, eligiendo otro número y colocándolo a continuación, x3, X4, X5. Parece que está eligiendo estos números
+13:26
+uno a la vez, pero en realidad las elecciones se hacen de todos los subconjuntos posibles al mismo tiempo.
+13:32
+Al principio podría parecer que Sermelo se iba a enfrentar a un problema conforme indexaba cada número con los números naturales, porque los números
+13:39
+naturales son un conjunto infinito numerable, mientras que hay muchos más números reales. En algún momento iba a
+13:45
+quedarse sin etiquetas, pero podemos contar más allá del infinito. Lo hicimos antes cuando contamos más allá del
+13:52
+infinito positivo para llegar a -1, -2, etcétera. Así que solo necesitamos un
+13:57
+nuevo conjunto de números que se extienda más allá de los naturales. Llamemos al siguiente número omega,
+14:02
+luego omega + 1, omega + 2 y así sucesivamente. Estos números omega no son más grandes que el infinito,
+14:09
+simplemente vienen después del infinito. No nos dicen cuántas cosas hay, pero sí nos indican su orden. Así que al
+14:16
+siguiente número que saquemos lo etiquetaremos como x omega, luego x omega + 1, x omega + 2, etcétera. Esto
+14:24
+continuará hasta que igualemos el tamaño de los números reales y nuestro conjunto original quede vacío. Ahora, todos los
+14:30
+números reales están en el nuevo conjunto. Hay un primer número x1 y cada subconjunto también tiene un primer
+14:37
+número. Y así hemos logrado bien ordenar los números
+14:42
+reales. Este orden no se parece en nada al orden que conocemos. 1000 millones podría estar antes que 0.2, pero con
+14:50
+este proceso podemos demostrar que existe un buen orden. Y además ahora
+14:55
+tenemos una forma de resolver nuestro problema de cómo elegir matemáticamente. No podemos elegir el número real más
+15:01
+pequeño, pero ahora podemos elegir un primer número real, nuestro punto de partida. Y esto se puede hacer con
+15:06
+cualquier conjunto. Significa que todos los conjuntos pueden ordenarse bien independientemente del infinito. Así que
+15:12
+el teorema del buen orden de Cantor y el axioma de elección de Sermelo son
+15:18
+equivalentes. Cantor se sintió aliviado. Sermelo había demostrado al teorema del
+15:23
+buen orden y bien ordenado los números reales en menos de un mes.
+15:30
+Hermelo tomó algo de lo que habían dependido los matemáticos sin saberlo durante décadas y lo convirtió en un
+15:35
+axioma formal. Demostró que entender las matemáticas no se trata solo de números, sino de la lógica detrás de ellos. El
+15:42
+axioma de elección puede haber sido una idea nueva, pero su uso no era nuevo en absoluto. Cermelo revisó decenas de
+15:49
+artículos de otros matemáticos y se dio cuenta de que ellos también habían estado utilizando el axioma todo el
+15:54
+tiempo, incluso aquellos que habían criticado al trabajo de Cantor. Esto solo demuestra que es tan poco intuitivo, que incluso es un axioma. La
+16:02
+gente lo había utilizado durante una década y no sabían. Pero esto casi
+16:07
+parece muy obvio. La demostración de Sermelo realmente no construyó un buen orden, solo decía que debía existir uno.
+16:15
+Pero, ¿puede existir algo si no podemos realmente construirlo? Su demostración también utilizó un número incontable de
+16:22
+pasos. Eso estaba permitido. Algunos matemáticos sostenían que las demostraciones debían ser finitas. Otros
+16:27
+aceptaban el infinito, pero solo el numerable. Y entonces las cosas
+16:33
+empeoraron. Cuando los matemáticos experimentaron con el axioma de elección, se produjeron
+16:38
+resultados inquietantes. Uno de los primeros fue el de Giuseppe Vitali en 1905. Vitali usó
+16:45
+el axioma de elección para construir un conjunto de números que destrozó nuestra idea de lo que significa que algo tenga
+16:51
+longitud. Lo que hizo Vitali fue tomar cada número real entre 0 y 1 y asignarlo
+16:58
+a uno de un número infinito de contenedores. Llamemos a estos contenedores grupos. Queremos que cada
+17:06
+número real termine exactamente en uno de nuestros contenedores infinitos. ¿Cómo lo hizo? Bueno, digamos que
+17:14
+tenemos dos números, x y. Si su diferencia x - y es igual a un número
+17:22
+racional, es decir, un entero dividido por otro entero, entonces tanto x como y
+17:29
+irán al mismo grupo. Pero si tenemos
+17:34
+otros dos números, digamos P y Q y su
+17:39
+diferencia no es racional, si es una diferencia irracional, entonces esos dos
+17:45
+números irán a grupos distintos. Veamos algunos ejemplos. Si tenemos 3/4 - 1/2
+17:55
+nos da 1/4, por lo que 3/4 y 1/2 irán al
+18:01
+mismo grupo. De hecho, puedes ver que todos los números racionales en el intervalo de 0 a 1 terminarán en el
+18:08
+mismo grupo. Ahora, si tienes números irracionales, no está claro si irán al
+18:14
+mismo contenedor o no. Por ejemplo, si tenemos í² 2 / 2
+18:21
+-√² 2 / 2 - 1/4, esto tiene una diferencia racional, aunque cada uno de
+18:28
+estos números sea irracional. Así que estos dos números irán al mismo grupo.
+18:34
+Pero si tenemos los números irracionales íz²ad 2 / 2 -√² 2 / 3, la diferencia es
+18:42
+irracional. Así que raíz 2 / 3 tiene que ir a un contenedor distinto y se le
+18:48
+unirán todos los números con los que tenga una diferencia racional. De esta manera puedes asignar cada número real a
+18:56
+exactamente uno de estos contenedores. Después, Vitali utilizó el axioma de
+19:01
+selección para ir a cada grupo y seleccionar exactamente un número que
+19:06
+actuaría como representante del grupo. Podríamos tomar 3/4 del grupo racional í
+19:12
+2 2 de este grupo raíz de 2 / 3 de aquel grupo, etcétera. Aunque claro, como estamos usando el axioma de elección,
+19:19
+realmente no sabemos cuál es ese número representante, solo que tienes uno.
+19:24
+Entonces podríamos escribirlo así. Tenemos estos representantes de cada
+19:30
+grupo y juntos forman el conjunto de Vitali. Puedes visualizar este conjunto
+19:35
+como una colección de puntos entre cer y uno. Después Vitali hace copias infinitas de su conjunto y cada una la
+19:44
+desplaza. un número racional diferente entre -1 y 1. Y pensemos en lo que esto
+19:51
+hace. va a mover cada número representante para estar en la posición de cada uno de los otros números del
+19:58
+grupo. Si tenemos el único número racional que seleccionamos como representante del grupo racional, ahora
+20:04
+vamos a desplazarlo por cada número racional posible entre -1 y 1, por lo
+20:09
+que terminará en cada una de las posiciones ocupadas por los otros miembros de su grupo, al menos en el
+20:15
+intervalo entre 0 y 1. Si ahora imaginas que juntas todos estos conjuntos
+20:21
+infinitos juntos, no habrá superposición entre los puntos y además vamos a tener
+20:27
+todos los números reales entre er y 1 porque en ese intervalo tenemos a todos
+20:33
+los miembros de cada grupo. Entonces la pregunta es, ¿de qué tamaño es el
+20:38
+conjunto de Vitali? Sabemos que la unión de esos conjuntos debe ser mayor o igual
+20:45
+a 1 porque tenemos todos los números reales entre 0 y 1, pero también que
+20:51
+estos puntos solo se extienden hasta -1 o 2 positivo, así que debe ser menor o
+20:58
+igual a 3. Pero aquí es donde surge el problema, porque ¿qué número para el
+21:05
+tamaño del conjunto de Vitali podría sumarse a sí mismo infinitas veces? y terminar con un valor entre 1 y 3. No
+21:13
+existe un número así. Es decir, si el tamaño del conjunto de Vitali fuera cero, al sumarlo infinitamente seguiría
+21:20
+siendo cero. Si el tamaño del conjunto de Vital es un valor positivo pequeño y lo sumas infinitamente, obtendrás
+21:27
+infinito, no tres. Así que tenemos una contradicción y la única salida es que el conjunto de Vitali en sí mismo no sea
+21:34
+medible. Y eso es absurdo. Los conjuntos no medibles como
+21:40
+el de Vitali no tienen una definición consistente de tamaño, longitud, área o incluso probabilidad. Pero las
+21:47
+matemáticas se basan en la idea de que todo puede cuantificarse, ya sea distancia, tiempo o peso, pero ahora hay
+21:54
+conjuntos no medibles y parece que el axioma de elección es el culpable.
+22:00
+Este fue solo el comienzo del revuelo que causó el axioma. En 1924, dos
+22:06
+matemáticos, Stephan Banak y Alfred Tarski, lo usaron para demostrar algo que parece un truco de magia.
+22:12
+Demostraron que se podía tomar una sola esfera sólida y dividirla en cinco piezas. Y luego rotando y moviendo
+22:19
+cuidadosamente esas piezas se podían formar dos esferas completamente
+22:24
+idénticas a la original y se podía repetir el proceso hasta finalmente
+22:30
+tener un número infinito de esferas, infinito a partir de uno. Esto suena
+22:35
+absurdo, pero de hecho podemos ver cómo funciona si construimos una gráfica. Imagina que puedes moverte en
+22:42
+cuatro direcciones, arriba, abajo, izquierda y derecha. Al dar un paso, digamos, hacia la izquierda, tienes las
+22:49
+mismas cuatro opciones, arriba, abajo, izquierda y derecha. Pero si vas a la derecha, terminarás en donde empezaste.
+22:55
+Así que la única regla que tendremos es que no se puede revertir inmediatamente un movimiento. Y vamos a repetir esto en
+23:02
+cada paso, dibujando cada nueva línea de la mitad del tamaño de la anterior para que todo quepa en la pantalla. Si
+23:09
+seguimos, terminaremos con esta gráfica de ramificaciones infinitas. Vemos en
+23:14
+nuestra gráfica que podemos dividirla en cinco secciones. La sección central donde comenzamos y luego hay otras
+23:20
+cuatro secciones que son idénticas solo que rotadas. Si tomamos esta sección de
+23:26
+la izquierda y movemos todo un paso hacia la derecha, la parte superior termina aquí, la parte inferior aquí y
+23:32
+la de la izquierda aquí. Casi hemos recreado toda la gráfica. Lo único que nos falta es esta
+23:39
+sección, así que volvamos a agregarla. Pero podríamos haber hecho lo mismo de una forma totalmente distinta al tomar
+23:46
+la sección inferior y moverla un paso hacia arriba. Ahora la parte de la izquierda termina aquí, la parte de la
+23:52
+derecha aquí y la parte inferior aquí. De nuevo, solo nos falta una sección, así que volvamos a agregarla. Pero esto
+23:58
+significa que puedo recrear toda la gráfica original de dos formas totalmente distintas. Tomamos una
+24:04
+gráfica, la dividimos en secciones, movimos las secciones de manera que la sección izquierda fue a la derecha y la
+24:10
+sección inferior hacia arriba. Y de alguna manera terminamos con dos copias idénticas. Esto es exactamente lo que
+24:17
+hicieron Vanakitarski, pero con una esfera. Como en nuestra gráfica, tenemos cuatro movimientos. Podemos rotar la
+24:23
+esfera hacia arriba, abajo, izquierda o derecha. E igualmente, la única regla es que no podemos revertir inmediatamente
+24:29
+un movimiento y para asegurarnos de no volver al mismo punto, cada rotación será de la misma fracción irracional de
+24:36
+un círculo. Podemos elegir un punto de inicio al azar, marcarlo y luego comenzar a rotar la esfera. Cada punto
+24:44
+se colorea según la dirección de rotación que se utiliza para llegar ahí. Si hacemos esto un número infinito de
+24:51
+veces, terminamos con esta colección de puntos. Esta es una colección infinita
+24:56
+numerable porque podríamos enumerar cada rotación y asignarle un número natural. Pero la superficie de una esfera tiene
+25:03
+puntos infinitos no numerables, al igual que la recta numérica real. Así que si queremos cubrir toda la superficie,
+25:09
+necesitaríamos repetir este proceso. Pero, ¿por dónde empezamos ahora? Como hay una cantidad infinita no numerable
+25:16
+de posibles puntos de inicio, no podemos enumerarlos todos y queremos asegurarnos de evitar cualquier punto que ya hayamos
+25:22
+coloreado. Entonces, la solución es utilizar el axioma de elección. Con él, podemos seguir eligiendo puntos de
+25:29
+inicio únicos, aunque no podamos decir exactamente cómo los elegimos.
+25:34
+Una vez que coloreamos cada punto en la esfera, podemos dividir los puntos en cinco grupos. Uno para los puntos de
+25:40
+inicio y otros cuatro con base en la rotación final que se usó para llegar a esos puntos. Estos grupos pueden
+25:47
+tratarse como las secciones de la gráfica. Podemos tomar el grupo de puntos que termina con una rotación a la
+25:52
+izquierda y rotarlo a la derecha. Luego añadimos el grupo que termina con una rotación a la derecha y así de fácil
+25:59
+recreamos nuestra bola original. Y podemos hacerlo de nuevo haciendo un movimiento extra para tomar en cuenta
+26:05
+los puntos de partida. También podemos tomar el grupo que termina con una rotación hacia abajo y rotarlo hacia arriba. Luego añadimos el grupo que
+26:12
+termina con una rotación hacia arriba y nuestros puntos de inicio y ya recreamos nuestra bola original por segunda
+26:19
+vez. Esto es una simplificación, pero da una idea de cómo se hace.
+26:25
+A partir de una bola, hemos creado dos bolas idénticas del mismo volumen y nada nos impide hacerlo de nuevo. Dos bolas
+26:32
+pueden volverse cuatro, cuatro se vuelven ocho y antes de darte cuenta tienes un número infinito de bolas. El
+26:38
+axioma de elección es algo que parece tan claramente cierto y sus consecuencias son tan evidentemente
+26:44
+falsas que piensas, "¿Qué rayos pasa?" Esta duplicación infinita es
+26:49
+teóricamente posible, pero el truco está en que los grupos en los que dividimos la esfera no son formas simples, de
+26:56
+hecho no son medibles como el conjunto de Vitali. Aunque la esfera original tiene un volumen y las esferas
+27:02
+duplicadas también, el paso intermedio viola nuestra comprensión de tamaño.
+27:07
+Esto es lo que permite que se dé la paradoja. Obviamente esos cortes no son
+27:13
+físicamente posibles, pero hay una pregunta eh más metafísica, ¿sería
+27:18
+remotamente posible si pudiéramos hacer tales cortes? La respuesta de casi todos los humanos que conozco es absolutamente
+27:24
+no. La verdad es que nadie sabía lo que estaba pasando. Ese mismo año, Tarsky
+27:30
+intentó llevar el axioma de elección más lejos, demostrando que es equivalente a la afirmación de que cuadrar cualquier
+27:36
+conjunto infinito no aumentaría su tamaño. Cuando Tarsky envió por primera vez este trabajo a una revista en París,
+27:42
+el editor Leb respondió despectivo, "A nadie le interesa la equivalencia entre
+27:48
+dos afirmaciones falsas." Sin desanimarse, Tarsky lo envió a otro editor de la misma revista. Fres su
+27:56
+respuesta. A nadie le interesa la equivalencia de dos afirmaciones obviamente verdaderas. Tarski nunca volvió a enviar
+28:03
+ahí un artículo. Las matemáticas estuvieron en crisis durante más de 30 años. La gente
+28:09
+no sabía en qué creer. La pregunta es, un momento, ¿esto es un axioma o es algo
+28:16
+que se puede demostrar? En 1938, por fin comenzamos a obtener algunas respuestas.
+28:22
+El matemático austríaco Kurt Godle demostró que existe un mundo donde todos los demás axiomas ya aceptados de la
+28:28
+teoría de conjuntos son válidos y también lo es el axioma de elección. Luego, en 1963, Paul Cohen demostró que
+28:35
+también hay un mundo donde todos los axiomas de la teoría de conjuntos son válidos, excepto el axioma de
+28:42
+elección. Esto es como el postulado de las paralelas en geometría. Puedes pensar en la geometría como un juego.
+28:49
+Los primeros cuatro postulados o axiomas son las reglas mínimas necesarias para jugar ese juego. Y el quinto axioma,
+28:56
+selecciona el universo en el que deseas jugar. Si decides que el quinto axioma no se cumple, de modo que no hay líneas
+29:02
+paralelas, estás jugando en geometría esférica. Si eliges una línea paralela,
+29:08
+estás jugando en geometría plana. Y si eliges más de una línea paralela, entonces estás jugando en geometría
+29:14
+hiperbólica. Todas estas geometrías son válidas, solo depende del tipo de matemáticas que quieras hacer. Lo mismo
+29:21
+ocurre con el axioma de elección. El axioma de elección no puede demostrarse ni refutarse a partir de los otros
+29:28
+axiomas. Así que mientras los otros axiomas sean consistentes, añadir el axioma de elección no llevará a ninguna
+29:34
+contradicción. Paul Cohen fue galardonado con la medalla Fiels 3 años después por su resultado revolucionario,
+29:39
+además de su otro trabajo en teoría de conjuntos. Y después del trabajo de Goldle y Cohen, la mayoría de los
+29:45
+debates sobre el axioma de elección se calmaron. Al final lo que realmente sucede es que depende de ti decidir si
+29:51
+quieres que el axioma de elección forme parte de tu sistema o no y enfrentar las
+29:57
+consecuencias de tenerlo o no tenerlo. A pesar de los resultados contrainttuitivos que genera el axioma
+30:03
+de elección, como los conjuntos no medibles y la duplicación infinita, es increíblemente útil. El axioma de
+30:10
+elección permite a los matemáticos reemplazar demostraciones explícitas y extensas con argumentos más concisos. Al
+30:15
+demostrar afirmaciones en un caso finito, muchas pruebas pueden extenderse a cualquier caso infinito en solo una
+30:21
+línea. Esto hace que demostraciones que podrían ser de 20 páginas sean solo de media página. Y el axioma de elección no
+30:28
+solo facilita las matemáticas, también es básico para algunas demostraciones. Hay muchos teoremas donde el caso
+30:34
+general no puede ser probado sin utilizar el axioma de elección en algún punto. Algunos matemáticos aún prefieren
+30:40
+las demostraciones sin elección. Aunque sea más difícil, la demostración debe explicarse paso a paso para
+30:45
+generalizarla a infinitos casos, lo que proporciona información adicional. Algunos matemáticos dedican su tiempo a
+30:52
+estudiar universos sin el axioma de elección para entender qué sucede al eliminarlo. Pero actualmente el axioma
+30:59
+de elección es casi universalmente aceptado. Durante los últimos 80 años se
+31:04
+ha enseñado a generaciones de matemáticos dando por supuesto la elección al grado de que muchos de los
+31:10
+que utilizan el axioma de elección no se dan cuenta de que lo hacen. Si no incluyes el axioma de elección es como
+31:15
+si estuvieras trabajando con las manos atadas. Sería muy difícil progresar en las matemáticas modernas. La pregunta
+31:22
+nunca fue realmente si el axioma de elección es correcto, sino más bien el axioma de elección es adecuado para lo
+31:29
+que quieres hacer.
+
+0:05
+Andrey Colmogorov nació en 1903 en
+0:09
+Tambov, Rusia, en un país a punto de
+0:12
+desmoronarse.
+0:14
+No conoció a su padre, un revolucionario
+0:17
+ejecutado por sus ideas políticas. Su
+0:20
+madre murió al darlo a luz. Creció bajo
+0:22
+el cuidado de una tía viuda. Sin dinero,
+0:26
+sin libros, sin privilegios. Era un niño
+0:29
+huérfano en un imperio que se desplomaba
+0:32
+y sin embargo tenía algo que nadie podía
+0:35
+quitarle, una obsesión por encontrar
+0:37
+sentido, donde los demás solo veían
+0:41
+caos. De niño no necesitaba cuadernos.
+0:45
+inventaba sus propios problemas,
+0:47
+contando árboles, calculando distancias
+0:50
+a ojo, observando patrones en la
+0:52
+naturaleza.
+0:54
+Mientras otros repetían lo que les
+0:55
+dictaba el maestro, Andrey buscaba sus
+0:59
+propias reglas, como si intuyera que el
+1:02
+universo escondía un orden secreto
+1:05
+detrás de lo imprevisible.
+1:07
+Pronto empezó a brillar. No porque
+1:10
+recitara fórmulas, eso le aburría, sino
+1:13
+porque encontraba caminos nuevos para
+1:15
+resolverlas.
+1:17
+Era un estudiante incómodo, demasiado
+1:20
+creativo, demasiado rápido, demasiado
+1:23
+difícil de encajar en los moldes de la
+1:25
+escuela. La Rusia que lo vio crecer un
+1:28
+mundo de incertidumbre, revoluciones,
+1:31
+hambre, guerras civiles. Quizás por eso
+1:35
+Colmogorof nunca huyó del desorden. Lo
+1:39
+miró de frente. Donde otros veían a Sar.
+1:42
+Él sospechaba que había estructura,
+1:44
+donde los juegos de probabilidad
+1:47
+parecían capricho de la suerte. Él
+1:49
+presintió que había leyes profundas
+1:52
+esperando ser descubiertas.
+1:54
+Esa intuición sería su marca. No solo
+1:57
+sería un gran matemático, sería el
+1:59
+hombre que transformó la probabilidad de
+2:01
+un juego de apuestas en una ciencia
+2:04
+exacta. Con axiomas tan firmes como los
+2:07
+de la geometría.
+2:09
+El niño huérfano, criado sin raíces, se
+2:12
+convertiría en el arquitecto del azar y
+2:15
+en su camino cambiaría para siempre la
+2:18
+manera en que entendemos lo incierto. A
+2:21
+comienzos de los años 20, Rusia ardía
+2:23
+entre revoluciones y hambre. Pero en
+2:27
+Moscú, en los pasillos fríos de la
+2:29
+universidad, un joven de apenas 20 años
+2:33
+empezaba a construir un lenguaje nuevo
+2:35
+para lo incierto. Andrey Colmogorov no
+2:39
+era un estudiante cualquiera. Llegaba a
+2:42
+clase con las botas gastadas y los
+2:44
+bolsillos vacíos, pero con un brillo en
+2:47
+los ojos que intimidaba incluso a los
+2:49
+profesores.
+2:51
+Mientras muchos sobrevivían a duras
+2:53
+penas en un país devastado. Él
+2:56
+encontraba refugio en los números. Muy
+2:59
+pronto su nombre empezó a circular. No
+3:02
+solo resolvía problemas que otros
+3:04
+consideraban imposibles. Inventaba
+3:07
+caminos completamente distintos para
+3:09
+resolverlos. Publicó su primer trabajo
+3:12
+científico con apenas 19 años. En él ya
+3:17
+se intuía lo que vendría. Un intento por
+3:20
+dar forma rigurosa, tío, a lo que
+3:22
+parecía informe. Hasta ese momento, la
+3:25
+probabilidad era poco más que un
+3:28
+conjunto de trucos para juegos de azar y
+3:31
+estadísticas,
+3:32
+una colección de fórmulas útiles, pero
+3:35
+sin un fundamento sólido. Los
+3:37
+matemáticos serios la miraban con
+3:39
+desprecio, como una rama menor, indigna
+3:43
+de compararse con la geometría o el
+3:45
+álgebra. Colmogorov pensaba distinto.
+3:49
+Para él, el azar no era un caos sin ley,
+3:53
+era un territorio virgen que pedía
+3:55
+estructura. La probabilidad no debía ser
+3:58
+intuición ni simple estadística. Debía
+4:01
+tener axiomas, principios claros, tan
+4:04
+firmes como los de Euclides, cuando
+4:07
+fundó la geometría. Fue entonces cuando
+4:10
+empezó a trabajar en lo que lo haría
+4:12
+inmortal, un marco matemático que
+4:15
+convirtiera lo incierto en ciencia, un
+4:18
+sistema capaz de describir no solo
+4:20
+juegos de cartas o dados, sino el
+4:23
+comportamiento del clima, de las
+4:25
+partículas subatómicas, incluso de la
+4:27
+economía y la vida social. Su rebeldía
+4:31
+no estaba en gritar contra el mundo,
+4:33
+sino en darle orden al desorden.
+4:36
+Mientras otros matemáticos buscaban
+4:38
+seguridad en lo determinista, él se
+4:41
+atrevía a poner al azar en el centro de
+4:44
+las matemáticas.
+4:46
+Ese atrevimiento no pasó inadvertido.
+4:49
+Algunos lo consideraban un genio precoz,
+4:52
+otros lo veían como un intruso que
+4:55
+intentaba ennoblecer algo vulgar. Pero
+4:58
+Colmogorov no buscaba aprobación,
+5:01
+buscaba claridad. Sabía que si lograba
+5:04
+sentar las bases, el azar dejaría de ser
+5:07
+un juego para convertirse en una ley. Y
+5:11
+así, poco a poco fue levantando los
+5:14
+cimientos de lo que sería su gran obra,
+5:17
+la axiomática de la probabilidad, la
+5:20
+estructura que cambiaría para siempre la
+5:22
+manera de entender lo incierto. En 1933,
+5:27
+Andrey Colmogorov publicó un libro que
+5:30
+transformaría la historia de las
+5:31
+matemáticas.
+5:33
+Fundamentos de la teoría de la
+5:34
+probabilidad.
+5:36
+Lo que había sido un territorio difuso,
+5:39
+lleno de intuiciones y fórmulas
+5:41
+dispersas, se convirtió en un edificio
+5:44
+sólido con cimientos firmes. Por primera
+5:48
+vez, la probabilidad tenía un lenguaje
+5:50
+universal, tan riguroso como el de la
+5:53
+geometría o el álgebra.
+5:56
+Su idea revolucionaria,
+5:58
+tratar los sucesos inciertos como
+6:01
+conjuntos dentro de un espacio
+6:02
+matemático regidos por reglas claras.
+6:06
+Así nacían los axiomas de Colmogorov.
+6:09
+La probabilidad de cualquier evento es
+6:12
+siempre un número positivo. El evento
+6:14
+seguro tiene probabilidad uno. La
+6:18
+probabilidad de la unión de eventos
+6:20
+incompatibles es la suma de sus
+6:22
+probabilidades.
+6:23
+Tres principios aparentemente sencillos,
+6:26
+pero que lo cambiaban todo. A partir de
+6:29
+ahí, el azar ya no era intuición, era
+6:32
+ciencia. Las cartas, el clima, la
+6:36
+genética, las fluctuaciones del mercado,
+6:39
+las partículas subatómicas, todo podía
+6:42
+pensarse bajo el mismo marco lógico. Con
+6:45
+un solo libro, Colmogorof convirtió la
+6:48
+probabilidad en el idioma de lo
+6:50
+incierto. Lo que antes era un juego,
+6:53
+ahora era una ley. Lo que antes parecía
+6:56
+caótico, ahora podía medirse,
+6:59
+describirse y hasta cierto punto
+7:02
+predecirse. Los matemáticos quedaron
+7:05
+asombrados. Lo que algunos veían como un
+7:08
+campo menor se elevó de pronto a la
+7:10
+altura de las ramas más nobles de la
+7:12
+ciencia. Las universidades comenzaron a
+7:15
+enseñar sus axiomas. Los físicos los
+7:18
+aplicaron a la mecánica cuántica. Los
+7:21
+estadísticos los usaron para dar forma
+7:24
+al análisis de datos. Los economistas
+7:27
+los incorporaron en modelos que
+7:29
+intentaban explicar el comportamiento de
+7:31
+sociedades enteras. El impacto fue tan
+7:34
+grande que en pocas décadas nadie podía
+7:38
+concebir la probabilidad sin Colmogorov.
+7:41
+Él no solo había puesto orden en un
+7:43
+caos, había abierto un puente hacia la
+7:46
+modernidad.
+7:47
+Gracias a sus axiomas, hoy entendemos
+7:50
+que la incertidumbre no es un límite,
+7:52
+sino una condición de la realidad, que
+7:55
+lo imprevisible también tiene reglas,
+7:58
+que incluso el azar obedece a
+8:00
+estructuras más profundas. Colmogorov
+8:04
+había demostrado que el universo podía
+8:06
+ser descrito no solo en términos de
+8:08
+certezas, sino también de posibilidades.
+8:12
+Y esa fue su verdadera ruptura con la
+8:14
+matemática clásica. Hacer del azar, un
+8:18
+territorio digno de ciencia. Colmogorov
+8:21
+no era un matemático de una sola obra.
+8:24
+Después de levantar los cimientos de la
+8:26
+probabilidad, no se detuvo. Miró más
+8:30
+lejos, porque para él las matemáticas no
+8:33
+eran un museo de certezas, sino un
+8:36
+taller donde lo incierto podía
+8:38
+transformarse en estructura. Se adentró
+8:41
+en la teoría de la información. Si el
+8:44
+azar podía medirse, también podía
+8:46
+medirse la complejidad. fue uno de los
+8:49
+primeros en preguntarse qué significa
+8:52
+realmente que algo sea aleatorio.
+8:56
+¿Se puede medir el grado de desorden de
+8:58
+una secuencia? Así nació lo que hoy
+9:00
+llamamos complejidad algorítmica de
+9:03
+Colmogorov.
+9:05
+La idea de que la verdadera medida de
+9:07
+algo está en la longitud mínima del
+9:10
+programa que puede describirlo.
+9:13
+Un concepto que décadas más tarde sería
+9:16
+esencial para la informática, la
+9:18
+criptografía y la inteligencia
+9:20
+artificial.
+9:22
+También miró al cielo la turbulencia del
+9:25
+aire, los remolinos en los ríos, las
+9:28
+nubes que se fragmentan en patrones
+9:30
+extraños. El caos atmosférico lo
+9:33
+fascinaba tanto como los juegos de dados
+9:36
+de su infancia. Y allí también dejó su
+9:39
+huella. Sus teorías sobre la turbulencia
+9:42
+siguen siendo pilares de la física
+9:44
+moderna. Era como si Colmogorov tuviera
+9:48
+una brújula especial. Allí donde los
+9:51
+demás veían confusión, él intuía un
+9:54
+orden oculto. Lo mismo aplicaba a la
+9:57
+biología, a la economía, incluso a la
+10:00
+psicología. Era matemático, sí, pero
+10:03
+pensaba como un explorador. No había
+10:06
+frontera que no quisiera cruzar. Esa
+10:09
+amplitud le dio fama, pero también
+10:11
+críticas. Algunos colegas lo veían
+10:14
+demasiado ambicioso. ¿Cómo podía un solo
+10:17
+hombre opinar con autoridad sobre tantos
+10:20
+campos distintos? Pero Colmogorov no
+10:23
+buscaba apropiarse de territorios, solo
+10:26
+quería tejer puentes, demostrar que la
+10:29
+probabilidad, la información, la
+10:31
+turbulencia, incluso la creatividad
+10:34
+humana compartían una raíz común, la
+10:37
+relación entre orden y desorden. En sus
+10:40
+clases hablaba con pasión. No era un
+10:43
+académico seco, sino un narrador del
+10:46
+azar. podía pasar de explicar una
+10:49
+ecuación, a evocar un río turbulento o
+10:52
+el vuelo de una bandada de pájaros. Sus
+10:55
+alumnos decían que lo escuchaban como
+10:57
+quien escucha a un poeta que usa números
+11:00
+en lugar de metáforas.
+11:02
+En un siglo marcado por guerras, censura
+11:05
+y dogmas políticos, Colmogorov ofrecía
+11:08
+otra forma de mirar la realidad, no como
+11:11
+un destino cerrado, sino como un abanico
+11:14
+de posibilidades, un recordatorio de que
+11:17
+incluso en la incertidumbre puede
+11:20
+encontrarse estructura y que en la
+11:22
+frontera entre el caos y el orden late
+11:25
+la verdadera creatividad. Andrey
+11:28
+Kolmogorov murió en 1987
+11:32
+en Moscú, la misma ciudad donde había
+11:35
+levantado su imperio de números y
+11:37
+posibilidades.
+11:39
+No dejó un manifiesto ni buscó construir
+11:41
+una escuela con su nombre. dejó algo más
+11:45
+profundo, una forma de pensar lo
+11:47
+incierto. Hoy sus huellas están por
+11:50
+todas partes. Cada vez que un
+11:53
+meteorólogo predice una tormenta, cada
+11:56
+vez que un economista modela una crisis,
+11:59
+cada vez que un ingeniero diseña
+12:01
+algoritmos para una computadora,
+12:04
+detrás de todo eso está Colmogorov,
+12:07
+recordándonos que el azar no es un
+12:10
+enemigo, sino un material con el que
+12:13
+trabajar. Su teoría de la probabilidad
+12:16
+sostiene la ciencia moderna. Su noción
+12:19
+de complejidad informa a la inteligencia
+12:22
+artificial.
+12:23
+Sus modelos de turbulencia siguen
+12:25
+guiando a la física y a la climatología.
+12:29
+y su visión interdisciplinaria
+12:31
+inspiró a generaciones que entendieron
+12:34
+que las matemáticas no son un lenguaje
+12:36
+frío, sino una brújula para orientarse
+12:40
+en lo desconocido.
+12:42
+Sol Mogorov fue disruptivo porque
+12:45
+dignificó lo incierto, le dio axiomas al
+12:48
+azar, nos mostró que incluso el caos
+12:51
+obedece a reglas y que el futuro no es
+12:54
+un misterio vacío, sino un espacio lleno
+12:57
+de posibilidades medibles. Pero más allá
+12:59
+de sus teorías, su legado es también
+13:02
+humano. El niño huérfano, criado en la
+13:05
+pobreza, se convirtió en la mente que
+13:07
+ordenó lo impredecible y con ello nos
+13:10
+dejó un recordatorio que incluso de las
+13:13
+condiciones más inestables pueden hacer
+13:15
+una estructura nueva, que la vida misma,
+13:19
+como sus ecuaciones, es un juego entre
+13:21
+azar y orden. En un mundo donde las
+13:25
+crisis se acumulan, Colmogorov nos sigue
+13:28
+diciendo al oído, "No huyan de la
+13:31
+incertidumbre, aprendan de ella, porque
+13:34
+es ahí, en el borde del desorden, donde
+13:37
+pueden hacerlo inesperado.
+13:40
+Si esta historia te inspiró, si alguna
+13:43
+vez sentiste que la vida era puro azar,
+13:45
+suscríbete.
+13:47
+Aquí celebramos a quienes se atrevieron
+13:49
+a darle sentido a lo impredecible, a los
+13:52
+que escucharon en el caos la música del
+13:55
+universo.
+
+0:00
+en montones de aplicaciones es
+0:01
+importantísimo tener números aleatorios
+0:03
+números elegidos al azar por supuesto
+0:06
+esto es importantísimo en los juegos de
+0:07
+azar plano claro en juegos de mesa en
+0:10
+juegos de rol donde un dado de 20 caras
+0:12
+puede decidir la suerte de tu mago del
+0:14
+nivel 15 pero también en otras muchas
+0:16
+situaciones como por ejemplo en
+0:18
+simulación de ciertos sistemas físicos o
+0:20
+en la seguridad informática en donde
+0:22
+existen claves que dependen de elegir un
+0:24
+número de aleatorio y hacer unas
+0:26
+operaciones con él no les prestamos
+0:28
+mucha atención pero es muy muy
+0:30
+importante poder generar números
+0:32
+aleatorios en un ordenador lo que ocurre
+0:34
+es que hay un problema tremendo resulta
+0:36
+que es imposible al menos sin ayuda
+0:38
+vamos a verlo
+0:40
+[Música]
+0:45
+los números aleatorios son números
+0:46
+elegidos al azar por ejemplo yo que sé
+0:48
+un número del 1 al 100 y que cada uno
+0:50
+tenga la misma probabilidad de aparecer
+0:52
+que cualquier otro medir y vaya pues no
+0:54
+es tan difícil te digo el primero que se
+0:55
+me pase por la cabeza y ya está no
+0:57
+aleatorio pues no pues está demostrado
+1:00
+que si preguntamos a miles de personas
+1:01
+por un número cualquiera del 1 al 100
+1:03
+enseguida aparecen patrones son mucho
+1:06
+más frecuentes los números acabados en 7
+1:08
+o en 3 la gente dice más a menudo
+1:10
+números impares que pares y casi nunca
+1:13
+dicen números acabados en 5 o en 0 la
+1:15
+gente no somos buenos generadores de
+1:17
+números aleatorios aquí tenéis por
+1:19
+ejemplo una encuesta a 8 mil 500
+1:21
+personas para que dijeran un número
+1:23
+cualquiera entre 0 y 10 casi la tercera
+1:25
+parte elige el 7 así que uno no puede
+1:29
+fiar la aleatoriedad a la gente es
+1:30
+demasiado importante por supuesto sí que
+1:33
+hay sistemas aleatorios lo más común son
+1:35
+dados de hecho hay máquinas que hacen
+1:37
+miles de tiradas de dados cómo está la
+1:39
+máquina dize o martín pero a nivel pro
+1:42
+lo mejor son sistemas cuánticos hay de
+1:44
+muchos tipos por ejemplo hay sistemas
+1:46
+que escuchan el vacío cuántico y
+1:48
+convierte en la aparición aleatoria de
+1:50
+partículas en números aquí tenéis una
+1:52
+página web que hace exactamente eso y te
+1:54
+dan números aleatorios o colores u otras
+1:56
+cosas ya pero no todo el mundo puede
+1:59
+tener un escuchador de vacío cuántico en
+2:01
+casa o en su empresa con su detector de
+2:04
+partículas y pasárselo al ordenador
+2:06
+cuando necesitas un número aleatorio
+2:07
+entonces qué hacemos como lo hacen los
+2:10
+ordenadores que ya me imagino a gente
+2:11
+ahí mordiéndose los labios
+2:14
+hiperventilando mientras avanza el vídeo
+2:16
+y pensando pues mi ordenador hace
+2:18
+números aleatorios porque yo programo en
+2:21
+c y en python y en otros tres lenguajes
+2:24
+y siempre hay una función que se llama
+2:26
+run y eso hace números aleatorios y yo
+2:28
+los uso en mis programas listo bueno un
+2:31
+segundito acá lo que los ordenadores
+2:33
+hacen se llaman números pseudo
+2:35
+aleatorios y te los voy a contar en un
+2:37
+segundito para que te relajes los
+2:39
+ordenadores son los menos aleatorio que
+2:41
+hay y por eso los queremos claro porque
+2:43
+queremos que hagan exactamente lo que se
+2:45
+espera de ellos lo que el programa dice
+2:47
+así que que como le pedimos a un
+2:50
+ordenador que elija
+2:52
+griffith le pita el chip los ordenadores
+2:54
+usan números pseudo aleatorios osea
+2:57
+parecidos a aleatorios y más baratos que
+3:00
+un escuchador de vacío cuántico los usan
+3:02
+todos los ordenadores incluso tu móvil
+3:04
+los genera sin la calculadora los
+3:05
+números pseudo aleatorios se generan a
+3:07
+partir de un número inicial que se llama
+3:09
+semilla que has de de algún lado y
+3:11
+un proceso matemático que vaya generando
+3:13
+una sucesión de números por ejemplo
+3:15
+podemos una semilla cualquiera el
+3:16
+77 por ejemplo multiplicarlo por un
+3:19
+número grande como el 70 mil 907 y el
+3:21
+resultado dividirlo por 534 con eso
+3:24
+obtenemos el 108 335 a éste le hacemos
+3:27
+lo mismo multiplicar por 70 mil 907 y
+3:30
+dividir por 534 y obtenemos el 13.000 60
+3:33
+0 59 y podríamos seguir así mis
+3:36
+operaciones para obtener la secuencia
+3:37
+son muy cutres además mi número siempre
+3:40
+va creciendo pero la idea es más o menos
+3:42
+así y no creéis que está tan alejada de
+3:44
+la realidad por ejemplo la antigua
+3:46
+función rand
+3:47
+de ibm usaba también las operaciones
+3:49
+multiplicar por 65 mil 539 y dividir por
+3:54
+2 mil 147 millones 483 mil 648 el otro
+3:58
+ingrediente de la sucesión de números
+3:59
+aleatorios es el número inicial lo que
+4:01
+se llama la semilla y eso se coge
+4:03
+normalmente de fenómenos físicos que el
+4:05
+ordenador pueda registrar como la hora
+4:08
+por ejemplo la cantidad de bits que
+4:10
+tenga de espacio libre el disco en ese
+4:12
+momento identificadores de procesos que
+4:14
+están ocurriendo dentro del ordenador o
+4:17
+una mezcla de todas esas cosas los
+4:19
+sistemas para generar semillas son
+4:20
+bastante buenos pero lo de las
+4:21
+sucesiones no es tan sencillo fue famoso
+4:24
+un error del algoritmo que usaban nada
+4:26
+menos que google con su navegador chrome
+4:28
+para registrar los nuevos usuarios de
+4:30
+una cierta aplicación les daban números
+4:32
+de usuario aleatorios en realidad pseudo
+4:34
+aleatorios de sabes utilizando un
+4:36
+algoritmo llamado mwc 16 a partir de
+4:40
+determinado momento el algoritmo empezó
+4:42
+a generar números repetidos y los
+4:44
+usuarios no quedaban registrados y eso
+4:46
+fue en 2016 no hacen nada cuando los
+4:48
+números se repiten o en malas obras
+4:50
+porque significa que nuestra sucesión
+4:52
+aleatoria ya va a ser siempre la misma
+4:54
+hoy en día en buena parte de generadores
+4:56
+de números aleatorios se utilizan una
+4:57
+técnica llamada el f linear feedback y
+5:01
+chiste que utiliza funciones lógicas
+5:03
+sencillas y por tanto es muy fácil de
+5:06
+programar y lo que es mejor es muy fácil
+5:08
+de implementar a nivel del hardware con
+5:10
+lo que sirve para generar números
+5:11
+aleatorios en aparatos pequeñitos como
+5:13
+en nuestra tarjeta que si la cosa es
+5:15
+bastante simple sorprendentemente
+5:16
+efectiva y se basa en lógica en unas
+5:19
+operaciones lógicas se trata de empezar
+5:20
+con una semilla en binario por ejemplo
+5:22
+una de 5 bits como ésta y lo que hacemos
+5:24
+es un proceso que en cada repetición
+5:27
+saca el último bit del número que
+5:29
+obtengamos ese último bit de cada paso
+5:30
+los van encadenando todos para producir
+5:32
+un número largo lo bueno es que si lo
+5:34
+hacemos bien la semilla no se repite en
+5:36
+mucho tiempo por ejemplo con 5 bits
+5:38
+podemos generar 31 números diferentes en
+5:40
+un orden que sólo dependerá de la
+5:42
+semilla inicial son 31 porque 2 elevado
+5:45
+a 5 es 32 y le quitamos 1 porque el que
+5:47
+tiene todo ceros no lo usamos el proceso
+5:49
+que hacemos es el siguiente extraemos el
+5:51
+bit de la derecha corremos los otros 4
+5:53
+la derecha y metemos a la izquierda un
+5:55
+nuevo bit y como se obtiene este vid
+5:57
+nuevo pues aplicando una operación
+5:59
+lógica a nuestros bits por ejemplo
+6:01
+podemos aplicar sol a los dos últimos
+6:03
+sólo vale 1 si son diferentes y ceros y
+6:06
+el resultado lo colocamos a la izquierda
+6:07
+y así tenemos de nuevo 5 bits y volvemos
+6:09
+a hacer lo mismo para esto podemos
+6:11
+aplicar diferentes funciones no un
+6:13
+simple short con lo que os podéis
+6:14
+imaginar que hay muchos tipos de lf s/r
+6:17
+diferentes hasta hay uno que se llama de
+6:19
+fibonacci
+6:20
+vamos con el ejemplo empezamos con 0 1 1
+6:22
+0 1 sacamos el número final ya tenemos
+6:24
+un bit y corremos los otros 4 a la
+6:26
+derecha y hacemos uso de los dos últimos
+6:27
+que como son 1 y 0 distintos resultados
+6:30
+1 con lo que nuestros 5 bits se han
+6:32
+convertido en 1 0 1 1 0 muy bien sacamos
+6:35
+ahora el último 0 que se une al 1 que
+6:37
+teníamos antes y repetimos el proceso
+6:39
+así vamos sacando unos y ceros que
+6:41
+podemos convertir en números en colores
+6:43
+en lo que queramos y que
+6:44
+estadísticamente se comportan como
+6:46
+aleatorios es casi como lanzar una
+6:48
+moneda esta es una forma buenísima de
+6:50
+conseguir números pseudo aleatorios y
+6:52
+que es muy usada su virtud viene
+6:54
+precisamente de que la semilla va a
+6:55
+tardar mucho en aparecer de nuevo por
+6:57
+ejemplo si nuestra semilla tiene 256
+7:00
+bits y hacemos este proceso mil veces
+7:03
+por segundo podemos estar generando
+7:04
+números sin repetir durante millones de
+7:07
+años muchas pero muchas veces la vida
+7:09
+del universo así que bueno ya veis que
+7:11
+con ingenio casi puede los ordenadores
+7:13
+no pueden ellos solitos generan números
+7:15
+aleatorios puros pero sí que pueden
+7:17
+hacer números pseudo aleatorios de mucha
+7:19
+calidad que casi parecen aleatorios y
+7:21
+eso usando funciones lógicas muy básicas
+7:24
+viva la lógica de mis entretelas bueno
+7:27
+para terminar os dejo una definición que
+7:29
+me encanta de sucesión aleatoria y que
+7:31
+se debe a android como core o un
+7:33
+matemático alucinante y que seguramente
+7:35
+os va a dejar pensando una sucesión es
+7:37
+aleatoria si es igual o más corta que
+7:41
+cualquier descripción de ella ahí te
+7:43
+queda eso hasta el próximo vídeo
+7:47
+[Música]
+
+0:00
+la probabilidad de que te toque el gordo
+0:01
+de navidad cuando compras un décimo es
+0:03
+de 1 entre 100.000 es decir de 1000 1% y
+0:09
+lo mismo pasa con el segundo y el tercer
+0:11
+premio por poner el dato en contexto es
+0:14
+más probable quedarse embarazada tomando
+0:16
+la píldora hay un riesgo del 0,1 por
+0:19
+ciento o que ese hijo nazca con un dedo
+0:21
+además le ocurre a uno de cada 500 bebés
+0:25
+la primera lotería de navidad se hizo el
+0:27
+18 de diciembre de 1812 el primer gordo
+0:31
+de la historia de la lotería de navidad
+0:32
+fue para el 3 mil 604 con un premio de 8
+0:37
+mil reales de la época que equivalen a 6
+0:39
+mil 88 euros
+0:41
+prósperos premios era su nombre hasta
+0:44
+1892 año en el que ya se catalogó como
+0:47
+sorteo de navidad ahora 209 años después
+0:51
+los agraciados con el primer premio
+0:53
+reciben nada menos que 400 mil euros por
+0:56
+cada décimo jugado si difícil es que
+0:58
+toque también es muy raro que se repita
+1:00
+de hecho sólo dos números han repetido
+1:02
+éxito el número
+1:04
+20.297 fue el ganador del sorteo
+1:07
+extraordinario de navidad de 2006 que
+1:10
+dejó 400 millones de euros en soria y 90
+1:13
+en sevilla este mismo número fue el
+1:16
+primer premio en el sorteo de 1903 la
+1:20
+otra ocasión en la que se ha repetido el
+1:22
+número del primer premio fue en
+1:24
+1978 con el número 15 mil 560 que 20
+1:28
+años atrás salió como ganador en
+1:31
+1956
+1:32
+la probabilidad de que un número
+1:34
+premiado con el gordo se repita es muy
+1:36
+baja existe una posibilidad entre
+1:38
+100.000 de que esto suceda en el sorteo
+1:41
+extraordinario de navidad es decir un
+1:44
+porcentaje del 0,00 1% como te dijimos
+1:48
+es la misma probabilidad de que tu
+1:50
+número jugado toque por lo que las
+1:51
+posibilidades de resultar millonario son
+1:54
+las mismas tanto si juegas con un número
+1:56
+nuevo como si repites el del año
+1:58
+anterior el gordo se ha repetido hasta
+2:00
+en cuatro ocasiones en sus últimas tres
+2:03
+cifras
+2:05
+25.444
+2:07
+25.888
+2:08
+[Música]
+2:10
+35.999 y
+2:13
+55.666 pero sin embargo hay cifras en
+2:16
+las que nunca ha terminado como el 0 9
+2:19
+10 21 25 31 34 41 42 43 51 54 59 67 78 y
+2:34
+82 está claro que las matemáticas son
+2:37
+matemáticas y no se las pueden
+2:39
+pero el siguiente dato es muy curioso en
+2:42
+el gordo de navidad hay un número que
+2:44
+suele traer mucha suerte a los
+2:45
+participantes en el sorteo y ese es el 5
+2:48
+el cual se ha repetido a lo largo de la
+2:51
+historia en 32 ocasiones le sigue en el
+2:54
+4 y el 6 con 27 veces cada uno los menos
+2:58
+repetidos son el 1 el 2 y el 9 el número
+3:02
+1 solo se ha repetido en ocho ocasiones
+3:04
+el 2 en 13 y el 9 en 18 ocasiones si nos
+3:09
+fijamos en las dos cifras finales las
+3:12
+más afortunadas son el 85 que se ha
+3:15
+repetido siete veces el 57 ha salido en
+3:18
+seis ocasiones el 75 y el 64 en cinco
+3:22
+ocasiones cada uno y el 94 ha salido en
+3:26
+cuatro ocasiones en las tres cifras
+3:29
+finales
+3:30
+297
+3:32
+457 y el 515 se han repetido en tres
+3:36
+ocasiones el 297 ha salido dos veces con
+3:40
+el
+3:41
+20.297 y otra con el
+3:44
+4.297
+3:46
+457 ha repartido suerte en los números
+3:50
+2457
+3:52
+4.457 y
+3:55
+9.457 y el 515 con
+3:59
+12.515
+4:00
+13.515 y 21 mil 515 por otra parte la
+4:06
+lotería del niño reparte más premios que
+4:08
+la de navidad el sorteo de reyes del
+4:11
+próximo 6 de enero tiene siete mil 813
+4:13
+premios frente a los cinco mil 305 de
+4:16
+navidad las probabilidades de ganar
+4:18
+aunque sea la pedrea pasan del 5 300 5%
+4:23
+de la lotería de navidad al 7 82 por
+4:26
+ciento de la lotería del niño aunque la
+4:29
+probabilidad de ganar el primer premio
+4:30
+sigue siendo igual de baja
+4:32
+0,001 por ciento es decir una entre
+4:36
+100.000 y el premio es menor en vez de
+4:39
+400 mil euros del gordo de navidad es la
+4:41
+mitad 200.000 euros por décimo
+4:44
+por otra parte hay que sumar el dinero
+4:46
+que recauda hacienda de los premios de
+4:48
+la lotería de navidad en 2021 se
+4:52
+mantiene
+4:53
+del 20 de la parte de cada premio que
+4:55
+exceda el importe exento de 40 mil euros
+4:58
+en el año 2019 loterías y apuestas del
+5:02
+estado alcanzó un beneficio de 9 mil 257
+5:05
+millones de euros de esta cantidad 2 mil
+5:08
+906 millones de euros se obtuvieron a
+5:10
+través de la venta de lotería de navidad
+5:12
+a esta cifra también hay que sumar el
+5:15
+dinero que el estado ingresa en concepto
+5:17
+de impuestos que recauda de empresas
+5:19
+dedicadas a los juegos de azar en madrid
+5:22
+está la administración más famosa de
+5:24
+españa y en la que más premios se han
+5:26
+repartido en toda la historia doña
+5:28
+manolita se encuentra en todo el centro
+5:30
+de madrid y durante todo el año está
+5:32
+vendiendo lotería a tal nivel que todos
+5:34
+los años se agota stock días antes del
+5:37
+sorteo pero porque toca tantas veces ahí
+5:40
+pues como siempre pura matemática es la
+5:43
+administración que más números vende en
+5:45
+toda españa- no es que tenga información
+5:47
+privilegiada
+5:49
+hablar de la lotería es hablar de una
+5:51
+gran ilusión la ilusión de comprar un
+5:53
+boleto esperar el sorteo y cuando den el
+5:56
+resultado comparar y revisar una dos
+5:59
+tres y todas las veces que sea necesario
+6:02
+si te ha tocado tu cabeza se inundara de
+6:05
+preguntas como cuánto es el premio
+6:07
+cuánto dinero me ha tocado después de
+6:10
+eso querrás ir corriendo a cobrarlo y lo
+6:13
+más fácil o quizá lo más difícil pensar
+6:15
+en cómo utilizar ese dinero por el
+6:18
+contrario si tus boletos no tienen
+6:20
+ningún premio la emoción se convierte en
+6:23
+decepción pasar de la euforia por ganar
+6:26
+un premio de lotería o incluso por la
+6:28
+sola posibilidad de ganarlo a la
+6:30
+decepción luego de corroborar que no lo
+6:32
+ganaste es una actitud que intriga y
+6:35
+seguirá intrigando a lo largo de los
+6:37
+años a los economistas si las personas
+6:40
+fueran racionales y sus decisiones
+6:41
+estuvieran orientadas a maximizar sus
+6:44
+rentas es difícil entender por qué hay
+6:46
+gente que juega a la lotería y por qué
+6:48
+es tan popular comprar un boleto de
+6:50
+lotería equivale a comprar un activo
+6:52
+económico de valor inferior a su precio
+6:55
+contradice la racionalidad económica
+6:57
+entonces las personas siguen comprando
+7:00
+boletos de lotería porque siguen
+7:02
+impulsos como la ilusión por la emoción
+7:04
+irracional de ganar el premio confiando
+7:07
+en su propia suerte o porque pueden
+7:09
+creer que son adivinos o astrólogos los
+7:11
+premios de la lotería limitan la
+7:13
+capacidad de racionamiento de los
+7:15
+jugadores haciéndoles asumir riesgos que
+7:17
+van más allá de la lógica la idea de
+7:20
+hacerse rico de un momento a otro con un
+7:22
+golpe de suerte es una aspiración humana
+7:24
+desde los inicios de la civilización
+HISTORIA DE LA LOTERÍA
+7:26
+de acuerdo con los registros históricos
+7:28
+la lotería se originó en un juego
+7:31
+similar en la china pre cristiana hacia
+7:33
+el siglo dos antes de cristo- durante la
+7:35
+dinastía de jan en la que se jugaba al
+7:37
+que no un juego que consistía en
+7:40
+adivinar qué números contienen premios
+7:42
+similar al bingo que como dato curioso
+7:44
+se ha llegado a comprobar que contribuyó
+7:47
+a financiar la muralla china
+7:49
+y años más tarde apareció en fiestas
+7:51
+romanas cuando el emperador otorgaba
+7:53
+premios a los invitados a estas
+7:55
+celebraciones sin embargo no todos los
+7:57
+premios serán especialmente deseados por
+8:00
+ejemplo el emperador heliogábalo
+8:02
+prefería repartir garbanzos esclavos
+8:06
+serpientes y hasta sentencias de muerte
+8:09
+existen teorías que afirman que en la
+8:12
+antigua roma existía una lotería que se
+8:14
+organizaba para la festividad de la
+8:16
+saturnalia una de las más importantes
+8:19
+realizadas en honor a la diosa fortuna
+8:20
+en el templo de saturno dios de la
+8:23
+agricultura y las cosechas los juegos de
+8:26
+azar estaban prohibidos en roma' por ley
+8:28
+y sólo se permitía jugar en tiempo de
+8:31
+saturn al ya que se celebraba en el
+8:33
+solsticio de invierno correspondiente
+8:35
+aproximadamente al 17 de diciembre de
+8:37
+nuestro calendario y para muchos podría
+8:40
+considerarse el principal antecedente
+8:42
+pagano de la lotería de navidad actual
+8:45
+para el juego se arrojaba a la
+8:47
+muchedumbre un gran número de tablillas
+8:49
+en las que habían sido inscritos
+8:51
+diversos dones premios y trofeos podían
+8:55
+participar todos incluso los esclavos lo
+8:57
+cual era uno de los pocos momentos del
+8:59
+año donde podrían tener algún golpe de
+9:02
+suerte para empezar recibían alimentos
+9:04
+más refinados algo que no comían
+9:06
+habitualmente y sobre todo más cantidad
+9:10
+de vino en algunos casos hasta tres
+9:12
+litros y medio más también recibían de
+9:15
+sus señores dinero extra que podían ir
+9:17
+guardando para comprar su propia
+9:18
+libertad al que se sumaban las
+9:20
+cantidades que ganaran en los juegos de
+9:22
+dados o de tablas los ciudadanos romanos
+9:25
+podían tener también golpes de suerte en
+9:27
+saturnalia y cuando se celebraban juegos
+9:30
+de gladiadores de cierta fama el juego
+9:32
+consistía en tirar bolas al público que
+9:35
+llevaban dentro regalos y que podían ser
+9:37
+desde algunas monedas hasta una casa
+9:40
+los romanos tenían números favoritos
+9:42
+para sus juegos de lotería prefiriendo
+9:44
+números impares y los múltiplos de 3
+9:46
+pues éstos iban unidos a la magia los
+9:49
+ritos y el pensamiento religioso pero la
+9:52
+lotería y los juegos de azar podían ir
+9:55
+incluso más allá y se utilizaban para
+9:57
+todo incluso para el amor pues se dice
+9:59
+que había una lotería que emparejaba a
+10:02
+los adolescentes durante un año se
+10:05
+introducían los nombres de los chicos en
+10:06
+una caja y los de las chicas en otra y
+10:09
+se sacaban dos nombres quedando así
+10:11
+emparejados por la suerte los así unidos
+10:14
+asistían juntos a las fiestas bailes y a
+10:17
+diferentes eventos de la ciudad
+10:19
+la lotería decidía el destino y el azar
+10:22
+unía a las personas el futuro dependía
+10:25
+de la buena o la mala suerte hacia
+10:27
+finales de la edad media los
+10:29
+comerciantes venecianos solían
+10:30
+deshacerse de las mercancías de difícil
+10:32
+salida rifando una serie de lotes por un
+10:35
+módico precio se podía adquirir una
+10:37
+serie de bienes y la suerte acompañaba y
+10:40
+a la vez el comerciante ganaba un dinero
+10:42
+con los boletos que no podría haber
+10:44
+ganado si no hubiese conseguido vender
+10:46
+esos difíciles de vender durante esta
+10:49
+época la rifa solo tenía de este tipo no
+10:51
+evolucionaron mucho siempre estaban
+10:54
+destinadas a solventar algún problema
+10:56
+puntual de llenar las arcas del rey
+10:58
+mientras en muchos lugares fueron
+11:00
+prohibidas en otros lugares empezaron a
+11:02
+aparecer las casas de apuestas con
+11:04
+licencia pertenecientes a las clases
+11:06
+pudientes
+11:07
+aunque los pobres continuaron jugando a
+11:09
+escondidas arriesgándose a ser multados
+11:12
+la lotería moderna por su parte deriva
+11:15
+del francés loto y empezó como un juego
+11:18
+introducido en francia en 1525 por los
+11:21
+soldados de francisco primero
+11:23
+provenientes de italia tiene su origen
+11:25
+de la subasta que se realizaba después
+11:27
+de una guerra entre los soldados en la
+11:29
+cual se sorteaban los terrenos
+11:31
+conquistados en ellos el soldado
+11:33
+construía su casa la cultivaba y vivía
+11:36
+allí por muchos años se casaba y tenía
+11:39
+hijos y al morir el terreno se repartía
+11:42
+entre los hijos y esa herencia se
+11:44
+llamaba lote aunque la tierra del
+11:46
+propietario ya ha envejecido se dividía
+11:48
+en parcelas de igual tamaño no todas
+11:50
+eran iguales por ejemplo a un hijo le
+11:53
+tocaba el terreno donde estaba la casa
+11:55
+al segundo le tocaba la que estaba al
+11:57
+lado del río al tercero le tocaba en las
+12:00
+tierras más fértiles para cultivar y al
+12:03
+cuarto le tocaba tierras sin agua ni
+12:05
+caminos pedregosas y montañosas visto
+12:08
+así el primer hijo era el que se ganaba
+12:11
+la lotería el mejor lote mientras que el
+12:13
+resto y en especial el último no tenían
+12:16
+tanta suerte ahora si alguien tocaba el
+12:20
+mejor campo sin haber sido soldado ni
+12:22
+trabajado allí como por ejemplo siendo
+12:24
+heredado de un tío rico que no tenía
+12:27
+hijos ahí sí que se podía decir que te
+12:29
+había tocado la lotería
+12:31
+visto que era una buena forma de
+12:33
+recaudar importantes sumas de dinero la
+12:36
+lotería se difundió y expandió por
+12:38
+varios países primero en los países
+12:40
+europeos y posteriormente a américa
+12:43
+ahora bien gana la lotería es sólo cosa
+MANDEL GANÓ 14 VECES LA LOTERÍA
+12:46
+de suerte si supiéramos que con las
+12:49
+matemáticas podríamos ser capaces de
+12:51
+ganar la lotería muchos de nosotros
+12:53
+seguro que le pondríamos más atención a
+12:55
+la comprensión de operaciones numéricas
+12:57
+que de pequeño no nos interesaron es el
+13:00
+caso de stefan man de un reconocido
+13:03
+profesor de matemática rumano que
+13:05
+utilizó sus habilidades para idear una
+13:07
+fórmula a mediados de los años 50 que le
+13:10
+permitió ganar la lotería 14 veces si
+13:13
+has oído bien tú sueñas con ganarla una
+13:16
+vez y te parece algo casi imposible y él
+13:18
+la ganó 14 veces quiere saber cómo en
+13:21
+aquella época mandel junto a un grupo de
+13:24
+amigos y les propuso una idea difícil de
+13:26
+rechazar comprar boletos de lotería con
+13:29
+las combinaciones que el propio
+13:30
+matemático les ofrecía y a cambio si
+13:34
+llegase a ganar les daría una porción
+13:36
+del premio la idea era que tanto él como
+13:39
+sus amigos invirtieron una cantidad de
+13:41
+dinero óptima para dar con el boleto
+13:43
+ganador con el plan puesto en marcha
+13:45
+mandel se propuso desafiar a las casas
+13:47
+de apuestas de su país natal para el
+13:50
+profesor todo esto eran meras
+13:51
+operaciones matemáticas por lo que se
+13:53
+propuso identificar cómo se configura el
+13:56
+azar en las casas de apuestas el método
+13:58
+consistía en hallar loterías en las que
+14:01
+el premio mayor fuera tres veces más
+14:03
+amplio que el número de posibilidades de
+14:05
+ganar con ello mandel se dirigía a
+14:07
+comprar todos los boletos con las
+14:09
+posibles variantes es decir si en un
+14:12
+bombo hay 40 números y tienes que
+14:14
+acertar 6 hay 3 millones
+14:17
+838 mil 380 combinaciones por lo que
+14:21
+comprando todos los boletos a un precio
+14:24
+de aproximado de 3 millones se aseguraba
+14:27
+el boleto ganador dejando un margen de
+14:29
+ganancia de 9 millones si bien es una
+14:31
+inversión de tiempo y dinero importante
+14:34
+mandel pudo hacerse con una gran fortuna
+14:36
+mediante esta modalidad tan sólo en
+14:39
+rumanía logró ganar el premio en 12
+14:41
+oportunidades
+14:42
+ahora bien el fbi y la cia estaban tras
+14:45
+su rastro la gran fortuna que recolectó
+14:48
+lo llevó a salir del país y probar
+14:50
+suerte en otras naciones a mediados de
+14:52
+la década de los 80 llegó a los eeuu
+14:54
+para probar con su exitoso método de
+14:57
+hacer dinero allí logró recolectar una
+15:00
+suma de 30 millones de dólares sin
+15:02
+embargo no todo era de color de rosa
+15:04
+pues las autoridades norteamericanas
+15:06
+empezaron a investigar a mandel por sus
+15:09
+constantes aciertos en distintas casas
+15:11
+de apuestas su método fue descubierto
+15:13
+por la cia y el fbi quienes empezaron a
+15:16
+realizar los trámites correspondientes
+15:17
+para su judicialización pero mándela
+15:20
+huyó a israel en donde estuvo oculto un
+15:23
+tiempo hasta que también empezó a
+15:25
+replicar su método allí las autoridades
+15:27
+de aquel país procedieron a su captura y
+15:30
+en 2002 fue judicial izado terminó
+15:33
+pagando la fianza de su pena pero cuando
+15:35
+fue liberado lo estaban esperando las
+15:37
+autoridades estadounidenses nuevamente
+15:40
+se escapó dejando a su esposa e hijos en
+15:43
+israel para aterrizar en londres
+15:45
+finalmente en el 2004 el hombre fue
+15:48
+condenado por la justicia de los eeuu en
+15:51
+donde tuvo que cumplir una condena de 10
+15:53
+meses de prisión y un pago de 30 mil
+15:55
+dólares no se ha sabido nada más del
+15:57
+matemático tras su liberación a
+15:59
+principios de 2005 de todas formas
+16:02
+algunos especulan que ya está entrado en
+16:05
+una edad avanzada por lo que se
+16:06
+encuentra descansando en las vano a tu
+16:09
+un país isleño muy cerca al continente
+16:12
+oceánico
+16:12
+hasta el día de hoy es imposible
+16:14
+calcular cuánto dinero recolectó el
+16:16
+rumano durante casi medio siglo ganando
+16:18
+loterías una última recomendación
+16:21
+si te hace realmente mucha ilusión jugar
+16:24
+la lotería está bien nombra los números
+16:28
+que quieras pero desde aquí creemos que
+16:30
+con los veinte euros que cuesta un
+16:32
+número de lotería puedes gastarlo en
+16:35
+cosas mejores o directamente hacer más
+16:38
+regalos a tus seres queridos porque en
+16:41
+la lotería ya sabes quién gana el que la
+16:44
+organiza y en el caso de la lotería de
+16:47
+navidad y el niño es el estado español
+16:51
+ellos siempre ganan y mucho mucho pero
+16:56
+que mucho dinero
+17:03
+esperemos que te haya gustado el vídeo
+17:05
+si es así nos ayudaría muchísimo que nos
+17:08
+dejas es un comentario ya que la red
+17:10
+neuronal de google esto lo valora
+17:12
+muchísimo y así recomienda nuestros
+17:14
+vídeos a más gente nos dejas es tu like
+17:16
+y actives la campanita para que te
+17:18
+llegue una notificación cuando subamos
+17:20
+nuestro próximo vídeo así que nos vemos
+17:23
+en él un saludo
+
+0:01
+las siguientes escenas pertenecen a la película ''mas allá de luz'' esta basada en hecho reales y fueron tomadas a modo de estudio y reflexión
+0:13
+rojo rojo o rojo
+0:24
+negro
+0:29
+sabes natal
+0:34
+el azar no existe
+0:38
+hola a todos son muchas las personas interesadas  en saber cuáles son los números de la suerte  
+0:44
+cuáles son los números ganadores o cuáles son  las combinaciones exactas que los harán ganar  
+0:53
+en fin algunas personas incluso gurús consideran  que la lotería es cosa de azar que simplemente  
+1:02
+no hay forma de saberlo quédate hasta el  final te compartiré algunos tips o métodos  
+1:11
+cuál es la diferencia entre una persona que  ha ganado la lotería y una que no? la única  
+1:20
+diferencia está en la vibración todos vibramos y  todos tenemos la misma posibilidad de ganar dinero  
+1:28
+así como otros lo hacen y aquí empieza todo si  tú crees que tienes la posibilidad de ganar estás  
+1:37
+dentro del juego pero si dudas ganar apostando  créeme que difícilmente ganarás un premio  
+1:45
+quizás seas una persona que ha jugado varias veces o por años y aún no has tenido la suerte de ganar  
+1:52
+o de recuperar por lo menos lo invertido considero  que si alguien conociera los números ganadores no  
+2:01
+lo revelaría simplemente jugaría ganar y si  alguien revela los números es solo porque  
+2:09
+quizás ignoraba que eran los números ganadores  pero sí quiero escucharme más positivo podría  
+2:17
+decir que se trata de una persona que tiene  habilidades inusuales y que desinteresadamente  
+2:23
+revela dichos números no obstante existen muchos métodos en internet que hablan sobre la idea de  
+2:32
+ganar la lotería o sobre cómo acercarse más a la  posibilidad de ganar yo no te puedo decir si son  
+2:39
+ciertos o no si funcionan o no no obstante hay  personas que dicen haber ganado por lo menos  
+2:47
+algunos premios con estos métodos al final cada  uno tomará su propia decisión y te soy honesto yo  
+2:56
+no he intentado jugar a ganar la lotería aunque sé  que existe la posibilidad si te interesa quédate a  
+3:03
+ver el vídeo un abrazo para todos no hago ninguna  recomendación solo te comparto lo que ya existe
+3:14
+el primer método del que vamos a hablar es el  número sagrado 199 de gabriel agesta y se trata de  
+3:22
+activar la energía de la suerte y la buena fortuna  este código se activa a través de la repetición o  
+3:30
+ejercitación de este número por 45 veces y puede  ser apoyado por afirmaciones que complemente  
+3:38
+dicha intención así como de imágenes de anclaje  para mayor efectividad este código tienes que  
+3:46
+dejar a un lado toda preocupación o ansiedad  tanto de ganar o de perder es decir si quieres  
+3:54
+atraer dinero sea como sea algo que nunca debes  hacer es preocuparte por si conseguirás el dinero  
+4:02
+que deseas o si lo conservarás así que tienes que  activar el código vibrando en positivo en la misma  
+4:11
+sintonía con la riqueza el dinero abundancia  y la buena fortuna trata de que la activación  
+4:19
+incluye afirmaciones e imágenes visuales de  esta forma crearás anclajes en tu mente y  
+4:28
+cada vez que pronuncies la afirmación con el  código trata de sentir que ya ganaste el premio  
+4:37
+después de haber realizado la activación olvídate  de cómo pasará y sigue tu día normalmente  
+4:46
+si te gustaría que hiciera un vídeo con la  activación de este código déjame un comentario  
+4:52
+el siguiente método se trata de un sistema  es un software que fue creado para lanzar  
+4:59
+números aleatorios con más probabilidad de ganar  basándose en secuencias de números ganadores en  
+5:07
+dicha lotería para utilizar este método lo único  que se debe hacer es escoger la lotería en la que  
+5:14
+quieres jugar y el sistema te dará una combinación  de probables números ganadores los que deberás  
+5:22
+jugar en tus billetes de lotería algunas personas  dicen haber ganado con este método lo que nunca  
+5:30
+antes habían ganado la clave de esto está en la  persistencia y la regularidad de las jugadas las  
+5:38
+mismas personas afirman ganar mucho más de lo  que pueden perder ya que usando el sistema no  
+5:45
+sólo recuperan su inversión en el software sino  que tiene la probabilidad de acumular una cierta  
+5:51
+cantidad de dinero muy buena su efectividad se  dice es de un 72% aproximadamente la premisa de  
+6:02
+este método dice que la lotería es principalmente  un juego de probabilidad y estadística y para  
+6:10
+ganarla hay que jugar utilizando precisamente eso  y no solo basarse en el azar o la buena suerte si  
+6:19
+te interesa este sistema te dejaré el link en la  descripción de este vídeo podrás consultar más  
+6:24
+información y testimonios pero ten en cuenta  esto no se ha descubierto ninguna fórmula un  
+6:31
+método sistema que proporcione en forma exacta  los números que saldrán en un juego de lotería  
+6:39
+como te mencioné antes de comenzar el vídeo  existen cientos de rituales y hechizos no te  
+6:46
+puedo hablar de todos ni mucho menos comprobarte su efectividad porque yo mismo no los he probado  
+6:53
+y por ello me reservo a hablarte de estos por  el contrario me gustaría compartirte algunos  
+7:00
+tips que considero podrían ayudarte y son  de una persona que ha ganado varios premios  
+7:06
+su nombre es richard lusting ha sido ganador  varias veces de grandes premios en la lotería  
+7:13
+para él no todo reside en la suerte algunos lo  definieron como un experto en ganar premios en  
+7:21
+la lotería ya que se ha embolsado millones de  dólares y ha logrado ganar siete premios de  
+7:27
+considerable valor económico incluso escribió  un libro titulado aprenda cómo aumentar sus  
+7:34
+posibilidades de ganar la lotería en el que  enseña su método para él había algunas claves  
+7:41
+que llevaban al éxito y por ello elaboró una  serie de consejos para tener más posibilidades  
+7:47
+de ganar dinero apostando en la lotería su primer consejo es juega más según lusting cuantos más  
+7:57
+boletos de lotería obtengas mayores son tus  posibilidades de ganar alguno de los premios  
+8:02
+grandes pero para ello debes de establecer un  presupuesto de lo que vas a gastar no te gastes  
+8:11
+más ni te metas en lo que se llama la fiebre  de la lotería es decir no desvíes el dinero  
+8:18
+que destina para tus necesidades básicas o  para pagar las cuentas por comprar lotería
+8:26
+2 elección de números no elijas los números  de forma apresurada tómate tu tiempo no uses  
+8:35
+programas que escojan los números de manera  automática ni utilices el ordenador de la  
+8:41
+tienda que te selecciona un grupo de números al  azar 3 procura siempre jugar los mismos números  
+8:50
+no hay truco para elegir cuáles son los números  correctos pero intenta que no sean consecutivos  
+8:57
+y si puedes elige números que no estén en la misma decena o que terminen con el mismo dígito lusting  
+9:07
+sostenía que muchas personas eligen sus números  en función de su cumpleaños o el de un familiar  
+9:13
+es decir entre el 1 y el 31 si eliges números por  encima de 31 esto no garantiza ganar pero aumenta  
+9:24
+tus probabilidades de no compartir el premio con  nadie no participes en juegos que siempre tienen  
+9:31
+un ganador ya que tienen un efecto llamada y  tus posibilidades de ganar son menores trata  
+9:38
+de explorar otros juegos con menos popularidad y  en los que en teoría participa menos gente estos  
+9:46
+son algunos tips pero considera esto si alguien  tiene un sistema ganador nunca lo dirá al final  
+9:53
+cada uno de ustedes juzgue la información nada  es absoluto y cada persona tiene su propia verdad  
+10:02
+pero entonces qué es lo que realmente me puede  hacer ganar la lotería quiere saber mi respuesta  
+10:08
+solo en tres palabras ley de atracción el  universo no se equivoca ni elige al azar  
+10:16
+el universo no distingue y no hace acepción de  personas el universo no va escogiendo por el  
+10:24
+mundo quien si puede ganar la lotería y quien  no eres tú mismo tu misma quien elige ganar sé  
+10:32
+que es complejo entenderlo porque no se trata  de números se trata de tu intención de tu poder  
+10:39
+de atracción de tu convencimiento se trata de la  congruencia entre tus pensamientos y sentimientos  
+10:46
+si juegas a la lotería con pensamientos de duda  o de escasez créeme que nunca ganarás porque no  
+10:56
+existe congruencia entre lo que quieres y lo  que sientes quieres ganar la lotería siéntete  
+11:03
+ganador siéntete ganadora piensa que eres ganador  visualiza de el mayor tiempo posible así entonces  
+11:12
+podrás entrar en la frecuencia correcta y el  universo te responderá de acuerdo a esa frecuencia  
+11:20
+debemos convertirnos en lo que queremos ser es  decir debemos sentirnos y vibrar aquello que  
+11:28
+queremos ser entonces mi recomendación personal  es que decrete y tengas mantras que te permitan  
+11:36
+entrar en esa vibración subliminales que envíen  esa frecuencia a tu subconsciente si te gustaría  
+11:43
+que haga un vídeo con decretos o mantras anclajes  mentales con imágenes para ganar la lotería hazme  
+11:51
+saber en los comentarios la repetición del código  sagrado con afirmaciones también es una forma de  
+11:58
+sugestionar a nuestra mente enviando la vibración  de éstas pero siempre recitando con la intención  
+12:06
+correcta con la energía correcta y no sólo  repetir por repetir así que si quieres que  
+12:13
+haga también el vídeo códigos sagrados 199 para  la lotería déjame tu comentario ahora permíteme  
+12:22
+compartirte por unos segundos unas escenas de una  película basada en hechos reales titulada más allá  
+12:30
+de la luz se la recomiendo si quieren verla solo  te mostraré algunas escenas a modo de estudio e  
+12:37
+interpretación para que cada uno de ustedes  los analice y saque sus propias conclusiones
+12:46
+las siguientes escenas pertenecen a la película ''mas allá de la luz'' esta basada en hechos reales y fueron tomadas a modo de estudio y reflexión
+12:59
+negro
+13:03
+rojo
+13:08
+negro
+13:11
+negro
+13:17
+''el azar no existe''
+13:24
+sabes natal
+13:29
+el azar no existe como es posible
+13:35
+''esto que utilizamos es otra forma de análisis''
+13:43
+un rojo
+13:47
+esto que utilizamos aquí es  simplemente otra forma de análisis cómo
+14:00
+8 negro
+14:10
+por favor
+14:15
+27 rojo
+14:22
+risa
+14:30
+35 negro
+14:34
+no puedo creerlo como saben  que número va a caer
+14:40
+''no es el los números donde se debe buscar''
+14:46
+no es en los números donde se debe de buscar pero donde se debe de buscar yo veo puros números ahí
+14:54
+''los números no le impiden a la bola caer donde debe caer''
+15:01
+natan imaginada sólo por un instante  esta ruleta sin números y sin colores 
+15:07
+crees que esto impide a  la bola cae a donde debe de caer
+15:15
+''lo que llamamos el azar esta basado sobre 2 elementos principales''
+15:21
+tienes razón lo que llamamos el azar está  basado sobre dos elementos principales  
+15:29
+puedes lanzar la bola
+15:34
+como ves la bola es atraída hacia abajo  por la fuerza de gravedad de la tierra
+15:39
+''el numero no interviene para nada''
+15:43
+y va a caer en algún lugar lo ves ha  caído en un casillero y el número no interviene
+15:49
+'para nada' lanzala otra  vez y siente esta vez la diferencia
+16:02
+''tu creas la diferencia, tu haces que suceda''
+16:07
+cuál diferencia, tu creas la diferencia
+16:11
+''ES TU EMOCION, LA QUE HACE GUIAR EL DESTINO''
+16:15
+es tu emoción la que hace  guiar el destino de la bolita
+16:21
+''Y SE PUEDE APLICAR A CUALQUIER JUEGO DE AZAR''
+16:26
+oiga esto se puede aplicar en todos  los juegos de azar sí claro por favor
+16:35
+22 NEGRO
+16:39
+''Las cifras son la sintesis de nuestro UNIVERSO material''
+16:43
+las cifras son la síntesis  de nuestro universo material
+16:49
+otra vez
+16:57
+''ES LA EXPRESION DE UNA NUEVA CIENCIA''
+17:02
+es la expresión de una nueva ciencia 36 ROJO
+17:08
+''EL SECRETO LA FISICA EMOCIONAL''
+17:14
+la física emocional ah
+17:17
+''EN EL CONOCIMIENTO EL AZAR NO TIENE LUGAR''
+17:22
+en el conocimiento el azar no tiene  lugar gracias por quedarte hasta aquí  
+17:33
+déjame saber en los comentarios cuál es tu  opinión un abrazo y un saludo para todos
+
+0:00
+[Música]
+0:00
+Vico Uruguay líder en biología molecular
+0:03
+auspicia y apoya la difusión de los
+0:05
+principales contenidos de sobre cencia
+0:09
+www.vico.com
+0:13
+último segmento del 2023 para sobre
+0:17
+ciencia en tv ciudad y lo compartimos
+0:19
+con Daniela held Alexandra perrone
+0:21
+bienvenidas programa final bien para
+0:24
+despedir el año juntos Exactamente Bueno
+0:26
+para despedir el año con unas cuantas
+0:28
+cosas distinas Ustedes sabrán por dónde
+0:31
+quieren comenzar porque por un lado eh
+0:33
+ahí no lo hemos hecho muchas veces pero
+0:35
+hay un informe que de alguna manera eh
+0:38
+se continúa no entre lo que han venido
+0:39
+trabajando ustedes y que tiene que ver
+0:41
+con ciencia y juegos de azar sí lo que
+0:43
+quisimos hacer fue nuevamente llevar
+0:45
+esto de dónde está la ciencia en lugares
+0:47
+donde no la vemos no hemos ido a lugares
+0:50
+y hemos mostrado ciencia que no se ve a
+0:52
+simple vista esta vez no vamos a un
+0:54
+lugar pero sí vamos a mostrar las
+0:56
+ciencias porque son varias en lugares
+0:58
+donde en realidad no la la vemos
+1:00
+realmente a simple vista y vemos otras
+1:02
+cosas y sobre esas ciencias lo que este
+1:05
+queremos Mostrar son también cosas que
+1:07
+no vemos entonces bueno en principio
+1:09
+vamos a empezar como siempre con la
+1:10
+historia con la historia sí en este caso
+1:13
+hablamos de juegos juegos de azar del
+1:16
+Por qué se se apuesta que algo que ha
+1:19
+acompañado a la humanidad desde los
+1:21
+inicios PR sí la creación del Universo
+1:24
+no el universo nuestro del mundo no la
+1:26
+historia los chinos los griegos los
+1:28
+romanos los egipcios ya tenían sus
+1:30
+propios juegos de azar en las diferentes
+1:32
+épocas Siempre han estado presente de
+1:34
+algún modo incluso hasta para decisiones
+1:37
+que tenían que ver con la vida o la
+1:38
+muerte de las personas desde los romanos
+1:40
+con los gladiadores y se se apostaba A
+1:43
+quién vencía hasta bueno juegos de
+1:46
+entretenimiento sí ha hay versiones
+1:48
+antiguas de de ajedrez versiones
+1:51
+antiguas de del del bamon deciones
+1:54
+antiguas del papel tijera papel
+1:58
+exactamente que tenía otro nombre hbre y
+2:00
+que apostaban con esos juegos y bueno y
+2:02
+ahí se se repartían o pertenencias o
+2:05
+hacían otro tipo de apuestas incluso los
+2:07
+romanos tenían este estadísticas de los
+2:10
+gladiadores O sea que es es como como
+2:12
+decíamos historia de los juegos de azar
+2:16
+o sea esto que uno puede relacionar con
+2:18
+con tiempos relativamente modernos es
+2:20
+absolutamente histórico lo lúdico
+2:22
+asociado a una apesta a un dinero eso
+2:25
+mismo y si en ese momento no se veía la
+2:27
+ciencia en este momento sí podemos
+2:30
+abordar la historia también es una
+2:31
+ciencia por supuesto pero seguramente No
+2:33
+investigaban en en en las cuestiones
+2:36
+científicas detrás de de estos juegos
+2:38
+pero nosotros aquí en sobre cencia por
+2:39
+supuesto lo quisimos hacer y para eso la
+2:41
+primera parte de este informe doble como
+2:43
+ya adelantó Gustavo este es bueno hablar
+2:46
+de de cuáles son las ciencias que hay
+2:48
+detrás de los juegos de azar para eso
+2:50
+conversamos primero con María INE arielo
+2:53
+profesora adjunta del instituto de
+2:54
+matemática y estadística de la facultad
+2:56
+de ingeniería y con ella hablamos desde
+2:58
+el inicio Qué es el azar No que ya de
+3:01
+por sí es un concepto bien interesante y
+3:03
+por supuesto qué disciplinas están
+3:05
+presentes en los juegos de azar más
+3:07
+populares Esto es lo que nos
+3:11
+[Música]
+3:21
+dijo los juegos de azar son juegos donde
+3:24
+interviene el azar Qué entendemos por
+3:26
+azar es que vamos a hacer un experimento
+3:29
+en el que no podemos predecir el
+3:31
+resultado antes de hacer el experimento
+3:33
+en muchos casos tenemos una cantidad
+3:36
+dada de resultados posibles por ejemplo
+3:38
+una moneda va a salir cara o Cruz un
+3:40
+dado va a salir del uno al seis pero es
+3:42
+bien diferente de otro tipo de
+3:44
+experimentos Por ejemplo si yo suelto
+3:46
+una pelotita sé que siempre va a caer al
+3:47
+piso ahí no hay aar es un comportamiento
+3:51
+[Aplausos]
+3:55
+determinista la matemática tiene
+3:57
+principalmente dos disciplinas que son
+3:59
+las que más se relacionan con los juegos
+4:00
+de azar que es la probabilidad y la
+4:03
+estadística entonces la probabilidad
+4:05
+modela todo este tipo de juegos puede
+4:07
+modelar qué carta sale de un Mazo puede
+4:09
+modelar qué bolillero va a salir después
+4:12
+podemos implicar a la estadística la
+4:14
+estadística lo que nos sirve es para
+4:15
+analizar los resultados O sea si yo digo
+4:18
+por ejemplo Quiero saber si una ruleta
+4:21
+está funcionando Como debería o si hay
+4:23
+algo raro atrás lo que voy a hacer es ir
+4:25
+a buscar la serie histórica de números
+4:27
+que salieron y ver si hay alguno Que sea
+4:30
+un resultado demasiado raro respecto a
+4:32
+lo que yo espero de mi modelo de
+4:39
+probabilidad saber mucho de matemática
+4:41
+No necesariamente implica que tengamos
+4:44
+algun una cosa favorecedora respecto a
+4:47
+un juego hay algunos juegos donde la
+4:50
+probabilidad no depende para nada de
+4:52
+nosotros o donde el proceso no cambia
+4:54
+por ejemplo en ese tipo de juegos nada
+4:57
+no no podemos hacer nada después está el
+4:59
+el más famoso quizás de todos es el tema
+5:02
+del póker y contar las cartas ahí que es
+5:04
+lo que no es que sí sabes mucho de
+5:06
+matemáticas lo que sabés es jugar bien
+5:09
+el Poker en el sentido que decí bueno si
+5:11
+yo ya sé que salieron determinadas
+5:13
+cartas yo que sé si ya salieron las 4k
+5:16
+sé que no va a salir ninguna ca Ya sé
+5:18
+que este determinado juego tiene
+5:20
+probabilidad cero y mis cartas son tal
+5:23
+cosa pero porque tuve muy buena memoria
+5:24
+aparte de saber hacer cálculos y es lo
+5:27
+que me dice Bueno Tenés una jugada
+5:28
+favorece pero mientras esté el azar Me
+5:32
+puede ayudar a tomar alguna decisión un
+5:34
+poquito más arriesgada o no pero siempre
+5:37
+puedo terminar perdiendo
+5:43
+igual básicamente la diferencia entre
+5:47
+juegos que puedo tener algún tipo de
+5:48
+estrategia o juegos que no me sirve
+5:51
+mucho son donde a medida que se va
+5:53
+jugando van cambiando las probabilidades
+5:56
+en juegos donde a medida que se va
+5:58
+jugando nada cambia mi decisión inicial
+6:00
+va a ser la misma que la decisión final
+6:02
+porque conocer cosas no me da
+6:05
+información en cuanto a las a las
+6:08
+estrategias en los juegos de hacer hay
+6:10
+en algunas por ejemplo una que es bien
+6:12
+simple es decir en el cinco de oro qué
+6:14
+hago siempre juego al mismo número Y
+6:16
+sigo ese número no esa combinación o
+6:19
+todas las veces me compro un cco deos
+6:20
+sorpresa por ejemplo la probabilidad de
+6:22
+ganar cada vez es exactamente la misma o
+6:25
+sea lo que me dice es algún día vas a
+6:27
+ganar no me dice va a ser dentro de un
+6:30
+mes o dentro de un
+6:31
+[Música]
+6:41
+año esto Esto último que decía Mine Dani
+6:44
+me recuerda un poco lo de la Ruleta No
+6:46
+dec si jugas siempre Al mismo número
+6:48
+tarde o temprano va a salir pero en
+6:50
+realidad cada mano es exactamente la
+6:52
+misma posibilidad de que salga ese o
+6:53
+cualquier otro no importa lo que pase
+6:55
+eso es lo que está justamente es lo que
+6:57
+se en lo que se basa la ciencia de los
+6:59
+juegos de azar no es ahí donde están las
+7:01
+probabilidades la estadística la
+7:03
+matemática como un paraguas que engloba
+7:06
+todo esto y bueno ahora que María Noel
+7:08
+María Inés este nos contó un poco más
+7:11
+sobre bueno el concepto y lo que se
+7:13
+mueve detrás de los juegos de azar lo
+7:15
+que le quisimos preguntar es caso a caso
+7:17
+o por lo menos caso a caso de los eh
+7:19
+juegos que de azar más populares en
+7:22
+Uruguay y eso fue lo que le preguntamos
+7:25
+En esta segunda parte del informe donde
+7:26
+hablamos del cinco de oro de la lotería
+7:28
+y de la
+7:29
+muy
+7:44
+bien el cinco de oro es un juego donde
+7:47
+elegimos cinco bolillas de 48 posibles y
+7:50
+lo que tenemos que lograr es acertar en
+7:52
+lo posible Esas cinco bolillas lo que
+7:55
+nos lleva Es que la probabilidad de que
+7:57
+yo gane el cinco de oro es una de
+8:02
+17234 o sea es una probabilidad que es
+8:04
+muy muy muy chiquitita Cuál es el
+8:07
+secreto un poquito por atrás del cinco
+8:08
+de oro es que en realidad me dan premios
+8:11
+cuando yo acierto dos bolillas por
+8:13
+ejemplo entonces ahí cambia un montón la
+8:16
+probabilidad la probabilidad de tener al
+8:18
+menos un premio es una en 13 muchísimo
+8:22
+mayor que la de sacar el cinco de
+8:26
+[Música]
+8:28
+oro
+8:30
+la lotería consiste en acertar un un
+8:33
+billete que compre de 30.000 que son
+8:36
+emitidos para lograr hacer ese número lo
+8:39
+que se hace es se elige de un bolillero
+8:41
+un número del C 1 o do para los primeros
+8:45
+que van para que no pase más del 30.000
+8:47
+y después en los otros voy a ir
+8:48
+eligiendo una bolilla en 10 para
+8:50
+terminar de conformar ese número hacer
+8:53
+eso o escribir 30.000 billetitos y sacar
+8:56
+uno al azar es exactamente lo mismo eso
+9:00
+hace que los 30,000 billetes tengan la
+9:03
+misma probabilidad de
+9:05
+[Música]
+9:08
+salir La ruleta está compuesta de 37
+9:12
+números de los cuales casi la mitad son
+9:16
+rojos y casi la mitad son negros porque
+9:19
+está el cero que es verde Si no
+9:21
+existiera el cero tirar una moneda al
+9:23
+aire o apostar rojo o negro sería lo
+9:26
+mismo porque tendría la misma
+9:28
+probabilidad qué es lo que pasa al
+9:30
+agregar el cero yo hago que la
+9:31
+probabilidad del rojo o la probabilidad
+9:33
+del color negro sea un poquitito más
+9:35
+chiquita Entonces eso qu hace que el
+9:38
+casino se asegure de alguna manera que
+9:40
+siempre va a ganar un poquito es 1 sobre
+9:43
+37 pero si pensamos que van a ir muchas
+9:46
+personas a jugar ese 1 sobre 37 para el
+9:49
+casino termina siendo
+9:52
+[Aplausos]
+9:58
+acumulación
+10:01
+si alguien Pensó que con la Ciencia se
+10:02
+iba a ir con la fórmula para hacerse
+10:04
+unos pesos en el casino o en alguno de
+10:06
+estos juegos Me parece que no consiguió
+10:08
+lo que esperaba no no por lo menos en
+10:10
+este no Pero por supuesto las ciencias
+10:12
+están Esto es lo que quisimos Mostrar no
+10:14
+como las ciencias están detrás de algo
+10:16
+como un juego sobre todo ahora que bueno
+10:18
+este fin de año siempre se se presta
+10:21
+para algún tipo de estos juegos como
+10:23
+entretenimiento este estas ciencias son
+10:26
+las que van a estar en juego en esa en
+10:28
+ese no y es importante eh digamos
+10:31
+viéndolo del otro lado del mostrador
+10:32
+tener presente que todos estos
+10:34
+conocimientos son los que aplican
+10:36
+quienes estructuran estos juegos no
+10:38
+sobre todo los que está administrado
+10:40
+claro que en nuestro país que casi todo
+10:43
+este tipo de juego está administrado por
+10:44
+el estado bueno a la hora de fijar los
+10:47
+premios de de ver cómo se paga cada cosa
+10:49
+ese esa posibilidad una en seis de tener
+10:52
+a que sea un premio de cinco de oro hace
+10:54
+que sea tan chiquito ese premio por
+10:55
+supuesto por supuesto Pero estas son las
+10:57
+ciencias que están exactamente detrás de
+10:59
+los juegos Qué pasa de las ciencias que
+11:01
+están ent en el vínculo entre el juego y
+11:03
+la persona no Entonces esta es la
+11:05
+segunda parte de de este abordaje que
+11:07
+queremos hacer a los juegos de azar Y
+11:09
+entonces hablamos también de la
+11:10
+psicología y de la neurociencia que son
+11:13
+dos ciencias que están en eso como
+11:15
+decían en ese vínculo y en los posibles
+11:17
+trastornos que puede haber entre el
+11:19
+vínculo entre el juego y la persona no
+11:21
+alexand Sí es lo que se llama ludopatía
+11:23
+no O sea des el punto de vista
+11:25
+psicológico y adictivo para eso fuimos a
+11:28
+hablar con grac Gómez que ella es
+11:30
+profesora adjunta de la unidad académica
+11:32
+de psicología médica de la Facultad de
+11:35
+Medicina de la udelar y coordinadora del
+11:38
+programa de prevención y tratamiento del
+11:40
+juego patológico que este es un convenio
+11:43
+entre la dirección Nacional de casinos
+11:45
+del estado y la Facultad de Medicina de
+11:47
+la Universidad de la república Y ella
+11:50
+nos cuenta en esta parte del informe que
+11:53
+Cómo se define la ludopatía desde el
+11:56
+punto de vista justamente de la
+11:57
+psicología y y de la
+12:01
+[Música]
+12:12
+adicción la ludopatía es un fenómeno
+12:16
+multicausal por un lado lo podemos
+12:19
+pensar vinculado a la
+12:23
+adicción el ludópata o el jugador tiene
+12:28
+un comportam que no puede controlar Sí y
+12:31
+eso sucede igual que en lo que puede ser
+12:35
+una adicción a sustancias pero como en
+12:38
+este caso no hay una sustancia concreta
+12:41
+se habla de bueno de adicción social o
+12:44
+psicológica no obstante ya se realizó un
+12:48
+experimento en la cual se comparó la
+12:51
+respuesta del organismo la presión
+12:54
+arterial la frecuencia cardíaca en el
+12:57
+caso de un jugador cuando ve los tres en
+13:00
+línea que significa que ganó el pozo y
+13:03
+un consumidor de cocaína y lo que se
+13:07
+observa Es que la
+13:09
+respuesta es
+13:16
+similar la sustancia que ingresa a
+13:19
+organismo produce el mismo efecto que el
+13:24
+juego y creo que eso tiene que ver
+13:26
+porque en realidad en elud la sustancia
+13:29
+es el juego no
+13:32
+necesito ingerir algo concreto para que
+13:36
+pueda haber un cambio en el organismo de
+13:39
+esa
+13:40
+[Música]
+13:46
+magnitud uno puede pensar que las
+13:48
+personas van a jugar por dinero y habrá
+13:51
+Quiénes Sí pero esa es la motivación
+13:56
+consciente la mayoría de los jugadores
+13:58
+necesitarían jugar para tener un buen
+14:01
+nivel económico Usan el juego por otra
+14:04
+cosa por eso es una adicción y por eso
+14:07
+es tan
+14:13
+peligroso muy muy muy interesante
+14:15
+Alexandra sobre toda esa explicación No
+14:17
+de Por qué es una adicción tan poderosa
+14:19
+como otras que uno tiene más
+14:21
+identificadas no Claro que que implican
+14:23
+sustancias Bueno ella nos decía también
+14:26
+que Cuanto más rápida es la respuesta de
+14:28
+así o no del juego más adictivo es No y
+14:32
+justamente le preguntábamos por por los
+14:34
+juegos como el cinco de oro la lotería
+14:36
+la Quiniela y bueno ella nos decía que
+14:39
+que son son juegos que en la teoría no
+14:42
+generan tanta adicción porque muchas
+14:45
+veces hay que esperar hay que esperar a
+14:46
+ver si salió o no muchas veces nos
+14:49
+olvidamos de de fijarnos
+14:51
+pasan esas cosas pierden las bolas se
+14:54
+pierden las boletas algo que no esan que
+14:57
+Aparentemente es bastante común
+14:59
+nos explicaba eso pero de todas maneras
+15:01
+siempre hay que tratar estos temas con
+15:03
+cuidado en la segunda en esta parte de
+15:06
+del informe con con gra nos cuenta cómo
+15:09
+es el perfil del
+15:15
+[Música]
+15:25
+jugador el perfil jugador es de una
+15:29
+persona en términos generales con muy
+15:32
+buen nivel intelectual son personas que
+15:35
+tienen posiciones
+15:38
+socioeconómicas relativamente buenas
+15:41
+tienen una particularidad que son tan
+15:45
+adictos al juego como al trabajo y de
+15:48
+hecho extremadamente
+15:50
+responsables en lo que es todo el resto
+15:53
+de su vida el ludópata el jugador suele
+15:57
+tener un pensamiento mágico Él juega
+16:01
+pensando que va a
+16:03
+[Música]
+16:11
+ganar bien acá una muy buena
+16:14
+caracterización del un perfil
+16:16
+prototípico de quien padece una
+16:18
+ludopatía sí Bueno le preguntamos a grac
+16:21
+cómo se diagnostica la ludopatía nos
+16:24
+decía que existen test internacionales
+16:26
+avalados internacionales de unas pocas
+16:28
+preguntas y nos decía también que
+16:31
+contestar que sí aproximadamente tres de
+16:33
+ellas Ya implica que es una persona que
+16:36
+puede tener tendencia a la adicción al
+16:40
+juego como decíamos gracia integra el
+16:43
+programa de prevención y tratamiento del
+16:45
+juego patológico y es un programa que se
+16:48
+inició en el 2009 y tiene una sede en el
+16:51
+hospital de clínicas acá en el sur en
+16:53
+paisandú y en punta del este nos
+16:55
+explicaba que con la pandemia bueno eso
+16:57
+se pudo ampliar
+16:59
+y se pudo llegar a todo el país y el
+17:02
+número para comunicarse con este
+17:04
+programa es el
+17:08
+88631 y nos cuenta ahora en la última
+17:11
+parte de este informe más detalles de
+17:14
+este programa y cómo
+17:21
+[Música]
+17:27
+funciona
+17:31
+actualmente el programa está atendiendo
+17:35
+aproximadamente una 180 personas el
+17:39
+número de personas es relativamente bajo
+17:43
+diría yo a la dimensión que tiene la
+17:47
+problemática Lo que pasa que en
+17:50
+ludopatía como en cualquier tipo de
+17:52
+adicción es difícil que la persona
+17:56
+adhiera al tratamiento
+17:58
+el programa implica el el tratamiento
+18:02
+psicoterapéutico a los pacientes a los
+18:05
+jugadores pero también implica el
+18:09
+asesoramiento y el apoyo a la
+18:17
+familia el gran problema es que no
+18:21
+pueden decirle a la familia lo que está
+18:24
+pasando porque esto es una patología que
+18:27
+tiene un nivel de estigma muy grande por
+18:30
+otro lado una vez que busca ayuda y que
+18:35
+la familia se enteran muchas veces la
+18:38
+familia lo que tiende a hacer es a
+18:40
+pagarles las deudas Sí y eso no suele
+18:45
+funcionar No al contrario eso puede
+18:50
+favorecer que la persona juegue para
+18:53
+ingresar al programa cualquier
+18:55
+interesado solo tiene que comunicarse
+18:57
+con la línea
+19:00
+0886
+19:06
+31 con respecto al tema de si la
+19:09
+ludopatía se cura o no podemos decir que
+19:12
+hay este ambas bibliotecas está la que
+19:15
+dice que esto es una enfermedad Crónica
+19:18
+que puede ser tratada pero nunca curada
+19:21
+y están quienes dicen que sí puede ser
+19:24
+curada y de hecho hasta como en el caso
+19:27
+del alcohol una una persona podría pasar
+19:30
+a ser un jugador social yo digo que es
+19:33
+extremadamente difícil Sí teóricamente
+19:36
+se puede pero van a ser muy pocas las
+19:39
+personas que puedan eh después de haber
+19:42
+tenido una ludopatía grave eh volver a
+19:46
+jugar con control Lo más eh adecuado
+19:50
+sería que este pensara en que no puede
+19:54
+volver a jugar o sea que pensara que ya
+19:56
+jugó tanto que ya no le está permitido
+20:00
+jugar
+20:02
+[Música]
+20:05
+[Aplausos]
+20:09
+digamos Bueno hasta acá el último
+20:13
+informe de este ciclo 2023 de sobre
+20:15
+cencia Alexandra querías repasar algo sí
+20:17
+quería repasar el el número para
+20:19
+comunicarse con el programa de
+20:21
+prevención y tratamiento del juego
+20:22
+patológico que es gratuito Es el
+20:26
+0886 31
+20:28
+muy bien Daniela Alexandra cerramos
+20:31
+sobre ciencia 2023 eh la tercera
+20:34
+temporada tercera Y por supuesto con
+20:36
+agradecimientos agradecimiento al Canal
+20:38
+que nos permite tener este espacio para
+20:40
+la ciencia en televisión a la fundación
+20:43
+Lolita rubial que nos permitió con este
+20:45
+premio tener un nuevo impulso para
+20:48
+seguir porque básicamente eso es este
+20:50
+premio Y el público por supuesto por
+20:51
+acompañarnos y y en todos momentos en
+20:54
+que nos cruzamos en la calle que nos que
+20:56
+nos dicen que que ven el programa y
+20:58
+agradecer a todos los compañeros y
+20:59
+compañeras que hacen sobre ciencia no
+21:01
+muy bien y en ese agradecimiento nos
+21:04
+vamos cerramos nuestro programa y los
+21:05
+invitamos a compartir este pequeño clip
+21:09
+con imágenes cotidianas de cada una de
+21:12
+las personas que hace su aporte para que
+21:15
+sobre ciencia haya cumplido más de 100
+21:18
+programas en tv ciudad y tres temporadas
+21:20
+nos
+21:22
+[Música]
+21:27
+vemos
+21:29
+[Música]
+21:32
+[Aplausos]
+21:32
+[Música]
+21:57
+k
+21:58
+[Música]
+22:26
+y
+22:30
+[Música]
+22:36
+[Música]
+22:56
+ah
+22:58
+[Música]
+23:26
+ah
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
