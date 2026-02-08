@@ -1,0 +1,363 @@
+tabla,tipo,accion,detalle
+boyaca,table,ok_sin_barras,
+huila,table,ok_sin_barras,
+manizales,table,ok_sin_barras,
+medellin,table,ok_sin_barras,
+quindio,table,ok_sin_barras,
+tolima,table,ok_sin_barras,
+astro_luna,table,ok_sin_barras,
+baloto_resultados,table,ok_sin_barras,
+baloto_premios,table,ok_sin_barras,
+revancha_resultados,table,ok_sin_barras,
+revancha_premios,table,ok_sin_barras,
+primer_resumen_matriz_aslu,table,ok_sin_barras,
+segundo_resumen_matriz_aslu,table,ok_sin_barras,
+tercer_resumen_matriz_aslu,table,ok_sin_barras,
+cuarto_resumen_matriz_aslu,table,ok_sin_barras,
+quinto_resumen_matriz_aslu,table,ok_sin_barras,
+sexto_resumen_matriz_aslu,table,ok_sin_barras,
+septimo_resumen_matriz_aslu,table,ok_sin_barras,
+octavo_resumen_matriz_aslu,table,ok_sin_barras,
+noveno_resumen_matriz_aslu,table,ok_sin_barras,
+decimo_resumen_matriz_aslu,table,ok_sin_barras,
+todos_resumen_matriz_aslu,table,ok_sin_barras,
+cuando_cero_es_unidad,table,ok_sin_barras,
+cuando_cero_es_decena,table,ok_sin_barras,
+cuando_cero_es_centena,table,ok_sin_barras,
+cuando_cero_es_umil,table,ok_sin_barras,
+cuando_cero_es_d_y_u,table,ok_sin_barras,
+cuando_cero_es_c_y_u,table,ok_sin_barras,
+cuando_cero_es_um_y_u,table,ok_sin_barras,
+cuando_cero_es_c_y_d,table,ok_sin_barras,
+cuando_cero_es_um_y_d,table,ok_sin_barras,
+cuando_cero_es_um_y_c,table,ok_sin_barras,
+cuando_cero_es_c_d_y_u,table,ok_sin_barras,
+cuando_cero_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_cero_es_um_c_y_d,table,ok_sin_barras,
+cuando_cero_es_um_c_y_u,table,ok_sin_barras,
+cuando_cero_es_um_d_y_u,table,ok_sin_barras,
+todo_cuando_0_es,table,ok_sin_barras,
+cuando_1_es_unidad,table,ok_sin_barras,
+cuando_1_es_decena,table,ok_sin_barras,
+cuando_1_es_centena,table,ok_sin_barras,
+cuando_1_es_umil,table,ok_sin_barras,
+cuando_1_es_d_y_u,table,ok_sin_barras,
+cuando_1_es_c_y_u,table,ok_sin_barras,
+cuando_1_es_um_y_u,table,ok_sin_barras,
+cuando_1_es_c_y_d,table,ok_sin_barras,
+cuando_1_es_um_y_d,table,ok_sin_barras,
+cuando_1_es_um_y_c,table,ok_sin_barras,
+cuando_1_es_c_d_y_u,table,ok_sin_barras,
+cuando_1_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_1_es_um_c_y_d,table,ok_sin_barras,
+cuando_1_es_um_c_y_u,table,ok_sin_barras,
+cuando_1_es_um_d_y_u,table,ok_sin_barras,
+todo_cuando_1_es,table,ok_sin_barras,
+cuando_2_es_unidad,table,ok_sin_barras,
+cuando_2_es_decena,table,ok_sin_barras,
+cuando_2_es_centena,table,ok_sin_barras,
+cuando_2_es_umil,table,ok_sin_barras,
+cuando_2_es_c_d_y_u,table,ok_sin_barras,
+cuando_2_es_c_y_d,table,ok_sin_barras,
+cuando_2_es_c_y_u,table,ok_sin_barras,
+cuando_2_es_d_y_u,table,ok_sin_barras,
+cuando_2_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_2_es_um_c_y_d,table,ok_sin_barras,
+cuando_2_es_um_c_y_u,table,ok_sin_barras,
+cuando_2_es_um_d_y_u,table,ok_sin_barras,
+cuando_2_es_um_y_c,table,ok_sin_barras,
+cuando_2_es_um_y_d,table,ok_sin_barras,
+cuando_2_es_um_y_u,table,ok_sin_barras,
+todo_cuando_2_es,table,ok_sin_barras,
+cuando_3_es_unidad,table,ok_sin_barras,
+cuando_3_es_decena,table,ok_sin_barras,
+cuando_3_es_centena,table,ok_sin_barras,
+cuando_3_es_umil,table,ok_sin_barras,
+cuando_3_es_um_c_y_d,table,ok_sin_barras,
+cuando_3_es_c_y_u,table,ok_sin_barras,
+cuando_3_es_d_y_u,table,ok_sin_barras,
+cuando_3_es_c_d_y_u,table,ok_sin_barras,
+cuando_3_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_3_es_c_y_d,table,ok_sin_barras,
+cuando_3_es_um_c_y_u,table,ok_sin_barras,
+cuando_3_es_um_d_y_u,table,ok_sin_barras,
+cuando_3_es_um_y_c,table,ok_sin_barras,
+cuando_3_es_um_y_d,table,ok_sin_barras,
+cuando_3_es_um_y_u,table,ok_sin_barras,
+todo_cuando_3_es,table,ok_sin_barras,
+cuando_4_es_unidad,table,ok_sin_barras,
+cuando_4_es_decena,table,ok_sin_barras,
+cuando_4_es_centena,table,ok_sin_barras,
+cuando_4_es_umil,table,ok_sin_barras,
+cuando_4_es_c_d_y_u,table,ok_sin_barras,
+cuando_4_es_c_y_d,table,ok_sin_barras,
+cuando_4_es_c_y_u,table,ok_sin_barras,
+cuando_4_es_d_y_u,table,ok_sin_barras,
+cuando_4_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_4_es_um_c_y_d,table,ok_sin_barras,
+cuando_4_es_um_c_y_u,table,ok_sin_barras,
+cuando_4_es_um_d_y_u,table,ok_sin_barras,
+cuando_4_es_um_y_c,table,ok_sin_barras,
+cuando_4_es_um_y_d,table,ok_sin_barras,
+cuando_4_es_um_y_u,table,ok_sin_barras,
+todo_cuando_4_es,table,ok_sin_barras,
+cuando_5_es_unidad,table,ok_sin_barras,
+cuando_5_es_decena,table,ok_sin_barras,
+cuando_5_es_centena,table,ok_sin_barras,
+cuando_5_es_umil,table,ok_sin_barras,
+cuando_5_es_c_d_y_u,table,ok_sin_barras,
+cuando_5_es_c_y_d,table,ok_sin_barras,
+cuando_5_es_c_y_u,table,ok_sin_barras,
+cuando_5_es_d_y_u,table,ok_sin_barras,
+cuando_5_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_5_es_um_c_y_d,table,ok_sin_barras,
+cuando_5_es_um_c_y_u,table,ok_sin_barras,
+cuando_5_es_um_d_y_u,table,ok_sin_barras,
+cuando_5_es_um_y_c,table,ok_sin_barras,
+cuando_5_es_um_y_d,table,ok_sin_barras,
+cuando_5_es_um_y_u,table,ok_sin_barras,
+todo_cuando_5_es,table,ok_sin_barras,
+cuando_6_es_unidad,table,ok_sin_barras,
+cuando_6_es_decena,table,ok_sin_barras,
+cuando_6_es_centena,table,ok_sin_barras,
+cuando_6_es_umil,table,ok_sin_barras,
+cuando_6_es_c_d_y_u,table,ok_sin_barras,
+cuando_6_es_c_y_d,table,ok_sin_barras,
+cuando_6_es_d_y_u,table,ok_sin_barras,
+cuando_6_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_6_es_c_y_u,table,ok_sin_barras,
+cuando_6_es_um_c_y_d,table,ok_sin_barras,
+cuando_6_es_um_c_y_u,table,ok_sin_barras,
+cuando_6_es_um_d_y_u,table,ok_sin_barras,
+cuando_6_es_um_y_c,table,ok_sin_barras,
+cuando_6_es_um_y_d,table,ok_sin_barras,
+cuando_6_es_um_y_u,table,ok_sin_barras,
+todo_cuando_6_es,table,ok_sin_barras,
+cuando_7_es_unidad,table,ok_sin_barras,
+cuando_7_es_decena,table,ok_sin_barras,
+cuando_7_es_centena,table,ok_sin_barras,
+cuando_7_es_umil,table,ok_sin_barras,
+cuando_7_es_c_d_y_u,table,ok_sin_barras,
+cuando_7_es_c_y_d,table,ok_sin_barras,
+cuando_7_es_c_y_u,table,ok_sin_barras,
+cuando_7_es_d_y_u,table,ok_sin_barras,
+cuando_7_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_7_es_um_c_y_d,table,ok_sin_barras,
+cuando_7_es_um_c_y_u,table,ok_sin_barras,
+cuando_7_es_um_d_y_u,table,ok_sin_barras,
+cuando_7_es_um_y_c,table,ok_sin_barras,
+cuando_7_es_um_y_d,table,ok_sin_barras,
+cuando_7_es_um_y_u,table,ok_sin_barras,
+todo_cuando_7_es,table,ok_sin_barras,
+cuando_8_es_unidad,table,ok_sin_barras,
+cuando_8_es_decena,table,ok_sin_barras,
+cuando_8_es_centena,table,ok_sin_barras,
+cuando_8_es_umil,table,ok_sin_barras,
+cuando_8_es_c_d_y_u,table,ok_sin_barras,
+cuando_8_es_c_y_d,table,ok_sin_barras,
+cuando_8_es_c_y_u,table,ok_sin_barras,
+cuando_8_es_d_y_u,table,ok_sin_barras,
+cuando_8_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_8_es_um_c_y_d,table,ok_sin_barras,
+cuando_8_es_um_c_y_u,table,ok_sin_barras,
+cuando_8_es_um_d_y_u,table,ok_sin_barras,
+cuando_8_es_um_y_c,table,ok_sin_barras,
+cuando_8_es_um_y_d,table,ok_sin_barras,
+cuando_8_es_um_y_u,table,ok_sin_barras,
+todo_cuando_8_es,table,ok_sin_barras,
+cuando_9_es_unidad,table,ok_sin_barras,
+cuando_9_es_decena,table,ok_sin_barras,
+cuando_9_es_centena,table,ok_sin_barras,
+cuando_9_es_umil,table,ok_sin_barras,
+cuando_9_es_c_d_y_u,table,ok_sin_barras,
+cuando_9_es_c_y_d,table,ok_sin_barras,
+cuando_9_es_c_y_u,table,ok_sin_barras,
+cuando_9_es_d_y_u,table,ok_sin_barras,
+cuando_9_es_um_c_d_y_u,table,ok_sin_barras,
+cuando_9_es_um_c_y_d,table,ok_sin_barras,
+cuando_9_es_um_c_y_u,table,ok_sin_barras,
+cuando_9_es_um_d_y_u,table,ok_sin_barras,
+cuando_9_es_um_y_d,table,ok_sin_barras,
+cuando_9_es_um_y_c,table,ok_sin_barras,
+cuando_9_es_um_y_u,table,ok_sin_barras,
+todo_cuando_9_es,table,ok_sin_barras,
+todos_cuando_son,table,ok_sin_barras,
+matriz_astro_luna,table,ok_sin_barras,
+matriz_astro_luna,table,reconstruida,MAX(fecha) src=2025-08-08 | matriz=2025-08-08
+primer_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+segundo_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+tercer_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+cuarto_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+quinto_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+sexto_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+septimo_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+octavo_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+noveno_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+decimo_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+todos_resumen_matriz_aslu,table,reconstruida,COUNT=5501 | MAX(fecha)=2025-08-08
+todos_cuando_son,table,reconstruida,COUNT=22004 | MAX(fecha)=2025-08-08
+todo_cuando_0_es,table,reconstruida,COUNT=1888 | MAX(fecha)=2025-08-07
+todo_cuando_1_es,table,reconstruida,COUNT=1862 | MAX(fecha)=2025-08-08
+todo_cuando_2_es,table,reconstruida,COUNT=1939 | MAX(fecha)=2025-08-05
+todo_cuando_3_es,table,reconstruida,COUNT=1879 | MAX(fecha)=2025-08-06
+todo_cuando_4_es,table,reconstruida,COUNT=1914 | MAX(fecha)=2025-08-08
+todo_cuando_5_es,table,reconstruida,COUNT=1926 | MAX(fecha)=2025-08-07
+todo_cuando_6_es,table,reconstruida,COUNT=1856 | MAX(fecha)=2025-08-08
+todo_cuando_7_es,table,reconstruida,COUNT=1887 | MAX(fecha)=2025-07-30
+todo_cuando_8_es,table,reconstruida,COUNT=1894 | MAX(fecha)=2025-08-08
+todo_cuando_9_es,table,reconstruida,COUNT=1824 | MAX(fecha)=2025-08-05
+cuando_cero_es_centena,table,reconstruida,COUNT=540 | MAX(fecha)=2025-07-29 (cuándo: c = 0)
+cuando_cero_es_decena,table,reconstruida,COUNT=552 | MAX(fecha)=2025-08-07 (cuándo: d = 0)
+cuando_cero_es_unidad,table,reconstruida,COUNT=549 | MAX(fecha)=2025-08-01 (cuándo: u = 0)
+cuando_cero_es_umil,table,reconstruida,COUNT=529 | MAX(fecha)=2025-08-06 (cuándo: um = 0)
+cuando_cero_es_c_y_d,table,reconstruida,COUNT=49 | MAX(fecha)=2025-04-06 (cuándo: c = 0 AND d = 0)
+cuando_cero_es_c_y_u,table,reconstruida,COUNT=43 | MAX(fecha)=2025-04-15 (cuándo: c = 0 AND u = 0)
+cuando_cero_es_d_y_u,table,reconstruida,COUNT=49 | MAX(fecha)=2025-06-07 (cuándo: d = 0 AND u = 0)
+cuando_cero_es_um_y_c,table,reconstruida,COUNT=44 | MAX(fecha)=2025-07-10 (cuándo: um = 0 AND c = 0)
+cuando_cero_es_um_y_d,table,reconstruida,COUNT=55 | MAX(fecha)=2025-07-15 (cuándo: um = 0 AND d = 0)
+cuando_cero_es_um_y_u,table,reconstruida,COUNT=58 | MAX(fecha)=2025-08-01 (cuándo: um = 0 AND u = 0)
+cuando_cero_es_c_d_y_u,table,reconstruida,COUNT=4 | MAX(fecha)=2022-12-01 (cuándo: (c = 0 AND d = 0) AND (u = 0))
+cuando_cero_es_um_c_y_d,table,reconstruida,COUNT=4 | MAX(fecha)=2018-09-12 (cuándo: (um = 0 AND c = 0) AND (d = 0))
+cuando_cero_es_um_c_y_u,table,reconstruida,COUNT=3 | MAX(fecha)=2025-02-25 (cuándo: (um = 0 AND c = 0) AND (u = 0))
+cuando_cero_es_um_d_y_u,table,reconstruida,COUNT=5 | MAX(fecha)=2021-12-23 (cuándo: (um = 0 AND d = 0) AND (u = 0))
+cuando_cero_es_um_c_d_y_u,table,reconstruida,COUNT=0 | MAX(fecha)=None (cuándo: (um = 0 AND c = 0 AND d = 0) AND (u = 0))
+cuando_1_es_centena,table,reconstruida,COUNT=534 | MAX(fecha)=2025-08-05 (cuándo: c = 1)
+cuando_1_es_decena,table,reconstruida,COUNT=551 | MAX(fecha)=2025-08-08 (cuándo: d = 1)
+cuando_1_es_unidad,table,reconstruida,COUNT=555 | MAX(fecha)=2025-07-23 (cuándo: u = 1)
+cuando_1_es_umil,table,reconstruida,COUNT=525 | MAX(fecha)=2025-08-03 (cuándo: um = 1)
+cuando_1_es_c_y_d,table,reconstruida,COUNT=55 | MAX(fecha)=2025-04-30 (cuándo: c = 1 AND d = 1)
+cuando_1_es_c_y_u,table,reconstruida,COUNT=53 | MAX(fecha)=2025-03-18 (cuándo: c = 1 AND u = 1)
+cuando_1_es_d_y_u,table,reconstruida,COUNT=61 | MAX(fecha)=2025-06-29 (cuándo: d = 1 AND u = 1)
+cuando_1_es_um_y_c,table,reconstruida,COUNT=51 | MAX(fecha)=2024-03-14 (cuándo: um = 1 AND c = 1)
+cuando_1_es_um_y_d,table,reconstruida,COUNT=47 | MAX(fecha)=2025-02-22 (cuándo: um = 1 AND d = 1)
+cuando_1_es_um_y_u,table,reconstruida,COUNT=51 | MAX(fecha)=2025-07-05 (cuándo: um = 1 AND u = 1)
+cuando_1_es_c_d_y_u,table,reconstruida,COUNT=4 | MAX(fecha)=2023-02-08 (cuándo: (c = 1 AND d = 1) AND (u = 1))
+cuando_1_es_um_c_y_d,table,reconstruida,COUNT=4 | MAX(fecha)=2021-12-12 (cuándo: (um = 1 AND c = 1) AND (d = 1))
+cuando_1_es_um_c_y_u,table,reconstruida,COUNT=2 | MAX(fecha)=2016-03-22 (cuándo: (um = 1 AND c = 1) AND (u = 1))
+cuando_1_es_um_d_y_u,table,reconstruida,COUNT=5 | MAX(fecha)=2023-05-30 (cuándo: (um = 1 AND d = 1) AND (u = 1))
+cuando_1_es_um_c_d_y_u,table,reconstruida,COUNT=0 | MAX(fecha)=None (cuándo: (um = 1 AND c = 1 AND d = 1) AND (u = 1))
+cuando_2_es_centena,table,reconstruida,COUNT=528 | MAX(fecha)=2025-07-28 (cuándo: c = 2)
+cuando_2_es_decena,table,reconstruida,COUNT=568 | MAX(fecha)=2025-08-05 (cuándo: d = 2)
+cuando_2_es_unidad,table,reconstruida,COUNT=615 | MAX(fecha)=2025-07-26 (cuándo: u = 2)
+cuando_2_es_umil,table,reconstruida,COUNT=580 | MAX(fecha)=2025-07-21 (cuándo: um = 2)
+cuando_2_es_c_y_d,table,reconstruida,COUNT=65 | MAX(fecha)=2025-05-09 (cuándo: c = 2 AND d = 2)
+cuando_2_es_c_y_u,table,reconstruida,COUNT=59 | MAX(fecha)=2025-07-25 (cuándo: c = 2 AND u = 2)
+cuando_2_es_d_y_u,table,reconstruida,COUNT=66 | MAX(fecha)=2025-02-10 (cuándo: d = 2 AND u = 2)
+cuando_2_es_um_y_c,table,reconstruida,COUNT=51 | MAX(fecha)=2025-06-30 (cuándo: um = 2 AND c = 2)
+cuando_2_es_um_y_d,table,reconstruida,COUNT=70 | MAX(fecha)=2025-07-21 (cuándo: um = 2 AND d = 2)
+cuando_2_es_um_y_u,table,reconstruida,COUNT=70 | MAX(fecha)=2025-03-20 (cuándo: um = 2 AND u = 2)
+cuando_2_es_c_d_y_u,table,reconstruida,COUNT=11 | MAX(fecha)=2024-11-10 (cuándo: (c = 2 AND d = 2) AND (u = 2))
+cuando_2_es_um_c_y_d,table,reconstruida,COUNT=12 | MAX(fecha)=2025-02-01 (cuándo: (um = 2 AND c = 2) AND (d = 2))
+cuando_2_es_um_c_y_u,table,reconstruida,COUNT=4 | MAX(fecha)=2023-01-23 (cuándo: (um = 2 AND c = 2) AND (u = 2))
+cuando_2_es_um_d_y_u,table,reconstruida,COUNT=3 | MAX(fecha)=2021-07-08 (cuándo: (um = 2 AND d = 2) AND (u = 2))
+cuando_2_es_um_c_d_y_u,table,reconstruida,COUNT=1 | MAX(fecha)=2019-11-03 (cuándo: (um = 2 AND c = 2 AND d = 2) AND (u = 2))
+cuando_3_es_centena,table,reconstruida,COUNT=550 | MAX(fecha)=2025-08-04 (cuándo: c = 3)
+cuando_3_es_decena,table,reconstruida,COUNT=564 | MAX(fecha)=2025-08-06 (cuándo: d = 3)
+cuando_3_es_unidad,table,reconstruida,COUNT=553 | MAX(fecha)=2025-07-29 (cuándo: u = 3)
+cuando_3_es_umil,table,reconstruida,COUNT=535 | MAX(fecha)=2025-08-04 (cuándo: um = 3)
+cuando_3_es_c_y_d,table,reconstruida,COUNT=53 | MAX(fecha)=2025-07-16 (cuándo: c = 3 AND d = 3)
+cuando_3_es_c_y_u,table,reconstruida,COUNT=64 | MAX(fecha)=2025-07-18 (cuándo: c = 3 AND u = 3)
+cuando_3_es_d_y_u,table,reconstruida,COUNT=57 | MAX(fecha)=2024-10-26 (cuándo: d = 3 AND u = 3)
+cuando_3_es_um_y_c,table,reconstruida,COUNT=57 | MAX(fecha)=2025-08-04 (cuándo: um = 3 AND c = 3)
+cuando_3_es_um_y_d,table,reconstruida,COUNT=53 | MAX(fecha)=2025-06-11 (cuándo: um = 3 AND d = 3)
+cuando_3_es_um_y_u,table,reconstruida,COUNT=60 | MAX(fecha)=2025-07-29 (cuándo: um = 3 AND u = 3)
+cuando_3_es_c_d_y_u,table,reconstruida,COUNT=5 | MAX(fecha)=2023-11-19 (cuándo: (c = 3 AND d = 3) AND (u = 3))
+cuando_3_es_um_c_y_d,table,reconstruida,COUNT=8 | MAX(fecha)=2022-12-09 (cuándo: (um = 3 AND c = 3) AND (d = 3))
+cuando_3_es_um_c_y_u,table,reconstruida,COUNT=6 | MAX(fecha)=2025-07-02 (cuándo: (um = 3 AND c = 3) AND (u = 3))
+cuando_3_es_um_d_y_u,table,reconstruida,COUNT=2 | MAX(fecha)=2022-11-05 (cuándo: (um = 3 AND d = 3) AND (u = 3))
+cuando_3_es_um_c_d_y_u,table,reconstruida,COUNT=0 | MAX(fecha)=None (cuándo: (um = 3 AND c = 3 AND d = 3) AND (u = 3))
+cuando_4_es_centena,table,reconstruida,COUNT=557 | MAX(fecha)=2025-07-22 (cuándo: c = 4)
+cuando_4_es_decena,table,reconstruida,COUNT=532 | MAX(fecha)=2025-07-27 (cuándo: d = 4)
+cuando_4_es_unidad,table,reconstruida,COUNT=536 | MAX(fecha)=2025-08-08 (cuándo: u = 4)
+cuando_4_es_umil,table,reconstruida,COUNT=611 | MAX(fecha)=2025-07-03 (cuándo: um = 4)
+cuando_4_es_c_y_d,table,reconstruida,COUNT=62 | MAX(fecha)=2025-06-03 (cuándo: c = 4 AND d = 4)
+cuando_4_es_c_y_u,table,reconstruida,COUNT=52 | MAX(fecha)=2025-07-22 (cuándo: c = 4 AND u = 4)
+cuando_4_es_d_y_u,table,reconstruida,COUNT=53 | MAX(fecha)=2025-04-03 (cuándo: d = 4 AND u = 4)
+cuando_4_es_um_y_c,table,reconstruida,COUNT=68 | MAX(fecha)=2025-07-03 (cuándo: um = 4 AND c = 4)
+cuando_4_es_um_y_d,table,reconstruida,COUNT=51 | MAX(fecha)=2025-06-19 (cuándo: um = 4 AND d = 4)
+cuando_4_es_um_y_u,table,reconstruida,COUNT=61 | MAX(fecha)=2024-09-28 (cuándo: um = 4 AND u = 4)
+cuando_4_es_c_d_y_u,table,reconstruida,COUNT=3 | MAX(fecha)=2016-11-14 (cuándo: (c = 4 AND d = 4) AND (u = 4))
+cuando_4_es_um_c_y_d,table,reconstruida,COUNT=8 | MAX(fecha)=2020-10-03 (cuándo: (um = 4 AND c = 4) AND (d = 4))
+cuando_4_es_um_c_y_u,table,reconstruida,COUNT=7 | MAX(fecha)=2022-09-04 (cuándo: (um = 4 AND c = 4) AND (u = 4))
+cuando_4_es_um_d_y_u,table,reconstruida,COUNT=7 | MAX(fecha)=2022-06-21 (cuándo: (um = 4 AND d = 4) AND (u = 4))
+cuando_4_es_um_c_d_y_u,table,reconstruida,COUNT=0 | MAX(fecha)=None (cuándo: (um = 4 AND c = 4 AND d = 4) AND (u = 4))
+cuando_5_es_centena,table,reconstruida,COUNT=562 | MAX(fecha)=2025-08-07 (cuándo: c = 5)
+cuando_5_es_decena,table,reconstruida,COUNT=574 | MAX(fecha)=2025-08-04 (cuándo: d = 5)
+cuando_5_es_unidad,table,reconstruida,COUNT=569 | MAX(fecha)=2025-08-06 (cuándo: u = 5)
+cuando_5_es_umil,table,reconstruida,COUNT=560 | MAX(fecha)=2025-08-07 (cuándo: um = 5)
+cuando_5_es_c_y_d,table,reconstruida,COUNT=66 | MAX(fecha)=2025-07-17 (cuándo: c = 5 AND d = 5)
+cuando_5_es_c_y_u,table,reconstruida,COUNT=52 | MAX(fecha)=2025-08-06 (cuándo: c = 5 AND u = 5)
+cuando_5_es_d_y_u,table,reconstruida,COUNT=64 | MAX(fecha)=2025-07-17 (cuándo: d = 5 AND u = 5)
+cuando_5_es_um_y_c,table,reconstruida,COUNT=65 | MAX(fecha)=2025-08-07 (cuándo: um = 5 AND c = 5)
+cuando_5_es_um_y_d,table,reconstruida,COUNT=61 | MAX(fecha)=2025-01-07 (cuándo: um = 5 AND d = 5)
+cuando_5_es_um_y_u,table,reconstruida,COUNT=61 | MAX(fecha)=2025-07-14 (cuándo: um = 5 AND u = 5)
+cuando_5_es_c_d_y_u,table,reconstruida,COUNT=11 | MAX(fecha)=2025-07-17 (cuándo: (c = 5 AND d = 5) AND (u = 5))
+cuando_5_es_um_c_y_d,table,reconstruida,COUNT=8 | MAX(fecha)=2023-01-26 (cuándo: (um = 5 AND c = 5) AND (d = 5))
+cuando_5_es_um_c_y_u,table,reconstruida,COUNT=5 | MAX(fecha)=2018-03-30 (cuándo: (um = 5 AND c = 5) AND (u = 5))
+cuando_5_es_um_d_y_u,table,reconstruida,COUNT=8 | MAX(fecha)=2023-07-18 (cuándo: (um = 5 AND d = 5) AND (u = 5))
+cuando_5_es_um_c_d_y_u,table,reconstruida,COUNT=2 | MAX(fecha)=2018-03-30 (cuándo: (um = 5 AND c = 5 AND d = 5) AND (u = 5))
+cuando_6_es_centena,table,reconstruida,COUNT=575 | MAX(fecha)=2025-08-08 (cuándo: c = 6)
+cuando_6_es_decena,table,reconstruida,COUNT=506 | MAX(fecha)=2025-08-03 (cuándo: d = 6)
+cuando_6_es_unidad,table,reconstruida,COUNT=539 | MAX(fecha)=2025-08-04 (cuándo: u = 6)
+cuando_6_es_umil,table,reconstruida,COUNT=516 | MAX(fecha)=2025-07-17 (cuándo: um = 6)
+cuando_6_es_c_y_d,table,reconstruida,COUNT=51 | MAX(fecha)=2025-03-11 (cuándo: c = 6 AND d = 6)
+cuando_6_es_c_y_u,table,reconstruida,COUNT=49 | MAX(fecha)=2025-03-08 (cuándo: c = 6 AND u = 6)
+cuando_6_es_d_y_u,table,reconstruida,COUNT=45 | MAX(fecha)=2025-03-07 (cuándo: d = 6 AND u = 6)
+cuando_6_es_um_y_c,table,reconstruida,COUNT=52 | MAX(fecha)=2025-06-02 (cuándo: um = 6 AND c = 6)
+cuando_6_es_um_y_d,table,reconstruida,COUNT=53 | MAX(fecha)=2025-04-22 (cuándo: um = 6 AND d = 6)
+cuando_6_es_um_y_u,table,reconstruida,COUNT=54 | MAX(fecha)=2025-01-24 (cuándo: um = 6 AND u = 6)
+cuando_6_es_c_d_y_u,table,reconstruida,COUNT=6 | MAX(fecha)=2024-09-17 (cuándo: (c = 6 AND d = 6) AND (u = 6))
+cuando_6_es_um_c_y_d,table,reconstruida,COUNT=6 | MAX(fecha)=2025-03-11 (cuándo: (um = 6 AND c = 6) AND (d = 6))
+cuando_6_es_um_c_y_u,table,reconstruida,COUNT=6 | MAX(fecha)=2023-08-18 (cuándo: (um = 6 AND c = 6) AND (u = 6))
+cuando_6_es_um_d_y_u,table,reconstruida,COUNT=6 | MAX(fecha)=2022-03-23 (cuándo: (um = 6 AND d = 6) AND (u = 6))
+cuando_6_es_um_c_d_y_u,table,reconstruida,COUNT=0 | MAX(fecha)=None (cuándo: (um = 6 AND c = 6 AND d = 6) AND (u = 6))
+cuando_7_es_centena,table,reconstruida,COUNT=543 | MAX(fecha)=2025-07-30 (cuándo: c = 7)
+cuando_7_es_decena,table,reconstruida,COUNT=608 | MAX(fecha)=2025-07-30 (cuándo: d = 7)
+cuando_7_es_unidad,table,reconstruida,COUNT=483 | MAX(fecha)=2025-07-24 (cuándo: u = 7)
+cuando_7_es_umil,table,reconstruida,COUNT=569 | MAX(fecha)=2025-07-30 (cuándo: um = 7)
+cuando_7_es_c_y_d,table,reconstruida,COUNT=63 | MAX(fecha)=2025-07-30 (cuándo: c = 7 AND d = 7)
+cuando_7_es_c_y_u,table,reconstruida,COUNT=36 | MAX(fecha)=2025-06-08 (cuándo: c = 7 AND u = 7)
+cuando_7_es_d_y_u,table,reconstruida,COUNT=57 | MAX(fecha)=2025-06-08 (cuándo: d = 7 AND u = 7)
+cuando_7_es_um_y_c,table,reconstruida,COUNT=76 | MAX(fecha)=2025-07-30 (cuándo: um = 7 AND c = 7)
+cuando_7_es_um_y_d,table,reconstruida,COUNT=66 | MAX(fecha)=2025-07-30 (cuándo: um = 7 AND d = 7)
+cuando_7_es_um_y_u,table,reconstruida,COUNT=42 | MAX(fecha)=2024-04-12 (cuándo: um = 7 AND u = 7)
+cuando_7_es_c_d_y_u,table,reconstruida,COUNT=2 | MAX(fecha)=2025-06-08 (cuándo: (c = 7 AND d = 7) AND (u = 7))
+cuando_7_es_um_c_y_d,table,reconstruida,COUNT=10 | MAX(fecha)=2025-07-30 (cuándo: (um = 7 AND c = 7) AND (d = 7))
+cuando_7_es_um_c_y_u,table,reconstruida,COUNT=6 | MAX(fecha)=2024-04-12 (cuándo: (um = 7 AND c = 7) AND (u = 7))
+cuando_7_es_um_d_y_u,table,reconstruida,COUNT=7 | MAX(fecha)=2024-04-12 (cuándo: (um = 7 AND d = 7) AND (u = 7))
+cuando_7_es_um_c_d_y_u,table,reconstruida,COUNT=1 | MAX(fecha)=2024-04-12 (cuándo: (um = 7 AND c = 7 AND d = 7) AND (u = 7))
+cuando_8_es_centena,table,reconstruida,COUNT=557 | MAX(fecha)=2025-08-02 (cuándo: c = 8)
+cuando_8_es_decena,table,reconstruida,COUNT=543 | MAX(fecha)=2025-08-01 (cuándo: d = 8)
+cuando_8_es_unidad,table,reconstruida,COUNT=537 | MAX(fecha)=2025-08-07 (cuándo: u = 8)
+cuando_8_es_umil,table,reconstruida,COUNT=547 | MAX(fecha)=2025-08-08 (cuándo: um = 8)
+cuando_8_es_c_y_d,table,reconstruida,COUNT=60 | MAX(fecha)=2025-07-08 (cuándo: c = 8 AND d = 8)
+cuando_8_es_c_y_u,table,reconstruida,COUNT=49 | MAX(fecha)=2025-07-08 (cuándo: c = 8 AND u = 8)
+cuando_8_es_d_y_u,table,reconstruida,COUNT=48 | MAX(fecha)=2025-07-28 (cuándo: d = 8 AND u = 8)
+cuando_8_es_um_y_c,table,reconstruida,COUNT=51 | MAX(fecha)=2024-02-03 (cuándo: um = 8 AND c = 8)
+cuando_8_es_um_y_d,table,reconstruida,COUNT=45 | MAX(fecha)=2025-07-11 (cuándo: um = 8 AND d = 8)
+cuando_8_es_um_y_u,table,reconstruida,COUNT=56 | MAX(fecha)=2025-02-21 (cuándo: um = 8 AND u = 8)
+cuando_8_es_c_d_y_u,table,reconstruida,COUNT=4 | MAX(fecha)=2025-07-08 (cuándo: (c = 8 AND d = 8) AND (u = 8))
+cuando_8_es_um_c_y_d,table,reconstruida,COUNT=4 | MAX(fecha)=2022-02-17 (cuándo: (um = 8 AND c = 8) AND (d = 8))
+cuando_8_es_um_c_y_u,table,reconstruida,COUNT=7 | MAX(fecha)=2023-10-09 (cuándo: (um = 8 AND c = 8) AND (u = 8))
+cuando_8_es_um_d_y_u,table,reconstruida,COUNT=4 | MAX(fecha)=2018-07-25 (cuándo: (um = 8 AND d = 8) AND (u = 8))
+cuando_8_es_um_c_d_y_u,table,reconstruida,COUNT=0 | MAX(fecha)=None (cuándo: (um = 8 AND c = 8 AND d = 8) AND (u = 8))
+cuando_9_es_centena,table,reconstruida,COUNT=555 | MAX(fecha)=2025-08-03 (cuándo: c = 9)
+cuando_9_es_decena,table,reconstruida,COUNT=503 | MAX(fecha)=2025-07-23 (cuándo: d = 9)
+cuando_9_es_unidad,table,reconstruida,COUNT=565 | MAX(fecha)=2025-08-03 (cuándo: u = 9)
+cuando_9_es_umil,table,reconstruida,COUNT=529 | MAX(fecha)=2025-08-05 (cuándo: um = 9)
+cuando_9_es_c_y_d,table,reconstruida,COUNT=50 | MAX(fecha)=2025-07-23 (cuándo: c = 9 AND d = 9)
+cuando_9_es_c_y_u,table,reconstruida,COUNT=67 | MAX(fecha)=2025-08-03 (cuándo: c = 9 AND u = 9)
+cuando_9_es_d_y_u,table,reconstruida,COUNT=64 | MAX(fecha)=2025-06-06 (cuándo: d = 9 AND u = 9)
+cuando_9_es_um_y_c,table,reconstruida,COUNT=61 | MAX(fecha)=2025-03-21 (cuándo: um = 9 AND c = 9)
+cuando_9_es_um_y_d,table,reconstruida,COUNT=63 | MAX(fecha)=2025-03-30 (cuándo: um = 9 AND d = 9)
+cuando_9_es_um_y_u,table,reconstruida,COUNT=49 | MAX(fecha)=2025-07-16 (cuándo: um = 9 AND u = 9)
+cuando_9_es_c_d_y_u,table,reconstruida,COUNT=7 | MAX(fecha)=2025-02-12 (cuándo: (c = 9 AND d = 9) AND (u = 9))
+cuando_9_es_um_c_y_d,table,reconstruida,COUNT=7 | MAX(fecha)=2019-07-25 (cuándo: (um = 9 AND c = 9) AND (d = 9))
+cuando_9_es_um_c_y_u,table,reconstruida,COUNT=3 | MAX(fecha)=2020-07-14 (cuándo: (um = 9 AND c = 9) AND (u = 9))
+cuando_9_es_um_d_y_u,table,reconstruida,COUNT=10 | MAX(fecha)=2024-09-25 (cuándo: (um = 9 AND d = 9) AND (u = 9))
+cuando_9_es_um_c_d_y_u,table,reconstruida,COUNT=1 | MAX(fecha)=2017-06-14 (cuándo: (um = 9 AND c = 9 AND d = 9) AND (u = 9))
+todo,view,creada,"LEFT JOIN a(fecha,numero)=b(fecha,numero)"
+astro_luna,check,verificada,COUNT=5501 | MAX(fecha)=2025-08-08
+matriz_astro_luna,check,verificada,COUNT=5501 | MAX(fecha)=2025-08-08
+todos_resumen_matriz_aslu,check,verificada,COUNT=5501 | MAX(fecha)=2025-08-08
+todos_cuando_son,check,verificada,COUNT=22004 | MAX(fecha)=2025-08-08

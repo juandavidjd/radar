@@ -1,0 +1,234 @@
+==============================================================================
+[INFO] Inicio: 2025-08-13 22:49:12
+[INFO] DB: C:\RadarPremios\radar_premios.db
+[INFO] MD5 (antes): 5c69de47a19ff590d7593b53ac2f5e1d
+[INFO] Opciones: dry_run=False | vacuum=False | todo_join=inner
+[INFO] PRAGMA user_version=0
+[INFO] Normalizando fechas...
+[STEP] Normalizar columnas 'fecha' (DD/MM/YYYY -> YYYY-MM-DD) en todas las tablas.
+  - primer_resumen_matriz_aslu: OK (sin barras)
+  - segundo_resumen_matriz_aslu: OK (sin barras)
+  - tercer_resumen_matriz_aslu: OK (sin barras)
+  - cuarto_resumen_matriz_aslu: OK (sin barras)
+  - quinto_resumen_matriz_aslu: OK (sin barras)
+  - sexto_resumen_matriz_aslu: OK (sin barras)
+  - septimo_resumen_matriz_aslu: OK (sin barras)
+  - octavo_resumen_matriz_aslu: OK (sin barras)
+  - noveno_resumen_matriz_aslu: OK (sin barras)
+  - decimo_resumen_matriz_aslu: OK (sin barras)
+  - cuando_cero_es_unidad: OK (sin barras)
+  - cuando_cero_es_decena: OK (sin barras)
+  - cuando_cero_es_centena: OK (sin barras)
+  - cuando_cero_es_umil: OK (sin barras)
+  - cuando_cero_es_d_y_u: OK (sin barras)
+  - cuando_cero_es_c_y_u: OK (sin barras)
+  - cuando_cero_es_um_y_u: OK (sin barras)
+  - cuando_cero_es_c_y_d: OK (sin barras)
+  - cuando_cero_es_um_y_d: OK (sin barras)
+  - cuando_cero_es_um_y_c: OK (sin barras)
+  - cuando_cero_es_c_d_y_u: OK (sin barras)
+  - cuando_cero_es_um_c_d_y_u: OK (sin barras)
+  - cuando_cero_es_um_c_y_d: OK (sin barras)
+  - cuando_cero_es_um_c_y_u: OK (sin barras)
+  - cuando_cero_es_um_d_y_u: OK (sin barras)
+  - todos_resumen_matriz_aslu: OK (sin barras)
+  - todos_cuando_son: OK (sin barras)
+  - todo_cuando_0_es: OK (sin barras)
+  - todo_cuando_1_es: OK (sin barras)
+  - todo_cuando_2_es: OK (sin barras)
+  - todo_cuando_3_es: OK (sin barras)
+  - todo_cuando_4_es: OK (sin barras)
+  - todo_cuando_5_es: OK (sin barras)
+  - todo_cuando_6_es: OK (sin barras)
+  - todo_cuando_7_es: OK (sin barras)
+  - todo_cuando_8_es: OK (sin barras)
+  - todo_cuando_9_es: OK (sin barras)
+  - cuando_0_es_umil: OK (sin barras)
+  - cuando_0_es_centena: OK (sin barras)
+  - cuando_0_es_decena: OK (sin barras)
+  - cuando_0_es_unidad: OK (sin barras)
+  - cuando_0_es_um_y_c: OK (sin barras)
+  - cuando_0_es_um_y_d: OK (sin barras)
+  - cuando_0_es_um_y_u: OK (sin barras)
+  - cuando_0_es_c_y_d: OK (sin barras)
+  - cuando_0_es_c_y_u: OK (sin barras)
+  - cuando_0_es_d_y_u: OK (sin barras)
+  - cuando_0_es_c_d_y_u: OK (sin barras)
+  - cuando_0_es_um_c_y_d: OK (sin barras)
+  - cuando_0_es_um_c_y_u: OK (sin barras)
+  - cuando_0_es_um_d_y_u: OK (sin barras)
+  - cuando_0_es_um_c_d_y_u: OK (sin barras)
+  - cuando_1_es_umil: OK (sin barras)
+  - cuando_1_es_centena: OK (sin barras)
+  - cuando_1_es_decena: OK (sin barras)
+  - cuando_1_es_unidad: OK (sin barras)
+  - cuando_1_es_um_y_c: OK (sin barras)
+  - cuando_1_es_um_y_d: OK (sin barras)
+  - cuando_1_es_um_y_u: OK (sin barras)
+  - cuando_1_es_c_y_d: OK (sin barras)
+  - cuando_1_es_c_y_u: OK (sin barras)
+  - cuando_1_es_d_y_u: OK (sin barras)
+  - cuando_1_es_c_d_y_u: OK (sin barras)
+  - cuando_1_es_um_c_y_d: OK (sin barras)
+  - cuando_1_es_um_c_y_u: OK (sin barras)
+  - cuando_1_es_um_d_y_u: OK (sin barras)
+  - cuando_1_es_um_c_d_y_u: OK (sin barras)
+  - cuando_2_es_umil: OK (sin barras)
+  - cuando_2_es_centena: OK (sin barras)
+  - cuando_2_es_decena: OK (sin barras)
+  - cuando_2_es_unidad: OK (sin barras)
+  - cuando_2_es_um_y_c: OK (sin barras)
+  - cuando_2_es_um_y_d: OK (sin barras)
+  - cuando_2_es_um_y_u: OK (sin barras)
+  - cuando_2_es_c_y_d: OK (sin barras)
+  - cuando_2_es_c_y_u: OK (sin barras)
+  - cuando_2_es_d_y_u: OK (sin barras)
+  - cuando_2_es_c_d_y_u: OK (sin barras)
+  - cuando_2_es_um_c_y_d: OK (sin barras)
+  - cuando_2_es_um_c_y_u: OK (sin barras)
+  - cuando_2_es_um_d_y_u: OK (sin barras)
+  - cuando_2_es_um_c_d_y_u: OK (sin barras)
+  - cuando_3_es_umil: OK (sin barras)
+  - cuando_3_es_centena: OK (sin barras)
+  - cuando_3_es_decena: OK (sin barras)
+  - cuando_3_es_unidad: OK (sin barras)
+  - cuando_3_es_um_y_c: OK (sin barras)
+  - cuando_3_es_um_y_d: OK (sin barras)
+  - cuando_3_es_um_y_u: OK (sin barras)
+  - cuando_3_es_c_y_d: OK (sin barras)
+  - cuando_3_es_c_y_u: OK (sin barras)
+  - cuando_3_es_d_y_u: OK (sin barras)
+  - cuando_3_es_c_d_y_u: OK (sin barras)
+  - cuando_3_es_um_c_y_d: OK (sin barras)
+  - cuando_3_es_um_c_y_u: OK (sin barras)
+  - cuando_3_es_um_d_y_u: OK (sin barras)
+  - cuando_3_es_um_c_d_y_u: OK (sin barras)
+  - cuando_4_es_umil: OK (sin barras)
+  - cuando_4_es_centena: OK (sin barras)
+  - cuando_4_es_decena: OK (sin barras)
+  - cuando_4_es_unidad: OK (sin barras)
+  - cuando_4_es_um_y_c: OK (sin barras)
+  - cuando_4_es_um_y_d: OK (sin barras)
+  - cuando_4_es_um_y_u: OK (sin barras)
+  - cuando_4_es_c_y_d: OK (sin barras)
+  - cuando_4_es_c_y_u: OK (sin barras)
+  - cuando_4_es_d_y_u: OK (sin barras)
+  - cuando_4_es_c_d_y_u: OK (sin barras)
+  - cuando_4_es_um_c_y_d: OK (sin barras)
+  - cuando_4_es_um_c_y_u: OK (sin barras)
+  - cuando_4_es_um_d_y_u: OK (sin barras)
+  - cuando_4_es_um_c_d_y_u: OK (sin barras)
+  - cuando_5_es_umil: OK (sin barras)
+  - cuando_5_es_centena: OK (sin barras)
+  - cuando_5_es_decena: OK (sin barras)
+  - cuando_5_es_unidad: OK (sin barras)
+  - cuando_5_es_um_y_c: OK (sin barras)
+  - cuando_5_es_um_y_d: OK (sin barras)
+  - cuando_5_es_um_y_u: OK (sin barras)
+  - cuando_5_es_c_y_d: OK (sin barras)
+  - cuando_5_es_c_y_u: OK (sin barras)
+  - cuando_5_es_d_y_u: OK (sin barras)
+  - cuando_5_es_c_d_y_u: OK (sin barras)
+  - cuando_5_es_um_c_y_d: OK (sin barras)
+  - cuando_5_es_um_c_y_u: OK (sin barras)
+  - cuando_5_es_um_d_y_u: OK (sin barras)
+  - cuando_5_es_um_c_d_y_u: OK (sin barras)
+  - cuando_6_es_umil: OK (sin barras)
+  - cuando_6_es_centena: OK (sin barras)
+  - cuando_6_es_decena: OK (sin barras)
+  - cuando_6_es_unidad: OK (sin barras)
+  - cuando_6_es_um_y_c: OK (sin barras)
+  - cuando_6_es_um_y_d: OK (sin barras)
+  - cuando_6_es_um_y_u: OK (sin barras)
+  - cuando_6_es_c_y_d: OK (sin barras)
+  - cuando_6_es_c_y_u: OK (sin barras)
+  - cuando_6_es_d_y_u: OK (sin barras)
+  - cuando_6_es_c_d_y_u: OK (sin barras)
+  - cuando_6_es_um_c_y_d: OK (sin barras)
+  - cuando_6_es_um_c_y_u: OK (sin barras)
+  - cuando_6_es_um_d_y_u: OK (sin barras)
+  - cuando_6_es_um_c_d_y_u: OK (sin barras)
+  - cuando_7_es_umil: OK (sin barras)
+  - cuando_7_es_centena: OK (sin barras)
+  - cuando_7_es_decena: OK (sin barras)
+  - cuando_7_es_unidad: OK (sin barras)
+  - cuando_7_es_um_y_c: OK (sin barras)
+  - cuando_7_es_um_y_d: OK (sin barras)
+  - cuando_7_es_um_y_u: OK (sin barras)
+  - cuando_7_es_c_y_d: OK (sin barras)
+  - cuando_7_es_c_y_u: OK (sin barras)
+  - cuando_7_es_d_y_u: OK (sin barras)
+  - cuando_7_es_c_d_y_u: OK (sin barras)
+  - cuando_7_es_um_c_y_d: OK (sin barras)
+  - cuando_7_es_um_c_y_u: OK (sin barras)
+  - cuando_7_es_um_d_y_u: OK (sin barras)
+  - cuando_7_es_um_c_d_y_u: OK (sin barras)
+  - cuando_8_es_umil: OK (sin barras)
+  - cuando_8_es_centena: OK (sin barras)
+  - cuando_8_es_decena: OK (sin barras)
+  - cuando_8_es_unidad: OK (sin barras)
+  - cuando_8_es_um_y_c: OK (sin barras)
+  - cuando_8_es_um_y_d: OK (sin barras)
+  - cuando_8_es_um_y_u: OK (sin barras)
+  - cuando_8_es_c_y_d: OK (sin barras)
+  - cuando_8_es_c_y_u: OK (sin barras)
+  - cuando_8_es_d_y_u: OK (sin barras)
+  - cuando_8_es_c_d_y_u: OK (sin barras)
+  - cuando_8_es_um_c_y_d: OK (sin barras)
+  - cuando_8_es_um_c_y_u: OK (sin barras)
+  - cuando_8_es_um_d_y_u: OK (sin barras)
+  - cuando_8_es_um_c_d_y_u: OK (sin barras)
+  - cuando_9_es_umil: OK (sin barras)
+  - cuando_9_es_centena: OK (sin barras)
+  - cuando_9_es_decena: OK (sin barras)
+  - cuando_9_es_unidad: OK (sin barras)
+  - cuando_9_es_um_y_c: OK (sin barras)
+  - cuando_9_es_um_y_d: OK (sin barras)
+  - cuando_9_es_um_y_u: OK (sin barras)
+  - cuando_9_es_c_y_d: OK (sin barras)
+  - cuando_9_es_c_y_u: OK (sin barras)
+  - cuando_9_es_d_y_u: OK (sin barras)
+  - cuando_9_es_c_d_y_u: OK (sin barras)
+  - cuando_9_es_um_c_y_d: OK (sin barras)
+  - cuando_9_es_um_c_y_u: OK (sin barras)
+  - cuando_9_es_um_d_y_u: OK (sin barras)
+  - cuando_9_es_um_c_d_y_u: OK (sin barras)
+  - boyaca: normalizando 102 filas con barras...
+  - huila: normalizando 101 filas con barras...
+  - manizales: normalizando 101 filas con barras...
+  - medellin: normalizando 101 filas con barras...
+  - quindio: normalizando 101 filas con barras...
+  - tolima: normalizando 102 filas con barras...
+  - astro_luna: normalizando 5504 filas con barras...
+  - baloto_resultados: normalizando 454 filas con barras...
+  - baloto_premios: normalizando 3632 filas con barras...
+  - revancha_resultados: normalizando 454 filas con barras...
+  - revancha_premios: normalizando 3632 filas con barras...
+  - matriz_astro_luna: normalizando 5504 filas con barras...
+[INFO] Reconstruyendo 'matriz_astro_luna'...
+[STEP] Reconstruir 'matriz_astro_luna' desde 'astro_luna'.
+[INFO] Reconstruyendo tablas resumen*...
+[STEP] Reconstruir tablas resumen*.
+[INFO] Reconstruyendo 'todos_cuando_son'...
+[STEP] Reconstruir 'todos_cuando_son'.
+[INFO] Reconstruyendo 'todo_cuando_*_es'...
+[STEP] Reconstruir 'todo_cuando_*_es' (0..9).
+[INFO] Reconstruyendo tablas 'cuando_*' detalladas...
+[STEP] Reconstruir tablas 'cuando_*' detalladas.
+[INFO] Asegurando vista 'todo' (INNER JOIN) ...
+[STEP] Asegurar vista 'todo' (INNER JOIN).
+[VIEW todo SQL]
+CREATE VIEW todo AS
+        SELECT *
+        FROM todos_resumen_matriz_aslu AS a
+        JOIN todos_cuando_son AS b
+          ON a.fecha = b.fecha
+         AND a.numero = b.numero
+[CHECK] Conteos y máximas fechas clave:
+  - astro_luna: COUNT=5504 | MAX(fecha)=2025-08-11
+  - matriz_astro_luna: COUNT=5504 | MAX(fecha)=2025-08-11
+  - todos_resumen_matriz_aslu: COUNT=5504 | MAX(fecha)=2025-08-11
+  - todo(view): COUNT=22016 | MAX(fecha)=2025-08-11
+[INFO] MD5 (después): d4e86dd9f0f335f53ed4caeebed56884
+[INFO] Fin: 2025-08-13 22:49:12
+==============================================================================
